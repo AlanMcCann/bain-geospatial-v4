@@ -1,0 +1,29 @@
+notes for data 20230203
+
+
+2 sets of 16
+in
+out
+
+net is difference
+
+Update key for first 32
+
+3 arrays
+ is the secondary market in
+    - top 50
+    - top 25
+    - top 10
+
+Remove all - from selection
+
+How many markets to display
+last in the list of options at the top
+
+All markets - show at the top left
+
+remote datatable buttons
+
+
+
+

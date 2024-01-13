@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="386px" height="52px" viewBox="0 0 386 52" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>bain-attribution</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="bain-attribution">
+            <rect id="Rectangle" fill-opacity="0.7" fill="#FFFFFF" x="0" y="0" width="386" height="52" rx="8"></rect>
+            <text id="US-Geospatial-Consum" font-family="Roboto-Bold, Roboto" font-size="18" font-weight="bold" fill="#000000">
+                <tspan x="54.1171875" y="25">US Geospatial Consumer Footprint Tool</tspan>
+            </text>
+            <text id="Macro-Trends-Group," font-family="Roboto-Bold, Roboto" font-size="18" font-weight="bold" fill="#CB2026">
+                <tspan x="54.4008789" y="42">Macro Trends Group,  Bain &amp; Company</tspan>
+            </text>
+            <g id="logo_red_bain" transform="translate(9.000000, 8.000000)" fill="#CB2026" fill-rule="nonzero">
+                <path d="M23.6764706,18.4150327 L20.4738562,4.23202614 L11.6666667,15.6699346 L23.6764706,18.4150327 Z M35,17.5 C35,27.1649832 27.1649835,35 17.5,35 C7.8350165,35 0,27.1649832 0,17.5 C0,7.83501688 7.8350165,0 17.5,0 C18.4188838,0.0193869931 19.3356791,0.0957865857 20.245098,0.22875817 L18.7581699,2.17320261 L17.5,2.17320261 C13.6312853,2.12438182 9.90197353,3.61611232 7.13416667,6.31955102 C4.36636095,9.02298974 2.78730621,12.7161754 2.74509804,16.5849673 C2.74509804,24.7338743 9.35109297,31.3398684 17.5,31.3398684 C25.648907,31.3398684 32.254902,24.7338743 32.254902,16.5849673 C32.2139954,10.6083323 28.4798317,5.28031901 22.875817,3.20261438 L22.3039216,0.800653595 C29.8072948,2.88226406 35.0007046,9.71323486 35,17.5 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

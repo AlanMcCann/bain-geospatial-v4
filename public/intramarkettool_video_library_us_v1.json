@@ -1,0 +1,14 @@
+{
+  "videos": [
+    {
+      "video": {
+        "id": 1,
+        "title": "Intra Market Tool Orientation Video",
+        "description": "Welcome to the Bain Macro Trends Intra Market tool.  In this video, we cover what the tool is intended to do, a little bit about the data behind the tool, and walk through the features, data series, and reports accessible in the tool.",
+        "url": "orientation-video-draft.mp4",
+        "pic": "orientation-video-preview.png"
+      },
+      "autoplay": false
+    }
+  ]
+}

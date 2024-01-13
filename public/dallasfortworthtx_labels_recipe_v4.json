@@ -1,0 +1,10 @@
+{
+    "version": 1,
+    "layers": {
+        "dallasfortworthtx_labels_v4": {
+            "source": "mapbox://tileset-source/stobieb/dallasfortworthtx_labels_src_v4",
+            "minzoom": 0,
+            "maxzoom": 13
+        }
+    }
+}

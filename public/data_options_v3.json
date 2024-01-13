@@ -1,0 +1,1927 @@
+{
+    "ageSegmentOptions": [
+        "1:All",
+        "2:18-44",
+        "3:45-64",
+        "4:65+"
+    ],
+    "incomeSegmentOptions": [
+        "1:All",
+        "2:$0-50k",
+        "3:$50-100k",
+        "4:$100k+"
+    ],
+    "regionOptions": [
+        {
+            "displayRegion": "Abilene, TX",
+            "isMetro": "1",
+            "region": "AbileneTX"
+        },
+        {
+            "displayRegion": "Akron, OH",
+            "isMetro": "1",
+            "region": "AkronOH"
+        },
+        {
+            "displayRegion": "Albany, GA",
+            "isMetro": "1",
+            "region": "AlbanyGA"
+        },
+        {
+            "displayRegion": "Albany, OR",
+            "isMetro": "1",
+            "region": "AlbanyOR"
+        },
+        {
+            "displayRegion": "Albany, NY",
+            "isMetro": "1",
+            "region": "AlbanyNY"
+        },
+        {
+            "displayRegion": "Albuquerque, NM",
+            "isMetro": "1",
+            "region": "AlbuquerqueNM"
+        },
+        {
+            "displayRegion": "Alexandria, LA",
+            "isMetro": "1",
+            "region": "AlexandriaLA"
+        },
+        {
+            "displayRegion": "Allentown, PA",
+            "isMetro": "1",
+            "region": "AllentownPA"
+        },
+        {
+            "displayRegion": "Altoona, PA",
+            "isMetro": "1",
+            "region": "AltoonaPA"
+        },
+        {
+            "displayRegion": "Amarillo, TX",
+            "isMetro": "1",
+            "region": "AmarilloTX"
+        },
+        {
+            "displayRegion": "Ames, IA",
+            "isMetro": "1",
+            "region": "AmesIA"
+        },
+        {
+            "displayRegion": "Anchorage, AK",
+            "isMetro": "1",
+            "region": "AnchorageAK"
+        },
+        {
+            "displayRegion": "Ann Arbor, MI",
+            "isMetro": "1",
+            "region": "AnnArborMI"
+        },
+        {
+            "displayRegion": "Anniston, AL",
+            "isMetro": "1",
+            "region": "AnnistonAL"
+        },
+        {
+            "displayRegion": "Appleton, WI",
+            "isMetro": "1",
+            "region": "AppletonWI"
+        },
+        {
+            "displayRegion": "Asheville, NC",
+            "isMetro": "1",
+            "region": "AshevilleNC"
+        },
+        {
+            "displayRegion": "Athens, GA",
+            "isMetro": "1",
+            "region": "AthensGA"
+        },
+        {
+            "displayRegion": "Atlanta, GA",
+            "isMetro": "1",
+            "region": "AtlantaGA"
+        },
+        {
+            "displayRegion": "Atlantic City, NJ",
+            "isMetro": "1",
+            "region": "AtlanticCityNJ"
+        },
+        {
+            "displayRegion": "Auburn, AL",
+            "isMetro": "1",
+            "region": "AuburnAL"
+        },
+        {
+            "displayRegion": "Augusta, GA",
+            "isMetro": "1",
+            "region": "AugustaGA"
+        },
+        {
+            "displayRegion": "Austin, TX",
+            "isMetro": "1",
+            "region": "AustinTX"
+        },
+        {
+            "displayRegion": "Bakersfield, CA",
+            "isMetro": "1",
+            "region": "BakersfieldCA"
+        },
+        {
+            "displayRegion": "Baltimore, MD",
+            "isMetro": "1",
+            "region": "BaltimoreMD"
+        },
+        {
+            "displayRegion": "Bangor, ME",
+            "isMetro": "1",
+            "region": "BangorME"
+        },
+        {
+            "displayRegion": "Barnstable Town, MA",
+            "isMetro": "1",
+            "region": "BarnstableTownMA"
+        },
+        {
+            "displayRegion": "Baton Rouge, LA",
+            "isMetro": "1",
+            "region": "BatonRougeLA"
+        },
+        {
+            "displayRegion": "Battle Creek, MI",
+            "isMetro": "1",
+            "region": "BattleCreekMI"
+        },
+        {
+            "displayRegion": "Bay City, MI",
+            "isMetro": "1",
+            "region": "BayCityMI"
+        },
+        {
+            "displayRegion": "Beaumont, TX",
+            "isMetro": "1",
+            "region": "BeaumontTX"
+        },
+        {
+            "displayRegion": "Beckley, WV",
+            "isMetro": "1",
+            "region": "BeckleyWV"
+        },
+        {
+            "displayRegion": "Bellingham, WA",
+            "isMetro": "1",
+            "region": "BellinghamWA"
+        },
+        {
+            "displayRegion": "Bend, OR",
+            "isMetro": "1",
+            "region": "BendOR"
+        },
+        {
+            "displayRegion": "Billings, MT",
+            "isMetro": "1",
+            "region": "BillingsMT"
+        },
+        {
+            "displayRegion": "Binghamton, NY",
+            "isMetro": "1",
+            "region": "BinghamtonNY"
+        },
+        {
+            "displayRegion": "Birmingham, AL",
+            "isMetro": "1",
+            "region": "BirminghamAL"
+        },
+        {
+            "displayRegion": "Bismarck, ND",
+            "isMetro": "1",
+            "region": "BismarckND"
+        },
+        {
+            "displayRegion": "Blacksburg, VA",
+            "isMetro": "1",
+            "region": "BlacksburgVA"
+        },
+        {
+            "displayRegion": "Bloomington, IL",
+            "isMetro": "1",
+            "region": "BloomingtonIL"
+        },
+        {
+            "displayRegion": "Bloomington, IN",
+            "isMetro": "1",
+            "region": "BloomingtonIN"
+        },
+        {
+            "displayRegion": "Bloomsburg, PA",
+            "isMetro": "1",
+            "region": "BloomsburgPA"
+        },
+        {
+            "displayRegion": "Boise City, ID",
+            "isMetro": "1",
+            "region": "BoiseCityID"
+        },
+        {
+            "displayRegion": "Boston, MA",
+            "isMetro": "1",
+            "region": "BostonMA"
+        },
+        {
+            "displayRegion": "Boulder, CO",
+            "isMetro": "1",
+            "region": "BoulderCO"
+        },
+        {
+            "displayRegion": "Bowling Green, KY",
+            "isMetro": "1",
+            "region": "BowlingGreenKY"
+        },
+        {
+            "displayRegion": "Bremerton, WA",
+            "isMetro": "1",
+            "region": "BremertonWA"
+        },
+        {
+            "displayRegion": "Bridgeport, CT",
+            "isMetro": "1",
+            "region": "BridgeportCT"
+        },
+        {
+            "displayRegion": "Brownsville, TX",
+            "isMetro": "1",
+            "region": "BrownsvilleTX"
+        },
+        {
+            "displayRegion": "Brunswick, GA",
+            "isMetro": "1",
+            "region": "BrunswickGA"
+        },
+        {
+            "displayRegion": "Buffalo, NY",
+            "isMetro": "1",
+            "region": "BuffaloNY"
+        },
+        {
+            "displayRegion": "Burlington, NC",
+            "isMetro": "1",
+            "region": "BurlingtonNC"
+        },
+        {
+            "displayRegion": "Burlington, VT",
+            "isMetro": "1",
+            "region": "BurlingtonVT"
+        },
+        {
+            "displayRegion": "California, MD",
+            "isMetro": "1",
+            "region": "CaliforniaMD"
+        },
+        {
+            "displayRegion": "Canton, OH",
+            "isMetro": "1",
+            "region": "CantonOH"
+        },
+        {
+            "displayRegion": "Cape Coral, FL",
+            "isMetro": "1",
+            "region": "CapeCoralFL"
+        },
+        {
+            "displayRegion": "Cape Girardeau, MO",
+            "isMetro": "1",
+            "region": "CapeGirardeauMO"
+        },
+        {
+            "displayRegion": "Carbondale, IL",
+            "isMetro": "1",
+            "region": "CarbondaleIL"
+        },
+        {
+            "displayRegion": "Carson City, NV",
+            "isMetro": "1",
+            "region": "CarsonCityNV"
+        },
+        {
+            "displayRegion": "Casper, WY",
+            "isMetro": "1",
+            "region": "CasperWY"
+        },
+        {
+            "displayRegion": "Cedar Rapids, IA",
+            "isMetro": "1",
+            "region": "CedarRapidsIA"
+        },
+        {
+            "displayRegion": "Chambersburg, PA",
+            "isMetro": "1",
+            "region": "ChambersburgPA"
+        },
+        {
+            "displayRegion": "Champaign, IL",
+            "isMetro": "1",
+            "region": "ChampaignIL"
+        },
+        {
+            "displayRegion": "Charleston, WV",
+            "isMetro": "1",
+            "region": "CharlestonWV"
+        },
+        {
+            "displayRegion": "Charleston, SC",
+            "isMetro": "1",
+            "region": "CharlestonSC"
+        },
+        {
+            "displayRegion": "Charlotte, NC",
+            "isMetro": "1",
+            "region": "CharlotteNC"
+        },
+        {
+            "displayRegion": "Charlottesville, VA",
+            "isMetro": "1",
+            "region": "CharlottesvilleVA"
+        },
+        {
+            "displayRegion": "Chattanooga, TN",
+            "isMetro": "1",
+            "region": "ChattanoogaTN"
+        },
+        {
+            "displayRegion": "Cheyenne, WY",
+            "isMetro": "1",
+            "region": "CheyenneWY"
+        },
+        {
+            "displayRegion": "Chicago, IL",
+            "isMetro": "1",
+            "region": "ChicagoIL"
+        },
+        {
+            "displayRegion": "Chico, CA",
+            "isMetro": "1",
+            "region": "ChicoCA"
+        },
+        {
+            "displayRegion": "Cincinnati, OH",
+            "isMetro": "1",
+            "region": "CincinnatiOH"
+        },
+        {
+            "displayRegion": "Clarksville, TN",
+            "isMetro": "1",
+            "region": "ClarksvilleTN"
+        },
+        {
+            "displayRegion": "Cleveland, TN",
+            "isMetro": "1",
+            "region": "ClevelandTN"
+        },
+        {
+            "displayRegion": "Cleveland, OH",
+            "isMetro": "1",
+            "region": "ClevelandOH"
+        },
+        {
+            "displayRegion": "Coeur D'alene, ID",
+            "isMetro": "1",
+            "region": "CoeurDaleneID"
+        },
+        {
+            "displayRegion": "College Station, TX",
+            "isMetro": "1",
+            "region": "CollegeStationTX"
+        },
+        {
+            "displayRegion": "Colorado Springs, CO",
+            "isMetro": "1",
+            "region": "ColoradoSpringCO"
+        },
+        {
+            "displayRegion": "Columbia, MO",
+            "isMetro": "1",
+            "region": "ColumbiaMO"
+        },
+        {
+            "displayRegion": "Columbia, SC",
+            "isMetro": "1",
+            "region": "ColumbiaSC"
+        },
+        {
+            "displayRegion": "Columbus, GA",
+            "isMetro": "1",
+            "region": "ColumbusGA"
+        },
+        {
+            "displayRegion": "Columbus, IN",
+            "isMetro": "1",
+            "region": "ColumbusIN"
+        },
+        {
+            "displayRegion": "Columbus, OH",
+            "isMetro": "1",
+            "region": "ColumbusOH"
+        },
+        {
+            "displayRegion": "Corpus Christi, TX",
+            "isMetro": "1",
+            "region": "CorpusChristiTX"
+        },
+        {
+            "displayRegion": "Corvallis, OR",
+            "isMetro": "1",
+            "region": "CorvallisOR"
+        },
+        {
+            "displayRegion": "Crestview, FL",
+            "isMetro": "1",
+            "region": "CrestviewFL"
+        },
+        {
+            "displayRegion": "Cumberland, MD",
+            "isMetro": "1",
+            "region": "CumberlandMD"
+        },
+        {
+            "displayRegion": "Dallas Fort Worth, TX",
+            "isMetro": "1",
+            "region": "DallasFortWrthTX"
+        },
+        {
+            "displayRegion": "Dalton, GA",
+            "isMetro": "1",
+            "region": "DaltonGA"
+        },
+        {
+            "displayRegion": "Danville, IL",
+            "isMetro": "1",
+            "region": "DanvilleIL"
+        },
+        {
+            "displayRegion": "Daphne, AL",
+            "isMetro": "1",
+            "region": "DaphneAL"
+        },
+        {
+            "displayRegion": "Davenport, IA",
+            "isMetro": "1",
+            "region": "DavenportIA"
+        },
+        {
+            "displayRegion": "Dayton, OH",
+            "isMetro": "1",
+            "region": "DaytonOH"
+        },
+        {
+            "displayRegion": "Decatur, AL",
+            "isMetro": "1",
+            "region": "DecaturAL"
+        },
+        {
+            "displayRegion": "Decatur, IL",
+            "isMetro": "1",
+            "region": "DecaturIL"
+        },
+        {
+            "displayRegion": "Deltona, FL",
+            "isMetro": "1",
+            "region": "DeltonaFL"
+        },
+        {
+            "displayRegion": "Denver, CO",
+            "isMetro": "1",
+            "region": "DenverCO"
+        },
+        {
+            "displayRegion": "Des Moines, IA",
+            "isMetro": "1",
+            "region": "DesMoinesIA"
+        },
+        {
+            "displayRegion": "Detroit, MI",
+            "isMetro": "1",
+            "region": "DetroitMI"
+        },
+        {
+            "displayRegion": "Dothan, AL",
+            "isMetro": "1",
+            "region": "DothanAL"
+        },
+        {
+            "displayRegion": "Dover, DE",
+            "isMetro": "1",
+            "region": "DoverDE"
+        },
+        {
+            "displayRegion": "Dubuque, IA",
+            "isMetro": "1",
+            "region": "DubuqueIA"
+        },
+        {
+            "displayRegion": "Duluth, MN",
+            "isMetro": "1",
+            "region": "DuluthMN"
+        },
+        {
+            "displayRegion": "Durham, NC",
+            "isMetro": "1",
+            "region": "DurhamNC"
+        },
+        {
+            "displayRegion": "East Stroudsburg, PA",
+            "isMetro": "1",
+            "region": "EastStroudsbrgPA"
+        },
+        {
+            "displayRegion": "Eau Claire, WI",
+            "isMetro": "1",
+            "region": "EauClaireWI"
+        },
+        {
+            "displayRegion": "El Centro, CA",
+            "isMetro": "1",
+            "region": "ElCentroCA"
+        },
+        {
+            "displayRegion": "El Paso, TX",
+            "isMetro": "1",
+            "region": "ElPasoTX"
+        },
+        {
+            "displayRegion": "Elizabethtown, KY",
+            "isMetro": "1",
+            "region": "ElizabethtownKY"
+        },
+        {
+            "displayRegion": "Elkhart, IN",
+            "isMetro": "1",
+            "region": "ElkhartIN"
+        },
+        {
+            "displayRegion": "Elmira, NY",
+            "isMetro": "1",
+            "region": "ElmiraNY"
+        },
+        {
+            "displayRegion": "Erie, PA",
+            "isMetro": "1",
+            "region": "EriePA"
+        },
+        {
+            "displayRegion": "Eugene, OR",
+            "isMetro": "1",
+            "region": "EugeneOR"
+        },
+        {
+            "displayRegion": "Evansville, IN",
+            "isMetro": "1",
+            "region": "EvansvilleIN"
+        },
+        {
+            "displayRegion": "Fairbanks, AK",
+            "isMetro": "1",
+            "region": "FairbanksAK"
+        },
+        {
+            "displayRegion": "Fargo, ND",
+            "isMetro": "1",
+            "region": "FargoND"
+        },
+        {
+            "displayRegion": "Farmington, NM",
+            "isMetro": "1",
+            "region": "FarmingtonNM"
+        },
+        {
+            "displayRegion": "Fayetteville, NC",
+            "isMetro": "1",
+            "region": "FayettevilleNC"
+        },
+        {
+            "displayRegion": "Fayetteville, AR",
+            "isMetro": "1",
+            "region": "FayettevilleAR"
+        },
+        {
+            "displayRegion": "Flagstaff, AZ",
+            "isMetro": "1",
+            "region": "FlagstaffAZ"
+        },
+        {
+            "displayRegion": "Flint, MI",
+            "isMetro": "1",
+            "region": "FlintMI"
+        },
+        {
+            "displayRegion": "Florence, SC",
+            "isMetro": "1",
+            "region": "FlorenceSC"
+        },
+        {
+            "displayRegion": "Florence, AL",
+            "isMetro": "1",
+            "region": "FlorenceAL"
+        },
+        {
+            "displayRegion": "Fond Du Lac, WI",
+            "isMetro": "1",
+            "region": "FondDuLacWI"
+        },
+        {
+            "displayRegion": "Fort Collins, CO",
+            "isMetro": "1",
+            "region": "FortCollinsCO"
+        },
+        {
+            "displayRegion": "Fort Smith, AR",
+            "isMetro": "1",
+            "region": "FortSmithAR"
+        },
+        {
+            "displayRegion": "Fort Wayne, IN",
+            "isMetro": "1",
+            "region": "FortWayneIN"
+        },
+        {
+            "displayRegion": "Fresno, CA",
+            "isMetro": "1",
+            "region": "FresnoCA"
+        },
+        {
+            "displayRegion": "Gadsden, AL",
+            "isMetro": "1",
+            "region": "GadsdenAL"
+        },
+        {
+            "displayRegion": "Gainesville, FL",
+            "isMetro": "1",
+            "region": "GainesvilleFL"
+        },
+        {
+            "displayRegion": "Gainesville, GA",
+            "isMetro": "1",
+            "region": "GainesvilleGA"
+        },
+        {
+            "displayRegion": "Gettysburg, PA",
+            "isMetro": "1",
+            "region": "GettysburgPA"
+        },
+        {
+            "displayRegion": "Glens Falls, NY",
+            "isMetro": "1",
+            "region": "GlensFallsNY"
+        },
+        {
+            "displayRegion": "Goldsboro, NC",
+            "isMetro": "1",
+            "region": "GoldsboroNC"
+        },
+        {
+            "displayRegion": "Grand Forks, ND",
+            "isMetro": "1",
+            "region": "GrandForksND"
+        },
+        {
+            "displayRegion": "Grand Island, NE",
+            "isMetro": "1",
+            "region": "GrandIslandNE"
+        },
+        {
+            "displayRegion": "Grand Junction, CO",
+            "isMetro": "1",
+            "region": "GrandJunctionCO"
+        },
+        {
+            "displayRegion": "Grand Rapids, MI",
+            "isMetro": "1",
+            "region": "GrandRapidsMI"
+        },
+        {
+            "displayRegion": "Grants Pass, OR",
+            "isMetro": "1",
+            "region": "GrantsPassOR"
+        },
+        {
+            "displayRegion": "Great Falls, MT",
+            "isMetro": "1",
+            "region": "GreatFallsMT"
+        },
+        {
+            "displayRegion": "Greeley, CO",
+            "isMetro": "1",
+            "region": "GreeleyCO"
+        },
+        {
+            "displayRegion": "Green Bay, WI",
+            "isMetro": "1",
+            "region": "GreenBayWI"
+        },
+        {
+            "displayRegion": "Greensboro, NC",
+            "isMetro": "1",
+            "region": "GreensboroNC"
+        },
+        {
+            "displayRegion": "Greenville, NC",
+            "isMetro": "1",
+            "region": "GreenvilleNC"
+        },
+        {
+            "displayRegion": "Greenville, SC",
+            "isMetro": "1",
+            "region": "GreenvilleSC"
+        },
+        {
+            "displayRegion": "Gulfport, MS",
+            "isMetro": "1",
+            "region": "GulfportMS"
+        },
+        {
+            "displayRegion": "Hagerstown, MD",
+            "isMetro": "1",
+            "region": "HagerstownMD"
+        },
+        {
+            "displayRegion": "Hammond, LA",
+            "isMetro": "1",
+            "region": "HammondLA"
+        },
+        {
+            "displayRegion": "Hanford, CA",
+            "isMetro": "1",
+            "region": "HanfordCA"
+        },
+        {
+            "displayRegion": "Harrisburg, PA",
+            "isMetro": "1",
+            "region": "HarrisburgPA"
+        },
+        {
+            "displayRegion": "Harrisonburg, VA",
+            "isMetro": "1",
+            "region": "HarrisonburgVA"
+        },
+        {
+            "displayRegion": "Hartford, CT",
+            "isMetro": "1",
+            "region": "HartfordCT"
+        },
+        {
+            "displayRegion": "Hattiesburg, MS",
+            "isMetro": "1",
+            "region": "HattiesburgMS"
+        },
+        {
+            "displayRegion": "Hickory, NC",
+            "isMetro": "1",
+            "region": "HickoryNC"
+        },
+        {
+            "displayRegion": "Hilton Head Island, SC",
+            "isMetro": "1",
+            "region": "HiltonHeadIlndSC"
+        },
+        {
+            "displayRegion": "Hinesville, GA",
+            "isMetro": "1",
+            "region": "HinesvilleGA"
+        },
+        {
+            "displayRegion": "Homosassa Springs, FL",
+            "isMetro": "1",
+            "region": "HomosassaSprngFL"
+        },
+        {
+            "displayRegion": "Hot Springs, AR",
+            "isMetro": "1",
+            "region": "HotSpringsAR"
+        },
+        {
+            "displayRegion": "Houma, LA",
+            "isMetro": "1",
+            "region": "HoumaLA"
+        },
+        {
+            "displayRegion": "Houston, TX",
+            "isMetro": "1",
+            "region": "HoustonTX"
+        },
+        {
+            "displayRegion": "Huntington, WV",
+            "isMetro": "1",
+            "region": "HuntingtonWV"
+        },
+        {
+            "displayRegion": "Huntsville, AL",
+            "isMetro": "1",
+            "region": "HuntsvilleAL"
+        },
+        {
+            "displayRegion": "Idaho Falls, ID",
+            "isMetro": "1",
+            "region": "IdahoFallsID"
+        },
+        {
+            "displayRegion": "Indianapolis, IN",
+            "isMetro": "1",
+            "region": "IndianapolisIN"
+        },
+        {
+            "displayRegion": "Iowa City, IA",
+            "isMetro": "1",
+            "region": "IowaCityIA"
+        },
+        {
+            "displayRegion": "Ithaca, NY",
+            "isMetro": "1",
+            "region": "IthacaNY"
+        },
+        {
+            "displayRegion": "Jackson, MI",
+            "isMetro": "1",
+            "region": "JacksonMI"
+        },
+        {
+            "displayRegion": "Jackson, MS",
+            "isMetro": "1",
+            "region": "JacksonMS"
+        },
+        {
+            "displayRegion": "Jackson, TN",
+            "isMetro": "1",
+            "region": "JacksonTN"
+        },
+        {
+            "displayRegion": "Jacksonville, FL",
+            "isMetro": "1",
+            "region": "JacksonvilleFL"
+        },
+        {
+            "displayRegion": "Jacksonville, NC",
+            "isMetro": "1",
+            "region": "JacksonvilleNC"
+        },
+        {
+            "displayRegion": "Janesville, WI",
+            "isMetro": "1",
+            "region": "JanesvilleWI"
+        },
+        {
+            "displayRegion": "Jefferson City, MO",
+            "isMetro": "1",
+            "region": "JeffersonCityMO"
+        },
+        {
+            "displayRegion": "Johnson City, TN",
+            "isMetro": "1",
+            "region": "JohnsonCityTN"
+        },
+        {
+            "displayRegion": "Johnstown, PA",
+            "isMetro": "1",
+            "region": "JohnstownPA"
+        },
+        {
+            "displayRegion": "Jonesboro, AR",
+            "isMetro": "1",
+            "region": "JonesboroAR"
+        },
+        {
+            "displayRegion": "Joplin, MO",
+            "isMetro": "1",
+            "region": "JoplinMO"
+        },
+        {
+            "displayRegion": "Kahului, HI",
+            "isMetro": "1",
+            "region": "KahuluiHI"
+        },
+        {
+            "displayRegion": "Kalamazoo, MI",
+            "isMetro": "1",
+            "region": "KalamazooMI"
+        },
+        {
+            "displayRegion": "Kankakee, IL",
+            "isMetro": "1",
+            "region": "KankakeeIL"
+        },
+        {
+            "displayRegion": "Kansas City, MO",
+            "isMetro": "1",
+            "region": "KansasCityMO"
+        },
+        {
+            "displayRegion": "Kennewick, WA",
+            "isMetro": "1",
+            "region": "KennewickWA"
+        },
+        {
+            "displayRegion": "Killeen, TX",
+            "isMetro": "1",
+            "region": "KilleenTX"
+        },
+        {
+            "displayRegion": "Kingsport, TN",
+            "isMetro": "1",
+            "region": "KingsportTN"
+        },
+        {
+            "displayRegion": "Kingston, NY",
+            "isMetro": "1",
+            "region": "KingstonNY"
+        },
+        {
+            "displayRegion": "Knoxville, TN",
+            "isMetro": "1",
+            "region": "KnoxvilleTN"
+        },
+        {
+            "displayRegion": "Kokomo, IN",
+            "isMetro": "1",
+            "region": "KokomoIN"
+        },
+        {
+            "displayRegion": "La Crosse, WI",
+            "isMetro": "1",
+            "region": "LaCrosseWI"
+        },
+        {
+            "displayRegion": "Lafayette, LA",
+            "isMetro": "1",
+            "region": "LafayetteLA"
+        },
+        {
+            "displayRegion": "Lafayette, IN",
+            "isMetro": "1",
+            "region": "LafayetteIN"
+        },
+        {
+            "displayRegion": "Lake Charles, LA",
+            "isMetro": "1",
+            "region": "LakeCharlesLA"
+        },
+        {
+            "displayRegion": "Lake Havasu City, AZ",
+            "isMetro": "1",
+            "region": "LakeHavasuCityAZ"
+        },
+        {
+            "displayRegion": "Lakeland, FL",
+            "isMetro": "1",
+            "region": "LakelandFL"
+        },
+        {
+            "displayRegion": "Lancaster, PA",
+            "isMetro": "1",
+            "region": "LancasterPA"
+        },
+        {
+            "displayRegion": "Lansing, MI",
+            "isMetro": "1",
+            "region": "LansingMI"
+        },
+        {
+            "displayRegion": "Laredo, TX",
+            "isMetro": "1",
+            "region": "LaredoTX"
+        },
+        {
+            "displayRegion": "Las Cruces, NM",
+            "isMetro": "1",
+            "region": "LasCrucesNM"
+        },
+        {
+            "displayRegion": "Las Vegas, NV",
+            "isMetro": "1",
+            "region": "LasVegasNV"
+        },
+        {
+            "displayRegion": "Lawrence, KS",
+            "isMetro": "1",
+            "region": "LawrenceKS"
+        },
+        {
+            "displayRegion": "Lawton, OK",
+            "isMetro": "1",
+            "region": "LawtonOK"
+        },
+        {
+            "displayRegion": "Lebanon, PA",
+            "isMetro": "1",
+            "region": "LebanonPA"
+        },
+        {
+            "displayRegion": "Lewiston, ID",
+            "isMetro": "1",
+            "region": "LewistonID"
+        },
+        {
+            "displayRegion": "Lewiston, ME",
+            "isMetro": "1",
+            "region": "LewistonME"
+        },
+        {
+            "displayRegion": "Lexington, KY",
+            "isMetro": "1",
+            "region": "LexingtonKY"
+        },
+        {
+            "displayRegion": "Lima, OH",
+            "isMetro": "1",
+            "region": "LimaOH"
+        },
+        {
+            "displayRegion": "Lincoln, NE",
+            "isMetro": "1",
+            "region": "LincolnNE"
+        },
+        {
+            "displayRegion": "Little Rock, AR",
+            "isMetro": "1",
+            "region": "LittleRockAR"
+        },
+        {
+            "displayRegion": "Logan, UT",
+            "isMetro": "1",
+            "region": "LoganUT"
+        },
+        {
+            "displayRegion": "Longview, TX",
+            "isMetro": "1",
+            "region": "LongviewTX"
+        },
+        {
+            "displayRegion": "Longview, WA",
+            "isMetro": "1",
+            "region": "LongviewWA"
+        },
+        {
+            "displayRegion": "Los Angeles, CA",
+            "isMetro": "1",
+            "region": "LosAngelesCA"
+        },
+        {
+            "displayRegion": "Louisville, KY",
+            "isMetro": "1",
+            "region": "LouisvilleKY"
+        },
+        {
+            "displayRegion": "Lubbock, TX",
+            "isMetro": "1",
+            "region": "LubbockTX"
+        },
+        {
+            "displayRegion": "Lynchburg, VA",
+            "isMetro": "1",
+            "region": "LynchburgVA"
+        },
+        {
+            "displayRegion": "Macon, GA",
+            "isMetro": "1",
+            "region": "MaconGA"
+        },
+        {
+            "displayRegion": "Madera, CA",
+            "isMetro": "1",
+            "region": "MaderaCA"
+        },
+        {
+            "displayRegion": "Madison, WI",
+            "isMetro": "1",
+            "region": "MadisonWI"
+        },
+        {
+            "displayRegion": "Manchester, NH",
+            "isMetro": "1",
+            "region": "ManchesterNH"
+        },
+        {
+            "displayRegion": "Manhattan, KS",
+            "isMetro": "1",
+            "region": "ManhattanKS"
+        },
+        {
+            "displayRegion": "Mankato, MN",
+            "isMetro": "1",
+            "region": "MankatoMN"
+        },
+        {
+            "displayRegion": "Mansfield, OH",
+            "isMetro": "1",
+            "region": "MansfieldOH"
+        },
+        {
+            "displayRegion": "McAllen, TX",
+            "isMetro": "1",
+            "region": "McAllenTX"
+        },
+        {
+            "displayRegion": "Medford, OR",
+            "isMetro": "1",
+            "region": "MedfordOR"
+        },
+        {
+            "displayRegion": "Memphis, TN",
+            "isMetro": "1",
+            "region": "MemphisTN"
+        },
+        {
+            "displayRegion": "Merced, CA",
+            "isMetro": "1",
+            "region": "MercedCA"
+        },
+        {
+            "displayRegion": "Miami, FL",
+            "isMetro": "1",
+            "region": "MiamiFL"
+        },
+        {
+            "displayRegion": "Michigan City, IN",
+            "isMetro": "1",
+            "region": "MichiganCityIN"
+        },
+        {
+            "displayRegion": "Midland, MI",
+            "isMetro": "1",
+            "region": "MidlandMI"
+        },
+        {
+            "displayRegion": "Midland, TX",
+            "isMetro": "1",
+            "region": "MidlandTX"
+        },
+        {
+            "displayRegion": "Milwaukee, WI",
+            "isMetro": "1",
+            "region": "MilwaukeeWI"
+        },
+        {
+            "displayRegion": "Minneapolis, MN",
+            "isMetro": "1",
+            "region": "MinneapolisMN"
+        },
+        {
+            "displayRegion": "Missoula, MT",
+            "isMetro": "1",
+            "region": "MissoulaMT"
+        },
+        {
+            "displayRegion": "Mobile, AL",
+            "isMetro": "1",
+            "region": "MobileAL"
+        },
+        {
+            "displayRegion": "Modesto, CA",
+            "isMetro": "1",
+            "region": "ModestoCA"
+        },
+        {
+            "displayRegion": "Monroe, LA",
+            "isMetro": "1",
+            "region": "MonroeLA"
+        },
+        {
+            "displayRegion": "Monroe, MI",
+            "isMetro": "1",
+            "region": "MonroeMI"
+        },
+        {
+            "displayRegion": "Montgomery, AL",
+            "isMetro": "1",
+            "region": "MontgomeryAL"
+        },
+        {
+            "displayRegion": "Morgantown, WV",
+            "isMetro": "1",
+            "region": "MorgantownWV"
+        },
+        {
+            "displayRegion": "Morristown, TN",
+            "isMetro": "1",
+            "region": "MorristownTN"
+        },
+        {
+            "displayRegion": "Mount Vernon, WA",
+            "isMetro": "1",
+            "region": "MountVernonWA"
+        },
+        {
+            "displayRegion": "Muncie, IN",
+            "isMetro": "1",
+            "region": "MuncieIN"
+        },
+        {
+            "displayRegion": "Muskegon, MI",
+            "isMetro": "1",
+            "region": "MuskegonMI"
+        },
+        {
+            "displayRegion": "Myrtle Beach, SC",
+            "isMetro": "1",
+            "region": "MyrtleBeachSC"
+        },
+        {
+            "displayRegion": "Napa, CA",
+            "isMetro": "1",
+            "region": "NapaCA"
+        },
+        {
+            "displayRegion": "Naples, FL",
+            "isMetro": "1",
+            "region": "NaplesFL"
+        },
+        {
+            "displayRegion": "Nashville, TN",
+            "isMetro": "1",
+            "region": "NashvilleTN"
+        },
+        {
+            "displayRegion": "New Bern, NC",
+            "isMetro": "1",
+            "region": "NewBernNC"
+        },
+        {
+            "displayRegion": "New Haven, CT",
+            "isMetro": "1",
+            "region": "NewHavenCT"
+        },
+        {
+            "displayRegion": "New Orleans, LA",
+            "isMetro": "1",
+            "region": "NewOrleansLA"
+        },
+        {
+            "displayRegion": "New York, NY",
+            "isMetro": "1",
+            "region": "NewYorkNY"
+        },
+        {
+            "displayRegion": "Niles, MI",
+            "isMetro": "1",
+            "region": "NilesMI"
+        },
+        {
+            "displayRegion": "North Port, FL",
+            "isMetro": "1",
+            "region": "NorthPortFL"
+        },
+        {
+            "displayRegion": "Norwich, CT",
+            "isMetro": "1",
+            "region": "NorwichCT"
+        },
+        {
+            "displayRegion": "Ocala, FL",
+            "isMetro": "1",
+            "region": "OcalaFL"
+        },
+        {
+            "displayRegion": "Ocean City, NJ",
+            "isMetro": "1",
+            "region": "OceanCityNJ"
+        },
+        {
+            "displayRegion": "Odessa, TX",
+            "isMetro": "1",
+            "region": "OdessaTX"
+        },
+        {
+            "displayRegion": "Ogden, UT",
+            "isMetro": "1",
+            "region": "OgdenUT"
+        },
+        {
+            "displayRegion": "Oklahoma City, OK",
+            "isMetro": "1",
+            "region": "OklahomaCityOK"
+        },
+        {
+            "displayRegion": "Olympia, WA",
+            "isMetro": "1",
+            "region": "OlympiaWA"
+        },
+        {
+            "displayRegion": "Omaha, NE",
+            "isMetro": "1",
+            "region": "OmahaNE"
+        },
+        {
+            "displayRegion": "Orlando, FL",
+            "isMetro": "1",
+            "region": "OrlandoFL"
+        },
+        {
+            "displayRegion": "Oshkosh, WI",
+            "isMetro": "1",
+            "region": "OshkoshWI"
+        },
+        {
+            "displayRegion": "Owensboro, KY",
+            "isMetro": "1",
+            "region": "OwensboroKY"
+        },
+        {
+            "displayRegion": "Oxnard, CA",
+            "isMetro": "1",
+            "region": "OxnardCA"
+        },
+        {
+            "displayRegion": "Palm Bay, FL",
+            "isMetro": "1",
+            "region": "PalmBayFL"
+        },
+        {
+            "displayRegion": "Panama City, FL",
+            "isMetro": "1",
+            "region": "PanamaCityFL"
+        },
+        {
+            "displayRegion": "Parkersburg, WV",
+            "isMetro": "1",
+            "region": "ParkersburgWV"
+        },
+        {
+            "displayRegion": "Pensacola, FL",
+            "isMetro": "1",
+            "region": "PensacolaFL"
+        },
+        {
+            "displayRegion": "Peoria, IL",
+            "isMetro": "1",
+            "region": "PeoriaIL"
+        },
+        {
+            "displayRegion": "Philadelphia, PA",
+            "isMetro": "1",
+            "region": "PhiladelphiaPA"
+        },
+        {
+            "displayRegion": "Phoenix, AZ",
+            "isMetro": "1",
+            "region": "PhoenixAZ"
+        },
+        {
+            "displayRegion": "Pine Bluff, AR",
+            "isMetro": "1",
+            "region": "PineBluffAR"
+        },
+        {
+            "displayRegion": "Pittsburgh, PA",
+            "isMetro": "1",
+            "region": "PittsburghPA"
+        },
+        {
+            "displayRegion": "Pittsfield, MA",
+            "isMetro": "1",
+            "region": "PittsfieldMA"
+        },
+        {
+            "displayRegion": "Pocatello, ID",
+            "isMetro": "1",
+            "region": "PocatelloID"
+        },
+        {
+            "displayRegion": "Port St. Lucie, FL",
+            "isMetro": "1",
+            "region": "PortStLucieFL"
+        },
+        {
+            "displayRegion": "Portland, ME",
+            "isMetro": "1",
+            "region": "PortlandME"
+        },
+        {
+            "displayRegion": "Portland, OR",
+            "isMetro": "1",
+            "region": "PortlandOR"
+        },
+        {
+            "displayRegion": "Prescott, AZ",
+            "isMetro": "1",
+            "region": "PrescottAZ"
+        },
+        {
+            "displayRegion": "Providence, RI",
+            "isMetro": "1",
+            "region": "ProvidenceRI"
+        },
+        {
+            "displayRegion": "Provo, UT",
+            "isMetro": "1",
+            "region": "ProvoUT"
+        },
+        {
+            "displayRegion": "Pueblo, CO",
+            "isMetro": "1",
+            "region": "PuebloCO"
+        },
+        {
+            "displayRegion": "Punta Gorda, FL",
+            "isMetro": "1",
+            "region": "PuntaGordaFL"
+        },
+        {
+            "displayRegion": "Racine, WI",
+            "isMetro": "1",
+            "region": "RacineWI"
+        },
+        {
+            "displayRegion": "Raleigh, NC",
+            "isMetro": "1",
+            "region": "RaleighNC"
+        },
+        {
+            "displayRegion": "Rapid City, SD",
+            "isMetro": "1",
+            "region": "RapidCitySD"
+        },
+        {
+            "displayRegion": "Reading, PA",
+            "isMetro": "1",
+            "region": "ReadingPA"
+        },
+        {
+            "displayRegion": "Redding, CA",
+            "isMetro": "1",
+            "region": "ReddingCA"
+        },
+        {
+            "displayRegion": "Reno, NV",
+            "isMetro": "1",
+            "region": "RenoNV"
+        },
+        {
+            "displayRegion": "Richmond, VA",
+            "isMetro": "1",
+            "region": "RichmondVA"
+        },
+        {
+            "displayRegion": "Riverside, CA",
+            "isMetro": "1",
+            "region": "RiversideCA"
+        },
+        {
+            "displayRegion": "Roanoke, VA",
+            "isMetro": "1",
+            "region": "RoanokeVA"
+        },
+        {
+            "displayRegion": "Rochester, MN",
+            "isMetro": "1",
+            "region": "RochesterMN"
+        },
+        {
+            "displayRegion": "Rochester, NY",
+            "isMetro": "1",
+            "region": "RochesterNY"
+        },
+        {
+            "displayRegion": "Rockford, IL",
+            "isMetro": "1",
+            "region": "RockfordIL"
+        },
+        {
+            "displayRegion": "Rocky Mount, NC",
+            "isMetro": "1",
+            "region": "RockyMountNC"
+        },
+        {
+            "displayRegion": "Rome, GA",
+            "isMetro": "1",
+            "region": "RomeGA"
+        },
+        {
+            "displayRegion": "Sacramento, CA",
+            "isMetro": "1",
+            "region": "SacramentoCA"
+        },
+        {
+            "displayRegion": "Saginaw, MI",
+            "isMetro": "1",
+            "region": "SaginawMI"
+        },
+        {
+            "displayRegion": "Salem, OR",
+            "isMetro": "1",
+            "region": "SalemOR"
+        },
+        {
+            "displayRegion": "Salinas, CA",
+            "isMetro": "1",
+            "region": "SalinasCA"
+        },
+        {
+            "displayRegion": "Salisbury, MD",
+            "isMetro": "1",
+            "region": "SalisburyMD"
+        },
+        {
+            "displayRegion": "Salt Lake City, UT",
+            "isMetro": "1",
+            "region": "SaltLakeCityUT"
+        },
+        {
+            "displayRegion": "San Angelo, TX",
+            "isMetro": "1",
+            "region": "SanAngeloTX"
+        },
+        {
+            "displayRegion": "San Antonio, TX",
+            "isMetro": "1",
+            "region": "SanAntonioTX"
+        },
+        {
+            "displayRegion": "San Diego, CA",
+            "isMetro": "1",
+            "region": "SanDiegoCA"
+        },
+        {
+            "displayRegion": "San Francisco, CA",
+            "isMetro": "1",
+            "region": "SanFranciscoCA"
+        },
+        {
+            "displayRegion": "San Jose, CA",
+            "isMetro": "1",
+            "region": "SanJoseCA"
+        },
+        {
+            "displayRegion": "San Luis Obispo, CA",
+            "isMetro": "1",
+            "region": "SanLuisObispoCA"
+        },
+        {
+            "displayRegion": "Santa Cruz, CA",
+            "isMetro": "1",
+            "region": "SantaCruzCA"
+        },
+        {
+            "displayRegion": "Santa Fe, NM",
+            "isMetro": "1",
+            "region": "SantaFeNM"
+        },
+        {
+            "displayRegion": "Santa Maria, CA",
+            "isMetro": "1",
+            "region": "SantaMariaCA"
+        },
+        {
+            "displayRegion": "Santa Rosa, CA",
+            "isMetro": "1",
+            "region": "SantaRosaCA"
+        },
+        {
+            "displayRegion": "Savannah, GA",
+            "isMetro": "1",
+            "region": "SavannahGA"
+        },
+        {
+            "displayRegion": "Scranton, PA",
+            "isMetro": "1",
+            "region": "ScrantonPA"
+        },
+        {
+            "displayRegion": "Seattle, WA",
+            "isMetro": "1",
+            "region": "SeattleWA"
+        },
+        {
+            "displayRegion": "Sebastian, FL",
+            "isMetro": "1",
+            "region": "SebastianFL"
+        },
+        {
+            "displayRegion": "Sebring, FL",
+            "isMetro": "1",
+            "region": "SebringFL"
+        },
+        {
+            "displayRegion": "Sheboygan, WI",
+            "isMetro": "1",
+            "region": "SheboyganWI"
+        },
+        {
+            "displayRegion": "Sherman, TX",
+            "isMetro": "1",
+            "region": "ShermanTX"
+        },
+        {
+            "displayRegion": "Shreveport, LA",
+            "isMetro": "1",
+            "region": "ShreveportLA"
+        },
+        {
+            "displayRegion": "Sierra Vista, AZ",
+            "isMetro": "1",
+            "region": "SierraVistaAZ"
+        },
+        {
+            "displayRegion": "Sioux City, IA",
+            "isMetro": "1",
+            "region": "SiouxCityIA"
+        },
+        {
+            "displayRegion": "Sioux Falls, SD",
+            "isMetro": "1",
+            "region": "SiouxFallsSD"
+        },
+        {
+            "displayRegion": "South Bend, IN",
+            "isMetro": "1",
+            "region": "SouthBendIN"
+        },
+        {
+            "displayRegion": "Spartanburg, SC",
+            "isMetro": "1",
+            "region": "SpartanburgSC"
+        },
+        {
+            "displayRegion": "Spokane, WA",
+            "isMetro": "1",
+            "region": "SpokaneWA"
+        },
+        {
+            "displayRegion": "Springfield, IL",
+            "isMetro": "1",
+            "region": "SpringfieldIL"
+        },
+        {
+            "displayRegion": "Springfield, MA",
+            "isMetro": "1",
+            "region": "SpringfieldMA"
+        },
+        {
+            "displayRegion": "Springfield, MO",
+            "isMetro": "1",
+            "region": "SpringfieldMO"
+        },
+        {
+            "displayRegion": "Springfield, OH",
+            "isMetro": "1",
+            "region": "SpringfieldOH"
+        },
+        {
+            "displayRegion": "St. Cloud, MN",
+            "isMetro": "1",
+            "region": "StCloudMN"
+        },
+        {
+            "displayRegion": "St. George, UT",
+            "isMetro": "1",
+            "region": "StGeorgeUT"
+        },
+        {
+            "displayRegion": "St. Joseph, MO",
+            "isMetro": "1",
+            "region": "StJosephMO"
+        },
+        {
+            "displayRegion": "St. Louis, MO",
+            "isMetro": "1",
+            "region": "StLouisMO"
+        },
+        {
+            "displayRegion": "State College, PA",
+            "isMetro": "1",
+            "region": "StateCollegePA"
+        },
+        {
+            "displayRegion": "Staunton, VA",
+            "isMetro": "1",
+            "region": "StauntonVA"
+        },
+        {
+            "displayRegion": "Stockton, CA",
+            "isMetro": "1",
+            "region": "StocktonCA"
+        },
+        {
+            "displayRegion": "Sumter, SC",
+            "isMetro": "1",
+            "region": "SumterSC"
+        },
+        {
+            "displayRegion": "Syracuse, NY",
+            "isMetro": "1",
+            "region": "SyracuseNY"
+        },
+        {
+            "displayRegion": "Tallahassee, FL",
+            "isMetro": "1",
+            "region": "TallahasseeFL"
+        },
+        {
+            "displayRegion": "Tampa, FL",
+            "isMetro": "1",
+            "region": "TampaFL"
+        },
+        {
+            "displayRegion": "Terre Haute, IN",
+            "isMetro": "1",
+            "region": "TerreHauteIN"
+        },
+        {
+            "displayRegion": "Texarkana, TX",
+            "isMetro": "1",
+            "region": "TexarkanaTX"
+        },
+        {
+            "displayRegion": "The Villages, FL",
+            "isMetro": "1",
+            "region": "TheVillagesFL"
+        },
+        {
+            "displayRegion": "Toledo, OH",
+            "isMetro": "1",
+            "region": "ToledoOH"
+        },
+        {
+            "displayRegion": "Topeka, KS",
+            "isMetro": "1",
+            "region": "TopekaKS"
+        },
+        {
+            "displayRegion": "Trenton, NJ",
+            "isMetro": "1",
+            "region": "TrentonNJ"
+        },
+        {
+            "displayRegion": "Tucson, AZ",
+            "isMetro": "1",
+            "region": "TucsonAZ"
+        },
+        {
+            "displayRegion": "Tulsa, OK",
+            "isMetro": "1",
+            "region": "TulsaOK"
+        },
+        {
+            "displayRegion": "Tuscaloosa, AL",
+            "isMetro": "1",
+            "region": "TuscaloosaAL"
+        },
+        {
+            "displayRegion": "Tyler, TX",
+            "isMetro": "1",
+            "region": "TylerTX"
+        },
+        {
+            "displayRegion": "Urban Honolulu, HI",
+            "isMetro": "1",
+            "region": "UrbanHonoluluHI"
+        },
+        {
+            "displayRegion": "Utica, NY",
+            "isMetro": "1",
+            "region": "UticaNY"
+        },
+        {
+            "displayRegion": "Valdosta, GA",
+            "isMetro": "1",
+            "region": "ValdostaGA"
+        },
+        {
+            "displayRegion": "Vallejo, CA",
+            "isMetro": "1",
+            "region": "VallejoCA"
+        },
+        {
+            "displayRegion": "Victoria, TX",
+            "isMetro": "1",
+            "region": "VictoriaTX"
+        },
+        {
+            "displayRegion": "Vineland, NJ",
+            "isMetro": "1",
+            "region": "VinelandNJ"
+        },
+        {
+            "displayRegion": "Virginia Beach, VA",
+            "isMetro": "1",
+            "region": "VirginiaBeachVA"
+        },
+        {
+            "displayRegion": "Visalia, CA",
+            "isMetro": "1",
+            "region": "VisaliaCA"
+        },
+        {
+            "displayRegion": "Waco, TX",
+            "isMetro": "1",
+            "region": "WacoTX"
+        },
+        {
+            "displayRegion": "Walla Walla, WA",
+            "isMetro": "1",
+            "region": "WallaWallaWA"
+        },
+        {
+            "displayRegion": "Warner Robins, GA",
+            "isMetro": "1",
+            "region": "WarnerRobinsGA"
+        },
+        {
+            "displayRegion": "Washington, DC",
+            "isMetro": "1",
+            "region": "WashingtonDC"
+        },
+        {
+            "displayRegion": "Waterloo, IA",
+            "isMetro": "1",
+            "region": "WaterlooIA"
+        },
+        {
+            "displayRegion": "Watertown, NY",
+            "isMetro": "1",
+            "region": "WatertownNY"
+        },
+        {
+            "displayRegion": "Wausau, WI",
+            "isMetro": "1",
+            "region": "WausauWI"
+        },
+        {
+            "displayRegion": "Weirton, WV",
+            "isMetro": "1",
+            "region": "WeirtonWV"
+        },
+        {
+            "displayRegion": "Wenatchee, WA",
+            "isMetro": "1",
+            "region": "WenatcheeWA"
+        },
+        {
+            "displayRegion": "Wheeling, WV",
+            "isMetro": "1",
+            "region": "WheelingWV"
+        },
+        {
+            "displayRegion": "Wichita Falls, TX",
+            "isMetro": "1",
+            "region": "WichitaFallsTX"
+        },
+        {
+            "displayRegion": "Wichita, KS",
+            "isMetro": "1",
+            "region": "WichitaKS"
+        },
+        {
+            "displayRegion": "Williamsport, PA",
+            "isMetro": "1",
+            "region": "WilliamsportPA"
+        },
+        {
+            "displayRegion": "Wilmington, NC",
+            "isMetro": "1",
+            "region": "WilmingtonNC"
+        },
+        {
+            "displayRegion": "Winchester, VA",
+            "isMetro": "1",
+            "region": "WinchesterVA"
+        },
+        {
+            "displayRegion": "Winston, NC",
+            "isMetro": "1",
+            "region": "WinstonNC"
+        },
+        {
+            "displayRegion": "Worcester, MA",
+            "isMetro": "1",
+            "region": "WorcesterMA"
+        },
+        {
+            "displayRegion": "Yakima, WA",
+            "isMetro": "1",
+            "region": "YakimaWA"
+        },
+        {
+            "displayRegion": "York, PA",
+            "isMetro": "1",
+            "region": "YorkPA"
+        },
+        {
+            "displayRegion": "Youngstown, OH",
+            "isMetro": "1",
+            "region": "YoungstownOH"
+        },
+        {
+            "displayRegion": "Yuba City, CA",
+            "isMetro": "1",
+            "region": "YubaCityCA"
+        },
+        {
+            "displayRegion": "Yuma, AZ",
+            "isMetro": "1",
+            "region": "YumaAZ"
+        }
+    ],
+    "yearOptions": [
+        "2012",
+        "2017",
+        "2020",
+        "2022"
+    ]
+}

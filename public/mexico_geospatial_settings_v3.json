@@ -1,0 +1,312 @@
+{
+    "Acapulco": {
+        "CenterLat": 16.859099,
+        "CenterLong": -99.911562,
+        "DefaultZoomLevel": "8",
+        "GeoTypeGroup": "1 - Designated Metro Areas",
+        "InterMarketMetro": "",
+        "MapboxMarketName": "Acapulco",
+        "MarketName": "Acapulco",
+        "Market_Display_Name": "Acapulco"
+    },
+    "Aguascalientes": {
+        "CenterLat": 21.880438,
+        "CenterLong": -102.295418,
+        "DefaultZoomLevel": "8",
+        "GeoTypeGroup": "1 - Designated Metro Areas",
+        "InterMarketMetro": "",
+        "MapboxMarketName": "Aguascalientes",
+        "MarketName": "Aguascalientes",
+        "Market_Display_Name": "Aguascalientes"
+    },
+    "Cancun": {
+        "CenterLat": 21.161455,
+        "CenterLong": -86.824901,
+        "DefaultZoomLevel": "8",
+        "GeoTypeGroup": "1 - Designated Metro Areas",
+        "InterMarketMetro": "",
+        "MapboxMarketName": "Cancun",
+        "MarketName": "Cancun",
+        "Market_Display_Name": "Cancun"
+    },
+    "Chihuahua": {
+        "CenterLat": 28.636859,
+        "CenterLong": -106.076593,
+        "DefaultZoomLevel": "8",
+        "GeoTypeGroup": "1 - Designated Metro Areas",
+        "InterMarketMetro": "",
+        "MapboxMarketName": "Chihuahua",
+        "MarketName": "Chihuahua",
+        "Market_Display_Name": "Chihuahua"
+    },
+    "Cuernavaca": {
+        "CenterLat": 18.917293,
+        "CenterLong": -99.236622,
+        "DefaultZoomLevel": "8",
+        "GeoTypeGroup": "1 - Designated Metro Areas",
+        "InterMarketMetro": "",
+        "MapboxMarketName": "Cuernavaca",
+        "MarketName": "Cuernavaca",
+        "Market_Display_Name": "Cuernavaca"
+    },
+    "Culiacan": {
+        "CenterLat": 24.806707,
+        "CenterLong": -107.393658,
+        "DefaultZoomLevel": "8",
+        "GeoTypeGroup": "1 - Designated Metro Areas",
+        "InterMarketMetro": "",
+        "MapboxMarketName": "Culiacan",
+        "MarketName": "Culiacan",
+        "Market_Display_Name": "Culiacan"
+    },
+    "Guadalajara": {
+        "CenterLat": 20.677375,
+        "CenterLong": -103.347814,
+        "DefaultZoomLevel": "8",
+        "GeoTypeGroup": "1 - Designated Metro Areas",
+        "InterMarketMetro": "",
+        "MapboxMarketName": "Guadalajara",
+        "MarketName": "Guadalajara",
+        "Market_Display_Name": "Guadalajara"
+    },
+    "Hermosillo": {
+        "CenterLat": 29.076153,
+        "CenterLong": -110.958277,
+        "DefaultZoomLevel": "8",
+        "GeoTypeGroup": "1 - Designated Metro Areas",
+        "InterMarketMetro": "",
+        "MapboxMarketName": "Hermosillo",
+        "MarketName": "Hermosillo",
+        "Market_Display_Name": "Hermosillo"
+    },
+    "Juarez": {
+        "CenterLat": 31.720777,
+        "CenterLong": -106.47091,
+        "DefaultZoomLevel": "8",
+        "GeoTypeGroup": "1 - Designated Metro Areas",
+        "InterMarketMetro": "",
+        "MapboxMarketName": "Juarez",
+        "MarketName": "Juarez",
+        "Market_Display_Name": "Juarez"
+    },
+    "LaLaguna": {
+        "CenterLat": 25.541248,
+        "CenterLong": -103.452787,
+        "DefaultZoomLevel": "8",
+        "GeoTypeGroup": "1 - Designated Metro Areas",
+        "InterMarketMetro": "",
+        "MapboxMarketName": "LaLaguna",
+        "MarketName": "LaLaguna",
+        "Market_Display_Name": "La Laguna"
+    },
+    "Leon": {
+        "CenterLat": 21.12198,
+        "CenterLong": -101.683125,
+        "DefaultZoomLevel": "8",
+        "GeoTypeGroup": "1 - Designated Metro Areas",
+        "InterMarketMetro": "",
+        "MapboxMarketName": "Leon",
+        "MarketName": "Leon",
+        "Market_Display_Name": "Leon"
+    },
+    "Matamoros": {
+        "CenterLat": 25.879965,
+        "CenterLong": -97.504676,
+        "DefaultZoomLevel": "8",
+        "GeoTypeGroup": "1 - Designated Metro Areas",
+        "InterMarketMetro": "",
+        "MapboxMarketName": "Matamoros",
+        "MarketName": "Matamoros",
+        "Market_Display_Name": "Matamoros"
+    },
+    "Merida": {
+        "CenterLat": 20.967115,
+        "CenterLong": -89.624287,
+        "DefaultZoomLevel": "8",
+        "GeoTypeGroup": "1 - Designated Metro Areas",
+        "InterMarketMetro": "",
+        "MapboxMarketName": "Merida",
+        "MarketName": "Merida",
+        "Market_Display_Name": "Merida"
+    },
+    "Mexicali": {
+        "CenterLat": 32.639503,
+        "CenterLong": -115.474956,
+        "DefaultZoomLevel": "8",
+        "GeoTypeGroup": "1 - Designated Metro Areas",
+        "InterMarketMetro": "",
+        "MapboxMarketName": "Mexicali",
+        "MarketName": "Mexicali",
+        "Market_Display_Name": "Mexicali"
+    },
+    "Mexico": {
+        "CenterLat": 23.0,
+        "CenterLong": -102.0,
+        "DefaultZoomLevel": "4",
+        "GeoTypeGroup": "1 - Designated Metro Areas",
+        "InterMarketMetro": "",
+        "MapboxMarketName": "Mexico",
+        "MarketName": "Mexico",
+        "Market_Display_Name": "Mexico"
+    },
+    "MexicoCity": {
+        "CenterLat": 19.433217,
+        "CenterLong": -99.135479,
+        "DefaultZoomLevel": "8",
+        "GeoTypeGroup": "1 - Designated Metro Areas",
+        "InterMarketMetro": "",
+        "MapboxMarketName": "MexicoCity",
+        "MarketName": "MexicoCity",
+        "Market_Display_Name": "Mexico City"
+    },
+    "Monclova": {
+        "CenterLat": 26.901766,
+        "CenterLong": -101.417048,
+        "DefaultZoomLevel": "8",
+        "GeoTypeGroup": "1 - Designated Metro Areas",
+        "InterMarketMetro": "",
+        "MapboxMarketName": "Monclova",
+        "MarketName": "Monclova",
+        "Market_Display_Name": "Monclova"
+    },
+    "Monterrey": {
+        "CenterLat": 25.704615,
+        "CenterLong": -100.308216,
+        "DefaultZoomLevel": "8",
+        "GeoTypeGroup": "1 - Designated Metro Areas",
+        "InterMarketMetro": "",
+        "MapboxMarketName": "Monterrey",
+        "MarketName": "Monterrey",
+        "Market_Display_Name": "Monterrey"
+    },
+    "Morelia": {
+        "CenterLat": 19.698579,
+        "CenterLong": -101.177281,
+        "DefaultZoomLevel": "8",
+        "GeoTypeGroup": "1 - Designated Metro Areas",
+        "InterMarketMetro": "",
+        "MapboxMarketName": "Morelia",
+        "MarketName": "Morelia",
+        "Market_Display_Name": "Morelia"
+    },
+    "Nogales": {
+        "CenterLat": 31.325768,
+        "CenterLong": -110.945724,
+        "DefaultZoomLevel": "8",
+        "GeoTypeGroup": "1 - Designated Metro Areas",
+        "InterMarketMetro": "",
+        "MapboxMarketName": "Nogales",
+        "MarketName": "Nogales",
+        "Market_Display_Name": "Nogales"
+    },
+    "NuevaLaredo": {
+        "CenterLat": 27.486271,
+        "CenterLong": -99.508498,
+        "DefaultZoomLevel": "8",
+        "GeoTypeGroup": "1 - Designated Metro Areas",
+        "InterMarketMetro": "",
+        "MapboxMarketName": "NuevaLaredo",
+        "MarketName": "NuevaLaredo",
+        "Market_Display_Name": "Nueva Laredo"
+    },
+    "Puebla-Tlaxcala": {
+        "CenterLat": 19.045571,
+        "CenterLong": -98.198886,
+        "DefaultZoomLevel": "8",
+        "GeoTypeGroup": "1 - Designated Metro Areas",
+        "InterMarketMetro": "",
+        "MapboxMarketName": "Puebla-Tlaxcala",
+        "MarketName": "Puebla-Tlaxcala",
+        "Market_Display_Name": "Puebla-Tlaxcala"
+    },
+    "Queretaro": {
+        "CenterLat": 20.590053,
+        "CenterLong": -100.391038,
+        "DefaultZoomLevel": "8",
+        "GeoTypeGroup": "1 - Designated Metro Areas",
+        "InterMarketMetro": "",
+        "MapboxMarketName": "Queretaro",
+        "MarketName": "Queretaro",
+        "Market_Display_Name": "Queretaro"
+    },
+    "Reynosa": {
+        "CenterLat": 26.092219,
+        "CenterLong": -98.278087,
+        "DefaultZoomLevel": "8",
+        "GeoTypeGroup": "1 - Designated Metro Areas",
+        "InterMarketMetro": "",
+        "MapboxMarketName": "Reynosa",
+        "MarketName": "Reynosa",
+        "Market_Display_Name": "Reynosa"
+    },
+    "Saltillo": {
+        "CenterLat": 25.4345,
+        "CenterLong": -101.001733,
+        "DefaultZoomLevel": "8",
+        "GeoTypeGroup": "1 - Designated Metro Areas",
+        "InterMarketMetro": "",
+        "MapboxMarketName": "Saltillo",
+        "MarketName": "Saltillo",
+        "Market_Display_Name": "Saltillo"
+    },
+    "SanLuisPotosi": {
+        "CenterLat": 22.131993,
+        "CenterLong": -100.968594,
+        "DefaultZoomLevel": "8",
+        "GeoTypeGroup": "1 - Designated Metro Areas",
+        "InterMarketMetro": "",
+        "MapboxMarketName": "SanLuisPotosi",
+        "MarketName": "SanLuisPotosi",
+        "Market_Display_Name": "San Luis Potosi"
+    },
+    "Tampico": {
+        "CenterLat": 22.241017,
+        "CenterLong": -97.866726,
+        "DefaultZoomLevel": "8",
+        "GeoTypeGroup": "1 - Designated Metro Areas",
+        "InterMarketMetro": "",
+        "MapboxMarketName": "Tampico",
+        "MarketName": "Tampico",
+        "Market_Display_Name": "Tampico"
+    },
+    "Tijuana": {
+        "CenterLat": 32.53298,
+        "CenterLong": -117.019293,
+        "DefaultZoomLevel": "8",
+        "GeoTypeGroup": "1 - Designated Metro Areas",
+        "InterMarketMetro": "",
+        "MapboxMarketName": "Tijuana",
+        "MarketName": "Tijuana",
+        "Market_Display_Name": "Tijuana"
+    },
+    "Toluca": {
+        "CenterLat": 19.292068,
+        "CenterLong": -99.65657,
+        "DefaultZoomLevel": "8",
+        "GeoTypeGroup": "1 - Designated Metro Areas",
+        "InterMarketMetro": "",
+        "MapboxMarketName": "Toluca",
+        "MarketName": "Toluca",
+        "Market_Display_Name": "Toluca"
+    },
+    "TuxtlaGutierrez": {
+        "CenterLat": 16.755181,
+        "CenterLong": -93.115502,
+        "DefaultZoomLevel": "8",
+        "GeoTypeGroup": "1 - Designated Metro Areas",
+        "InterMarketMetro": "",
+        "MapboxMarketName": "TuxtlaGutierrez",
+        "MarketName": "TuxtlaGutierrez",
+        "Market_Display_Name": "Tuxtla Gutierrez"
+    },
+    "Veracruz": {
+        "CenterLat": 19.200505,
+        "CenterLong": -96.138748,
+        "DefaultZoomLevel": "8",
+        "GeoTypeGroup": "1 - Designated Metro Areas",
+        "InterMarketMetro": "",
+        "MapboxMarketName": "Veracruz",
+        "MarketName": "Veracruz",
+        "Market_Display_Name": "Veracruz"
+    }
+}

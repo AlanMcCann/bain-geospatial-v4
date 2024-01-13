@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "layers": {
+    "alabama_bg_data_id": {
+      "source": "mapbox://tileset-source/stobieb/alabama_bg_data_id-src",
+      "minzoom": 0,
+      "maxzoom": 13
+    }
+  }
+}
