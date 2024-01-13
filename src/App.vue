@@ -15,8 +15,6 @@
     <p>intramarketMarketSettingsData {{ intramarketMarketSettingsData }}</p>
 
     -->
-    {{ selectedDataTypeDisplay }}
-    {{ selectedDataType }}
     <div id="main" class="main_padd">
       <h1
         class="bain_headline"
