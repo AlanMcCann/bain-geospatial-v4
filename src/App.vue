@@ -15,6 +15,7 @@
     <p>intramarketMarketSettingsData {{ intramarketMarketSettingsData }}</p>
 
     -->
+    {{ selectedDataTypeDisplay }} {{ selectedDataType }}
     <div id="main" class="main_padd">
       <h1
         class="bain_headline"
@@ -109,10 +110,12 @@
                   </div>
                   <div>
                     Selected data type:
-                    <b>{{ this.dataTypeMapping[this.selectedDataType] }}</b>
+                    <b>{{
+                      this.dataTypeNameMappingV4[this.selectedDataType]
+                    }}</b>
                   </div>
                   <div>
-                    Selected data series:<b> {{ selectedDataSeries }}</b>
+                    Selected data series:<b> {{ selectedDataSeriesDisplay }}</b>
                   </div>
                   <p
                     class="help-link text-left"
@@ -2175,6 +2178,10 @@ export default {
         "2:Percent",
         "Saturation",
         "2:Saturation (Demo HH/ HH Total)",
+        "2:Saturation (Demo HH/ HH Total)",
+        "Saturation (Demo HH/ HH Total)",
+        "4:Saturation Shift Over Time",
+        "Saturation Shift Over Time",
       ],
       notAllAllTypes: [
         "4:Percent Change",
@@ -3315,6 +3322,11 @@ export default {
       )}-${slugify(this.selectedEthnicity)}-${slugify(
         renameDataSeries(this.selectedDataSeries.code)
       )}`;
+    },
+    selectedDataSeriesDisplay() {
+      return this.selectedDataSeries
+        ? renameDataSeries(this.selectedDataSeries.code)
+        : null;
     },
     filenamePartialForSelectedFlowOptions() {
       let direction;
@@ -4606,7 +4618,8 @@ export default {
     showDropLocationModal() {
       // this.$refs[].show()
       this.$bvModal.show("modal-drop-location");
-      this.range = 10;
+
+      this.range = this.selectedMarketType == "dma" ? 10 : 25;
     },
     showVideoTutorialModal() {
       // this.$refs[].show()
@@ -5971,9 +5984,35 @@ export default {
           "SaturationShift3 (%)",
         ];
       }
+      if (this.selectedDataType == "4:Saturation Shift Over Time (Nat Adj)") {
+        summaryTitle =
+          "Average  nationally adjusted saturation shift for selected demographic across entire market for selected series:";
+        summarySpaceCount = 8;
+        summaryTotal = ((allHouseholdDataTotal / segmentTotal) * 100).toFixed(
+          1
+        );
+        headerRow = [
+          "SaturationShift1 (%)",
+          "SaturationShift2 (%)",
+          "SaturationShift3 (%)",
+        ];
+      }
       if (this.selectedDataType == "4:Growth As A % Over Time") {
         summaryTitle =
           "Average percent change for the selected demographic across all geographic shapes in the selected market:";
+        summarySpaceCount = 9;
+        summaryTotal = ((allHouseholdDataTotal / segmentTotal) * 100).toFixed(
+          1
+        );
+        headerRow = [
+          "PercentGrowth1 (%)",
+          "PercentGrowth2 (%)",
+          "PercentGrowth3 (%)",
+        ];
+      }
+      if (this.selectedDataType == "4:Growth As A % Over Time (Nat Adj)") {
+        summaryTitle =
+          "Average nationally adjusted percent change for the selected demographic across all geographic shapes in the selected market:";
         summarySpaceCount = 9;
         summaryTotal = ((allHouseholdDataTotal / segmentTotal) * 100).toFixed(
           1
@@ -6291,7 +6330,7 @@ export default {
         `This count includes all shapes that are within the radius of the chosen point, regardless of whether they are also contained in the radius ranges of other points.`,
       ]);
 
-      if (this.selectedDataTypeDisplay == "Household count") {
+      if (this.selectedDataType == "1:Household Count") {
         csv_rows.push([
           `HouseholdCount1`,
           "",
@@ -6308,7 +6347,7 @@ export default {
           `Count of households within the shapes in ShapeCount3. (This population is considered in range of this location, regardless of if it is also in range of other locations. Note: The total for this count will include double counting of households if there are overlaps between points.)`,
         ]);
       }
-      if (this.selectedDataTypeDisplay == "Saturation") {
+      if (this.selectedDataType == "2:Saturation (Demo HH/ HH Total)") {
         csv_rows.push([
           `Saturation1 (%)`,
           "",
@@ -6325,24 +6364,24 @@ export default {
           `Average saturation of the selected demographic for shapes in ShapeCount3. (This population is considered to be in range of this location, regardless of whether it is also within the range of other locations.)`,
         ]);
       }
-      if (this.selectedDataTypeDisplay == "Saturation shift") {
+      if (this.selectedDataType == "4:Saturation Shift Over Time") {
         csv_rows.push([
           `SaturationShift1 (%)`,
           "",
-          `Average saturation of the selected demographic for shapes in ShapeCount1. (This population can be considered to be only covered by this point.)`,
+          `Average saturation shift of the selected demographic for shapes in ShapeCount1. (This population can be considered to be only covered by this point.)`,
         ]);
         csv_rows.push([
           `SaturationShift2 (%)`,
           "",
-          `Average saturation of the selected demographic for shapes in ShapeCount2. (This population can be considered to be associated with this point before all others.)`,
+          `Average saturation shift of the selected demographic for shapes in ShapeCount2. (This population can be considered to be associated with this point before all others.)`,
         ]);
         csv_rows.push([
           `SaturationShift3 (%)`,
           "",
-          `Average saturation of the selected demographic for shapes in ShapeCount3. (This population is considered to be in range of this location, regardless of whether it is also within the range of other locations.)`,
+          `Average saturation shift of the selected demographic for shapes in ShapeCount3. (This population is considered to be in range of this location, regardless of whether it is also within the range of other locations.)`,
         ]);
       }
-      if (this.selectedDataTypeDisplay == "Household count change") {
+      if (this.selectedDataType == "3:HH Count Shift Over Time") {
         csv_rows.push([
           `HouseholdCountChange1`,
           "",
@@ -6360,7 +6399,7 @@ export default {
         ]);
       }
 
-      if (this.selectedDataTypeDisplay == "Percent growth") {
+      if (this.selectedDataType == "4:Growth As A % Over Time") {
         csv_rows.push([
           `PercentGrowth1 (%)`,
           "",
@@ -6375,6 +6414,41 @@ export default {
           `PercentGrowth3 (%)`,
           "",
           `Average percent change of the selected demographic for shapes in ShapeCount3. (This population is considered to be in range of this location, regardless of whether it is also within the range of other locations.)`,
+        ]);
+      }
+
+      if (this.selectedDataType == "4:Saturation Shift Over Time (Nat Adj)") {
+        csv_rows.push([
+          `SaturationShift1 (%)`,
+          "",
+          `Average nationally adjusted saturation shift of the selected demographic for shapes in ShapeCount1. (This population can be considered to be only covered by this point.)`,
+        ]);
+        csv_rows.push([
+          `SaturationShift2 (%)`,
+          "",
+          `Average nationally adjusted saturation shift of the selected demographic for shapes in ShapeCount2. (This population can be considered to be associated with this point before all others.)`,
+        ]);
+        csv_rows.push([
+          `SaturationShift3 (%)`,
+          "",
+          `Average nationally adjusted saturation shift of the selected demographic for shapes in ShapeCount3. (This population is considered to be in range of this location, regardless of whether it is also within the range of other locations.)`,
+        ]);
+      }
+      if (this.selectedDataType == "4:Growth As A % Over Time (Nat Adj)") {
+        csv_rows.push([
+          `PercentGrowth1 (%)`,
+          "",
+          `Average nationally adjusted percent change of the selected demographic for shapes in ShapeCount1. (This population can be considered to be only covered by this point.)`,
+        ]);
+        csv_rows.push([
+          `PercentGrowth2 (%)`,
+          "",
+          `Average nationally adjusted percent change of the selected demographic for shapes in ShapeCount2. (This population can be considered to be associated with this point before all others.)`,
+        ]);
+        csv_rows.push([
+          `PercentGrowth3 (%)`,
+          "",
+          `Average nationally adjusted percent change of the selected demographic for shapes in ShapeCount3. (This population is considered to be in range of this location, regardless of whether it is also within the range of other locations.)`,
         ]);
       }
 
