@@ -15,6 +15,8 @@
     <p>intramarketMarketSettingsData {{ intramarketMarketSettingsData }}</p>
 
     -->
+    {{ selectedTotalDataType }} {{ selectedTotalSegment }}
+    {{ totalMapSettingsData }}
     <div id="main" class="main_padd">
       <h1
         class="bain_headline"
@@ -2347,6 +2349,7 @@ export default {
       flowComputedMarketOptions: [],
       // selectedComputedSummaryMarketOptions: [],
       mapSettingsData: {},
+      totalMapSettingsData: {},
       mapSettingsCompData: {},
       segmentSettings: {}, //Object.values(settingsData)[0],
       previousSegmentSettings: {}, //Object.values(settingsData)[0],
@@ -4004,7 +4007,7 @@ export default {
         `${
           this.base_asset_url
         }/${this.selectedMarket.toLowerCase()}_${ethnicityName}_${this.dataTypeSlugMappingV4[
-          this.selectedDataType
+          this.selectedTotalDataType
         ].toLowerCase()}_data_v${this.mapVersion}.json`
       );
 
@@ -4017,6 +4020,8 @@ export default {
       sourceTotalDataPromise.then((mapSourceTotalData) => {
         // console.log("promised resolved");
         this.mapSourceTotalData = mapSourceTotalData;
+        console.log("loaded mapSourceSourceTotalData");
+        console.log(this.mapSourceTotalData);
       });
     },
 
@@ -4104,6 +4109,22 @@ export default {
         console.log("line 4094");
         console.log(uri);
         this.mapSettingsData = await mapSettingsData;
+
+        console.log("line 4113");
+        let totalDataTypeName =
+          this.dataTypeSlugMappingV4[this.selectedTotalDataType].toLowerCase();
+        let totalUri = `${
+          this.base_asset_url
+        }/${this.selectedMarket.toLowerCase()}_${ethnicityName}_${totalDataTypeName}_settings_data_v${
+          this.mapVersion
+        }.json`;
+        console.log("totalUri", totalUri);
+        const totalSettingsDataResponse = await fetch(totalUri);
+        const totalMapSettingsData = await totalSettingsDataResponse.json();
+        console.log("line 4094");
+        console.log(uri);
+        this.totalMapSettingsData = await totalMapSettingsData;
+
         console.log("valuesForDataSeries");
         let values = Object.values(this.mapSettingsData);
         console.log("values");
@@ -5717,7 +5738,7 @@ export default {
         this.selectedDataSeries
       );
       let selectedTotalSegment = findMarketSegmentDataV4(
-        Object.values(this.mapSettingsData),
+        Object.values(this.totalMapSettingsData),
         this.selectedGeographiesShapes,
         // this.selectedAgeSegment,
         "1:All",
@@ -5726,6 +5747,8 @@ export default {
         this.selectedTotalDataType,
         this.selectedDataSeries
       );
+      console.log("selectedSegment");
+      console.log(selectedSegment);
       console.log("selectedTotalSegment");
       console.log(selectedTotalSegment);
       let allHouseholdTotalData = 0;
@@ -5923,13 +5946,11 @@ export default {
           }
         });
       }
-      let segmentTotal = allHouseholdTotalData.reduce(
-        (accumulator, currentValue) =>
-          currentValue ? accumulator + currentValue : accumulator,
-        0
-      );
-      console.log("segmentTotal");
-      console.log(segmentTotal);
+
+      // console.log("segmentTotal");
+      // console.log(segmentTotal);
+      console.log("selectedSegmentTotal");
+      console.log(selectedSegmentTotal);
       console.log("allHouseholdDataTotal");
       console.log(allHouseholdDataTotal);
       console.log("this.selectedDataTypeDisplay");
@@ -5954,9 +5975,10 @@ export default {
         summaryTitle =
           "Average saturation of the selected demographic across entire market:";
         summarySpaceCount = 6;
-        summaryTotal = ((allHouseholdDataTotal / segmentTotal) * 100).toFixed(
-          1
-        );
+        summaryTotal = (
+          (allHouseholdDataTotal / selectedSegmentTotal) *
+          100
+        ).toFixed(1);
         headerRow = ["Saturation1 (%)", "Saturation2 (%)", "Saturation3 (%)"];
       }
       if (this.selectedDataType == "3:HH Count Shift Over Time") {
@@ -5974,9 +5996,10 @@ export default {
         summaryTitle =
           "Average saturation shift for selected demographic across entire market for selected series:";
         summarySpaceCount = 8;
-        summaryTotal = ((allHouseholdDataTotal / segmentTotal) * 100).toFixed(
-          1
-        );
+        summaryTotal = (
+          (allHouseholdDataTotal / selectedSegmentTotal) *
+          100
+        ).toFixed(1);
         headerRow = [
           "SaturationShift1 (%)",
           "SaturationShift2 (%)",
@@ -5987,9 +6010,10 @@ export default {
         summaryTitle =
           "Average  nationally adjusted saturation shift for selected demographic across entire market for selected series:";
         summarySpaceCount = 8;
-        summaryTotal = ((allHouseholdDataTotal / segmentTotal) * 100).toFixed(
-          1
-        );
+        summaryTotal = (
+          (allHouseholdDataTotal / selectedSegmentTotal) *
+          100
+        ).toFixed(1);
         headerRow = [
           "SaturationShift1 (%)",
           "SaturationShift2 (%)",
@@ -6000,9 +6024,10 @@ export default {
         summaryTitle =
           "Average percent change for the selected demographic across all geographic shapes in the selected market:";
         summarySpaceCount = 9;
-        summaryTotal = ((allHouseholdDataTotal / segmentTotal) * 100).toFixed(
-          1
-        );
+        summaryTotal = (
+          (allHouseholdDataTotal / selectedSegmentTotal) *
+          100
+        ).toFixed(1);
         headerRow = [
           "PercentGrowth1 (%)",
           "PercentGrowth2 (%)",
@@ -6013,9 +6038,10 @@ export default {
         summaryTitle =
           "Average nationally adjusted percent change for the selected demographic across all geographic shapes in the selected market:";
         summarySpaceCount = 9;
-        summaryTotal = ((allHouseholdDataTotal / segmentTotal) * 100).toFixed(
-          1
-        );
+        summaryTotal = (
+          (allHouseholdDataTotal / selectedSegmentTotal) *
+          100
+        ).toFixed(1);
         headerRow = [
           "PercentGrowth1 (%)",
           "PercentGrowth2 (%)",
