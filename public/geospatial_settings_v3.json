@@ -1022,13 +1022,13 @@
         "Market_Display_Name": "Cumberland, MD",
         "StateFips": ""
     },
-    "DallasFortWrthTX": {
+    "DallasFortWorthTX": {
         "CenterLat": 32.775862,
         "CenterLong": -96.796877,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "1",
-        "MapboxMarketName": "DallasFortWrthTX",
+        "MapboxMarketName": "DallasFortWorthTX",
         "MarketName": "DallasFortWorthTX",
         "Market_Display_Name": "Dallas Fort Worth, TX",
         "StateFips": ""

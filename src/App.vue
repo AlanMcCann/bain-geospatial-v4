@@ -15,8 +15,6 @@
     <p>intramarketMarketSettingsData {{ intramarketMarketSettingsData }}</p>
 
     -->
-    {{ selectedTotalDataType }} {{ selectedTotalSegment }}
-    {{ totalMapSettingsData }}
     <div id="main" class="main_padd">
       <h1
         class="bain_headline"
@@ -2043,7 +2041,7 @@ export default {
       flowShowSettings: true,
       flowDisableInputs: false,
       flowExcludeWithinState: "yes",
-      flowSelectedMarket: "DallasFortWrthTX",
+      flowSelectedMarket: "DallasFortWorthTX",
       flowMarketListOptions: null,
       flowSelectedDirection: null,
       flowSelectedMarketType: null,
@@ -2309,8 +2307,8 @@ export default {
       // selectedMarket: "DallasFortWorthTX",
       selectedMarket: "Texas", //Object.keys(marketSettingsData)[0],
       // selectedMarket: "Mexico", //Object.keys(marketSettingsData)[0],
-      selectedSummaryMarket: "DallasFortWrthTX",
-      selectedComparisonMarkets: ["DallasFortWrthTX"],
+      selectedSummaryMarket: "DallasFortWorthTX",
+      selectedComparisonMarkets: ["DallasFortWorthTX"],
       // intramarketMarketSettingsData: mexicoMarketSettingsData,
       intramarketMarketSettingsData: usMarketSettingsData,
       intramarketMarketSettingsDataV4: usMarketSettingsDataV4,
@@ -4951,7 +4949,7 @@ export default {
       const videoData = await videoDataResponse.json();
       this.videoOptions = videoData;
       const flowDataResponse = await fetch(
-        `${this.base_asset_url}/intermarketdata-20230625.json`
+        `${this.base_asset_url}/intermarketdata-20240115.json`
       );
       console.log(flowDataResponse);
       const flowMapDataBase = await flowDataResponse.json();
@@ -8147,7 +8145,7 @@ export default {
         this.flowSelectedGeoSegment = this.flowSelectedMetroAreaOption;
         this.flowComputedMarketOptions =
           this.computedFlowMarketOptions[0]["options"];
-        this.flowSelectedMarket = "DallasFortWrthTX";
+        this.flowSelectedMarket = "DallasFortWorthTX";
       } else {
         this.flowSelectedStatesOption = Object.keys(
           this.flowStatesListOptions
