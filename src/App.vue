@@ -6044,8 +6044,8 @@ export default {
           "Average saturation shift for selected demographic across entire market for selected series:";
         summarySpaceCount = 8;
         summaryTotal = (
-          (allHouseholdDataTotal / allHouseholdDataTotal) *
-          100
+          (allHouseholdDataTotal / allHouseholdData.length) *
+          1
         ).toFixed(1);
         headerRow = [
           "SaturationShift1 (%)",
