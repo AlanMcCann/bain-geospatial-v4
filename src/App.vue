@@ -15,9 +15,7 @@
     <p>intramarketMarketSettingsData {{ intramarketMarketSettingsData }}</p>
 
     -->
-    {{ tempPercentTypes }} {{ selectedDataType }}
-    {{ tempPercentTypes.includes(selectedDataType) }}
-    {{ selectedDataSeries }}
+
     <div id="main" class="main_padd">
       <h1
         class="bain_headline"
