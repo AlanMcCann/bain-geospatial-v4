@@ -15,6 +15,9 @@
     <p>intramarketMarketSettingsData {{ intramarketMarketSettingsData }}</p>
 
     -->
+    {{ tempPercentTypes }} {{ selectedDataType }}
+    {{ tempPercentTypes.includes(selectedDataType) }}
+    {{ selectedDataSeries }}
     <div id="main" class="main_padd">
       <h1
         class="bain_headline"
@@ -133,7 +136,10 @@
               </b-row>
               <template #modal-footer>
                 <!-- Emulate built in modal footer ok and cancel button actions -->
-                <b-button variant="success" @click="showTosModalCsv('summary')"
+                <b-button
+                  :disabled="disableSummaryCSVDownload"
+                  variant="success"
+                  @click="showTosModalCsv('summary')"
                   >Download summary data
                 </b-button>
                 <b-button variant="success" @click="showTosModalCsv('points')"
@@ -608,7 +614,7 @@
                     ></v-select>
                     <!-- </b-form-group> -->
                   </b-col>
-                  <b-col cols="2" class="pt-2">
+                  <b-col cols="3" class="pt-2">
                     <b-form-group
                       label="Head of household age"
                       v-slot="{ ariaDescribedby }"
@@ -2195,6 +2201,13 @@ export default {
         "4:Saturation Shift Over Time",
         "4:Saturation Shift Over Time (Nat Adj)",
       ],
+      noSummaryDownloadTypes: [
+        "4:Saturation Shift Over Time (Nat Adj)",
+        "Saturation Shift Over Time (Nat Adj)",
+        "4:Growth As A % Over Time (Nat Adj)",
+        "Growth As A % Over Time (Nat Adj)",
+      ],
+
       ethnicityTypes: ["All", "Asian", "Black", "Hispanic", "Other", "White"],
       ethnicityMapping: {
         all: {
@@ -2394,6 +2407,9 @@ export default {
       );
       console.log("video", video);
       return video;
+    },
+    disableSummaryCSVDownload() {
+      return this.noSummaryDownloadTypes.includes(this.selectedDataType);
     },
     selectedVideoTitle() {
       if (this.eelectedVideo === null) {
@@ -4123,6 +4139,27 @@ export default {
         console.log(uri);
         this.totalMapSettingsData = await totalMapSettingsData;
 
+        const mapTotalDataPromise = fetch(
+          `${
+            this.base_asset_url
+          }/${this.selectedMarket.toLowerCase()}_${ethnicityName}_${this.dataTypeSlugMappingV4[
+            this.selectedTotalDataType
+          ].toLowerCase()}_data_v${this.mapVersion}.json`
+        );
+
+        const sourceTotalDataPromise = mapTotalDataPromise.then((response) => {
+          // console.log(response);
+          // console.log("loaded map source data");
+          // const mapData =  response.json();
+          return response.json();
+        });
+        sourceTotalDataPromise.then((mapSourceTotalData) => {
+          // console.log("promised resolved");
+          this.mapSourceTotalData = mapSourceTotalData;
+          console.log("loaded mapSourceSourceTotalData");
+          console.log(this.mapSourceTotalData);
+        });
+
         console.log("valuesForDataSeries");
         let values = Object.values(this.mapSettingsData);
         console.log("values");
@@ -4418,7 +4455,7 @@ export default {
           console.log(this.selectedAgeSegment);
           console.log(this.selectedIncomeSegment);
           console.log(this.selectedDataType);
-          console.log(this.selectedDataSeries.codd);
+          console.log(this.selectedDataSeries.code);
           this.selectedSegment = findMarketSegmentDataV4(
             Object.values(this.mapSettingsData),
             this.selectedGeographiesShapes,
@@ -5735,6 +5772,17 @@ export default {
         this.selectedDataType,
         this.selectedDataSeries
       );
+      console.log("this.totalMapSettingsData 1");
+      console.log(this.totalMapSettingsData);
+      let totalDataSeries = this.selectedDataSeries.code.includes("to")
+        ? `Y${this.selectedDataSeries.code.split("to")[1].trim()}`
+        : this.selectedDataSeries.code;
+      console.log("total data series", totalDataSeries);
+      console.log(
+        Object.values(this.totalMapSettingsData),
+        this.selectedTotalDataType,
+        this.totalDataSeries
+      );
       let selectedTotalSegment = findMarketSegmentDataV4(
         Object.values(this.totalMapSettingsData),
         this.selectedGeographiesShapes,
@@ -5743,7 +5791,7 @@ export default {
         // this.selectedIncomeSegment,
         "1:All",
         this.selectedTotalDataType,
-        this.selectedDataSeries
+        { code: totalDataSeries, value: this.selectedDataSeries.value }
       );
       console.log("selectedSegment");
       console.log(selectedSegment);
@@ -5912,9 +5960,9 @@ export default {
       let allHouseholdDataTotal = 0;
       // console.log("allHouseholdData");
       // console.log(allHouseholdData);
-      console.log("allHouseholdData");
+      console.log("allHouseholdData 0");
       console.log(allHouseholdData);
-      console.log("allHouseholdTotalData");
+      console.log("allHouseholdTotalData 0");
       console.log(allHouseholdTotalData);
       if (this.tempPercentTypes.includes(this.selectedDataType)) {
         console.log("dot product");
@@ -5937,12 +5985,15 @@ export default {
           console.log("r", r);
           return r + factor * allHouseholdDataTotalItem;
         }, 0);
+
+        console.log("allHouseholdDataTotal 1", allHouseholdDataTotal);
       } else {
         allHouseholdData.forEach((value) => {
           if (!isNaN(value) && value !== null) {
             allHouseholdDataTotal += value;
           }
         });
+        console.log("allHouseholdDataTotal 1", allHouseholdDataTotal);
       }
 
       // console.log("segmentTotal");
@@ -5963,8 +6014,8 @@ export default {
       let percentAppend = "";
       if (this.selectedDataType == "1:Household Count") {
         summaryTitle =
-          "Total households in this series for selected age and income:";
-        summarySpaceCount = 5;
+          "Total households in this series for the selected demographic:";
+        summarySpaceCount = 6;
         summaryTotal = allHouseholdDataTotal;
         headerRow = ["HouseholdCount1", "HouseholdCount2", "HouseholdCount3"];
       }
@@ -5974,14 +6025,14 @@ export default {
           "Average saturation of the selected demographic across entire market:";
         summarySpaceCount = 6;
         summaryTotal = (
-          (allHouseholdDataTotal / selectedSegmentTotal) *
+          (selectedSegmentTotal / allHouseholdDataTotal) *
           100
         ).toFixed(1);
         headerRow = ["Saturation1 (%)", "Saturation2 (%)", "Saturation3 (%)"];
       }
       if (this.selectedDataType == "3:HH Count Shift Over Time") {
         summaryTitle =
-          "Total household count change in this series for the selected age and income:";
+          "Total household count change in this series for the selected demographic:";
         summarySpaceCount = 4;
         summaryTotal = allHouseholdDataTotal;
         headerRow = [
@@ -5995,7 +6046,7 @@ export default {
           "Average saturation shift for selected demographic across entire market for selected series:";
         summarySpaceCount = 8;
         summaryTotal = (
-          (allHouseholdDataTotal / selectedSegmentTotal) *
+          (allHouseholdDataTotal / allHouseholdDataTotal) *
           100
         ).toFixed(1);
         headerRow = [
@@ -6023,7 +6074,7 @@ export default {
           "Average percent change for the selected demographic across all geographic shapes in the selected market:";
         summarySpaceCount = 9;
         summaryTotal = (
-          (allHouseholdDataTotal / selectedSegmentTotal) *
+          (allHouseholdDataTotal / allHouseholdData.length) *
           100
         ).toFixed(1);
         headerRow = [
