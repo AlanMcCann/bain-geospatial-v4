@@ -2200,8 +2200,8 @@ export default {
         "4:Saturation Shift Over Time (Nat Adj)",
       ],
       noSummaryDownloadTypes: [
-        "4:Saturation Shift Over Time (Nat Adj)",
-        "Saturation Shift Over Time (Nat Adj)",
+        "4:Growth As A % Over Time",
+        "Growth As A % Over Time",
         "4:Growth As A % Over Time (Nat Adj)",
         "Growth As A % Over Time (Nat Adj)",
       ],
