@@ -2181,10 +2181,11 @@ export default {
         "2:Percent",
         "Saturation",
         "2:Saturation (Demo HH/ HH Total)",
-        "2:Saturation (Demo HH/ HH Total)",
         "Saturation (Demo HH/ HH Total)",
         "4:Saturation Shift Over Time",
         "Saturation Shift Over Time",
+        "4:Saturation Shift Over Time (Nat Adj)",
+        "Saturation Shift Over Time (Nat Adj)",
       ],
       notAllAllTypes: [
         "4:Percent Change",
@@ -5772,22 +5773,33 @@ export default {
       );
       console.log("this.totalMapSettingsData 1");
       console.log(this.totalMapSettingsData);
-      let totalDataSeries = this.selectedDataSeries.code.includes("to")
-        ? `Y${this.selectedDataSeries.code.split("to")[1].trim()}`
-        : this.selectedDataSeries.code;
+      // let totalDataSeries = this.selectedDataSeries.code.includes("to")
+      //   ? `Y${this.selectedDataSeries.code.split("to")[1].trim()}`
+      //   : this.selectedDataSeries.code;
+      let totalDataSeries = "Y2023";
       console.log("total data series", totalDataSeries);
       console.log(
         Object.values(this.totalMapSettingsData),
         this.selectedTotalDataType,
         this.totalDataSeries
       );
+      // let selectedTotalSegment = findMarketSegmentDataV4(
+      //   Object.values(this.totalMapSettingsData),
+      //   this.selectedGeographiesShapes,
+      //   // this.selectedAgeSegment,
+      //   "1:All",
+      //   // this.selectedIncomeSegment,
+      //   "1:All",
+      //   this.selectedTotalDataType,
+      //   { code: totalDataSeries, value: this.selectedDataSeries.value }
+      // );
       let selectedTotalSegment = findMarketSegmentDataV4(
         Object.values(this.totalMapSettingsData),
         this.selectedGeographiesShapes,
-        // this.selectedAgeSegment,
-        "1:All",
-        // this.selectedIncomeSegment,
-        "1:All",
+        this.selectedAgeSegment,
+        // "1:All",
+        this.selectedIncomeSegment,
+        // "1:All",
         this.selectedTotalDataType,
         { code: totalDataSeries, value: this.selectedDataSeries.value }
       );
@@ -5955,10 +5967,17 @@ export default {
       allHouseholdTotalData = this.mapSourceTotalData.map((f) =>
         selectedTotalSegment ? f[selectedTotalSegment.mapbox_segment] : 0
       );
+      let allHouseholdTotalDataTotal = allHouseholdTotalData.reduce(
+        (a, b) => a + b,
+        0
+      );
+      console.log("allHouseholdTotalDataTotal", allHouseholdTotalDataTotal);
       let allHouseholdDataTotal = 0;
       // console.log("allHouseholdData");
       // console.log(allHouseholdData);
       console.log("allHouseholdData 0");
+      let mapSourceData = this.mapSourceData;
+      let mapSourceTotalData = this.mapSourceTotalData;
       console.log(allHouseholdData);
       console.log("allHouseholdTotalData 0");
       console.log(allHouseholdTotalData);
@@ -5977,6 +5996,8 @@ export default {
           if (!isNaN(a) && a !== null && a) {
             factor = a;
           }
+          console.log("mapSourceData[i]", mapSourceData[i]);
+          console.log("mapSourceTotalData[i]", mapSourceTotalData[i]);
           console.log("allHouseholdDataTotalItem", allHouseholdDataTotalItem);
           console.log("a", a);
           console.log("factor", factor);
@@ -6023,7 +6044,7 @@ export default {
           "Average saturation of the selected demographic across entire market:";
         summarySpaceCount = 6;
         summaryTotal = (
-          (selectedSegmentTotal / allHouseholdDataTotal) *
+          (allHouseholdDataTotal / allHouseholdTotalDataTotal) *
           100
         ).toFixed(1);
         headerRow = ["Saturation1 (%)", "Saturation2 (%)", "Saturation3 (%)"];
@@ -6040,12 +6061,17 @@ export default {
         ];
       }
       if (this.selectedDataType == "4:Saturation Shift Over Time") {
+        console.log("allHouseholdDataTotal last");
+        console.log(allHouseholdDataTotal);
+        console.log("allHouseholdTotalDataTotal last");
+        console.log(allHouseholdTotalDataTotal);
+        console.log(allHouseholdDataTotal / allHouseholdTotalDataTotal);
         summaryTitle =
           "Average saturation shift for selected demographic across entire market for selected series:";
         summarySpaceCount = 8;
         summaryTotal = (
-          (allHouseholdDataTotal / allHouseholdData.length) *
-          1
+          (allHouseholdDataTotal / allHouseholdTotalDataTotal) *
+          100
         ).toFixed(1);
         headerRow = [
           "SaturationShift1 (%)",
@@ -6054,11 +6080,17 @@ export default {
         ];
       }
       if (this.selectedDataType == "4:Saturation Shift Over Time (Nat Adj)") {
+        console.log("allHouseholdDataTotal last");
+        console.log(allHouseholdDataTotal);
+        console.log("allHouseholdTotalDataTotal last");
+        console.log(allHouseholdTotalDataTotal);
+        console.log(allHouseholdDataTotal / allHouseholdTotalDataTotal);
+
         summaryTitle =
-          "Average  nationally adjusted saturation shift for selected demographic across entire market for selected series:";
+          "Average nationally adjusted saturation shift for selected demographic across entire market for selected series:";
         summarySpaceCount = 8;
         summaryTotal = (
-          (allHouseholdDataTotal / selectedSegmentTotal) *
+          (allHouseholdDataTotal / allHouseholdTotalDataTotal) *
           100
         ).toFixed(1);
         headerRow = [
