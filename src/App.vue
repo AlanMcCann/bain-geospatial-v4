@@ -2441,8 +2441,8 @@ export default {
       if (this.notAllAllTypes.includes(this.selectedDataType)) {
         let newOptions = [];
         this.selectedAgeSegmentOptions.forEach((option) => {
-          if (option.value === "1:All") {
-            if (this.selectedIncomeSegment === "1:All") {
+          if (option.value === "All") {
+            if (this.selectedIncomeSegment === "All") {
               let newOption = {
                 text: option.text,
                 value: option.value,
@@ -2491,8 +2491,8 @@ export default {
       if (this.notAllAllTypes.includes(this.selectedDataType)) {
         let newOptions = [];
         this.selectedIncomeSegmentOptions.forEach((option) => {
-          if (option.value === "1:All") {
-            if (this.selectedAgeSegment === "1:All") {
+          if (option.value === "All") {
+            if (this.selectedAgeSegment === "All") {
               let newOption = {
                 text: option.text,
                 value: option.value,
@@ -2512,6 +2512,7 @@ export default {
       }
     },
     computedSelectedEthnicityOptions() {
+      return ["Asian", "Black", "Hispanic", "Other", "White", "All"];
       if (this.notAllAllTypes.includes(this.selectedDataType)) {
         let newOptions = [];
         this.selectedEthnicityOptions.forEach((option) => {
