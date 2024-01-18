@@ -5,7 +5,7 @@
     style="background: white"
   >
     <!-- <p>selectedDataType {{ selectedDataType }}</p>
-    <p>dataTypeNameMappingV4 {{ dataTypeNameMappingV4 }}</p>
+    <p>dataTypeNameMappingV4 {{ dataTypeNameMappingV4 }}</p>s
     <p>selectedDataTypeOptions {{ selectedDataTypeOptions }}</p>
     <p>dataTypeSlugMappingV4 {{ dataTypeSlugMappingV4 }}</p>
     <p>selectedDataTypeOptions {{ selectedDataTypeOptions }}</p>
@@ -68,7 +68,7 @@
                         class="far fa-question-circle text-danger"
                         id="help-range"
                       ></i>
-                      <b-tooltip target="help-range"
+                      <b-tooltip placement="bottom" target="help-range"
                         >Select range in miles for selecting geo units units.
                       </b-tooltip>
                     </template>
@@ -171,7 +171,7 @@
                         class="far fa-question-circle text-danger"
                         id="help-opacity"
                       ></i>
-                      <b-tooltip target="help-opacity"
+                      <b-tooltip placement="bottom" target="help-opacity"
                         >Select opacity for geographic units.</b-tooltip
                       >
                     </template>
@@ -218,9 +218,11 @@
                         class="far fa-question-circle text-danger"
                         id="help-geography-units"
                       ></i>
-                      <b-tooltip target="help-geography-units">{{
-                        selectGeoUnitsToolTipText
-                      }}</b-tooltip>
+                      <b-tooltip
+                        placement="top"
+                        target="help-geography-units"
+                        >{{ selectGeoUnitsToolTipText }}</b-tooltip
+                      >
                     </template>
                     <b-form-radio-group
                       v-model="selectedGeoUnits"
@@ -244,7 +246,7 @@
                         class="far fa-question-circle text-danger"
                         id="help-opacity"
                       ></i>
-                      <b-tooltip target="help-opacity"
+                      <b-tooltip placement="bottom" target="help-opacity"
                         >Select opacity for geographic units.</b-tooltip
                       >
                     </template>
@@ -275,7 +277,7 @@
                         class="far fa-question-circle text-danger"
                         id="help-geolabel"
                       ></i>
-                      <b-tooltip target="help-geolabel"
+                      <b-tooltip placement="bottom" target="help-geolabel"
                         >Turn geo unit labels on or off.</b-tooltip
                       >
                     </template>
@@ -308,7 +310,7 @@
                         class="far fa-question-circle text-danger"
                         id="help-count-selector"
                       ></i>
-                      <b-tooltip target="help-count-selector"
+                      <b-tooltip placement="bottom" target="help-count-selector"
                         >Turn Multiple Geo Unit Selector Mode on to select and
                         display segment data for one or more geographic units.
                         Hold the Shift key and then click and drag your cursor
@@ -596,7 +598,7 @@
                         v-model="selectedMarketType"
                         :options="selectedMarketTypeOptions"
                         :aria-describedby="ariaDescribedby3"
-                        disabled="true"
+                        :disabled="false"
                         name="radio-options-2"
                       >
                       </b-form-radio-group>
@@ -633,7 +635,7 @@
                       </b-form-radio-group>
                     </b-form-group>
                   </b-col>
-                  <b-col cols="3" class="mt-2">
+                  <b-col cols="3" class="mt-2 px-0">
                     <b-form-group
                       label="Head of household income"
                       v-slot="{ ariaDescribedby }"
@@ -652,7 +654,7 @@
                       </b-form-radio-group>
                     </b-form-group>
                   </b-col>
-                  <b-col cols="3" class="mt-2">
+                  <b-col cols="3" class="mt-2 px-0">
                     <b-form-group
                       label="Ethnicity"
                       v-slot="{ ariaDescribedby }"
@@ -728,9 +730,11 @@
                         :class="{ active: geoLabelVisibility === 'On' }"
                         @click="toggleGeoLabels"
                       >
-                        <b-tooltip target="geolabels-button">{{
-                          selectGeoLabelsToolTipText
-                        }}</b-tooltip>
+                        <b-tooltip
+                          placement="bottom"
+                          target="geolabels-button"
+                          >{{ selectGeoLabelsToolTipText }}</b-tooltip
+                        >
                       </div>
                       <div
                         id="opacity-button"
@@ -739,7 +743,9 @@
                         v-if="showSettings"
                         @click="showOpacityModal"
                       >
-                        <b-tooltip target="opacity-button">Opacity</b-tooltip>
+                        <b-tooltip placement="bottom" target="opacity-button"
+                          >Opacity</b-tooltip
+                        >
                       </div>
                       <div
                         id="select-button"
@@ -750,7 +756,7 @@
                         @click="toggleCountSelector('contiguous')"
                         v-if="showSettings"
                       >
-                        <b-tooltip target="select-button">{{
+                        <b-tooltip placement="bottom" target="select-button">{{
                           toggleContiguousCountSelectorToolTipText
                         }}</b-tooltip>
                       </div>
@@ -763,7 +769,7 @@
                         @click="toggleCountSelector('distinct')"
                         v-if="showSettings"
                       >
-                        <b-tooltip target="check-button">{{
+                        <b-tooltip placement="bottom" target="check-button">{{
                           toggleDistinctCountSelectorToolTipText
                         }}</b-tooltip>
                       </div>
@@ -774,7 +780,9 @@
                         @click="showTosModalCsv('csv')"
                         v-if="showSettings"
                       >
-                        <b-tooltip target="downloaddoc-button"
+                        <b-tooltip
+                          placement="bottom"
+                          target="downloaddoc-button"
                           >Download CSV</b-tooltip
                         >
                       </div>
@@ -784,7 +792,9 @@
                         :class="{ active: false }"
                         @click="downloadImage"
                       >
-                        <b-tooltip target="downloadimg-button"
+                        <b-tooltip
+                          placement="bottom"
+                          target="downloadimg-button"
                           >Download map image</b-tooltip
                         >
                       </div>
@@ -795,7 +805,7 @@
                         @click="showDropLocationModal"
                         v-if="showSettings"
                       >
-                        <b-tooltip target="pin-button"
+                        <b-tooltip placement="bottom" target="pin-button"
                           >Add custom location points to map</b-tooltip
                         >
                       </div>
@@ -807,7 +817,7 @@
                         v-show="pointDataLength > 0"
                         v-if="showSettings"
                       >
-                        <b-tooltip target="mathpin-button"
+                        <b-tooltip placement="bottom" target="mathpin-button"
                           >Build summary reports for custom location
                           points</b-tooltip
                         >
@@ -820,7 +830,7 @@
                         :class="{ active: false }"
                         @click="toggleFullScreen"
                       >
-                        <b-tooltip target="maximize-button"
+                        <b-tooltip placement="bottom" target="maximize-button"
                           >Turn full screen mode on</b-tooltip
                         >
                       </div>
@@ -831,7 +841,7 @@
                         :class="{ active: false }"
                         @click="toggleFullScreen"
                       >
-                        <b-tooltip target="minimize-button"
+                        <b-tooltip placement="bottom" target="minimize-button"
                           >Turn full screen mode off</b-tooltip
                         >
                       </div>
@@ -846,7 +856,7 @@
                         v-if="fullscreen"
                         @click="toggleShowSettings"
                       >
-                        <b-tooltip target="point-button"
+                        <b-tooltip placement="bottom" target="point-button"
                           >Show or hide settings pane.</b-tooltip
                         >
                       </div>
@@ -1119,7 +1129,9 @@
                         @click="showTosModalCsv('flow')"
                         v-if="flowShowSettings"
                       >
-                        <b-tooltip target="flow-downloaddoc-button"
+                        <b-tooltip
+                          placement="top"
+                          target="flow-downloaddoc-button"
                           >Download CSV</b-tooltip
                         >
                       </div>
@@ -1129,7 +1141,9 @@
                         :class="{ active: false }"
                         @click="downloadFlowMapImage"
                       >
-                        <b-tooltip target="flow-downloadimg-map-button"
+                        <b-tooltip
+                          placement="top"
+                          target="flow-downloadimg-map-button"
                           >Download image</b-tooltip
                         >
                       </div>
@@ -1141,7 +1155,9 @@
                         :class="{ active: false }"
                         @click="toggleFlowFullScreen"
                       >
-                        <b-tooltip target="flow-maximize-button"
+                        <b-tooltip
+                          placement="bottom"
+                          target="flow-maximize-button"
                           >Turn full screen mode on</b-tooltip
                         >
                       </div>
@@ -1152,7 +1168,9 @@
                         :class="{ active: false }"
                         @click="toggleFlowFullScreen"
                       >
-                        <b-tooltip target="flow-minimize-button"
+                        <b-tooltip
+                          placement="bottom"
+                          target="flow-minimize-button"
                           >Turn full screen mode off</b-tooltip
                         >
                       </div>
@@ -1167,7 +1185,7 @@
                         v-if="fullscreen"
                         @click="toggleShowSettings"
                       >
-                        <b-tooltip target="point-button"
+                        <b-tooltip placement="bottom" target="point-button"
                           >Show or hide settings pane.</b-tooltip
                         >
                       </div>
@@ -1181,7 +1199,7 @@
                         v-if="flowFullScreen"
                         @click="toggleflowShowSettings"
                       >
-                        <b-tooltip target="flow-point-button"
+                        <b-tooltip placement="bottom" target="flow-point-button"
                           >Show or hide settings pane.</b-tooltip
                         >
                       </div>
