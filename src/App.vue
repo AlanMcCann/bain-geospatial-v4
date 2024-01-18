@@ -2213,8 +2213,6 @@ export default {
         "6:Percent Change Nat Adj",
         "Saturation shift (Nat Adj)",
         "2:Saturation (Demo HH/ HH Total)",
-        "4:Growth As A % Over Time",
-        "4:Growth As A % Over Time (Nat Adj)",
         "4:Saturation Shift Over Time",
         "4:Saturation Shift Over Time (Nat Adj)",
         "4:Saturation Shift Over Time",
