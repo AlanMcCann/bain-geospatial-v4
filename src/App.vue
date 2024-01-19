@@ -682,7 +682,7 @@
                         :options="selectedDataTypeOptions"
                         :reduce="(dataType) => dataType.code"
                         :clearable="false"
-                        :selectable="(option) => !option.disabled"
+                        :selectable="(option) => selectableDataType(option)"
                         :disabled="disableInputs"
                         class="col-9 pl-0"
                       ></v-select>
@@ -3842,6 +3842,25 @@ export default {
     },
   },
   methods: {
+    selectableDataType(dataType) {
+      console.log("checking selectableDataType");
+      console.log(dataType);
+      console.log(this.notAllAllTypes);
+      console.log(this.notAllAllTypes.includes(dataType));
+      if (this.notAllAllTypes.includes(dataType.code)) {
+        if (
+          this.selectedAgeSegment === "All" &&
+          this.selectedIncomeSegment === "All" &&
+          this.selectedEthnicity === "All"
+        ) {
+          return false;
+        } else {
+          return true;
+        }
+      } else {
+        return true;
+      }
+    },
     selectVideo(index) {
       // this.$refs.dplayer.dp.pause();
       this.selectedVideoId = index + 1;
