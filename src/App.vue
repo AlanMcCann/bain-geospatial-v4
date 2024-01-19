@@ -8827,16 +8827,17 @@ export default {
             // create a HTML element for each feature
             let el = document.createElement("div");
             el.className = markerClass;
-            el.style = "background-color: blue;";
+            let markerColor = dropPinColors.filter(
+              (color) => color.id == marker.properties.color
+            )[0].color;
+            el.style = `background-color: ${markerColor};`;
             let title = markerClass == "marker" ? marker.properties.title : "";
-            el.innerHTML =
-              "<span style='background-color: " +
-              dropPinColors.filter(
-                (color) => color.id == marker.properties.color
-              )[0].color +
-              ";'><b>" +
-              title +
-              "</b></span>";
+            // el.innerHTML =
+            //   "<span style='background-color: " +
+            //   markerColor +
+            //   ";'><b>" +
+            //   title +
+            //   "</b></span>";
             console.log("el");
             console.log(el);
 
@@ -9579,6 +9580,10 @@ export default {
             // create a HTML element for each feature - Larger Marker
             var el = document.createElement("div");
             el.className = "marker";
+            let markerColor = dropPinColors.filter(
+              (color) => color.id == marker.properties.color
+            )[0].color;
+            el.style = `background-color: ${markerColor};`;
             // console.log(
             //   "<span style='background-color: " +
             //   dropPinColors.filter(
@@ -9590,17 +9595,16 @@ export default {
             // );
             // el.innerHTML =
             //   '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M374.6 310.6l-160 160C208.4 476.9 200.2 480 192 480s-16.38-3.125-22.62-9.375l-160-160c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 370.8V64c0-17.69 14.33-31.1 31.1-31.1S224 46.31 224 64v306.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0S387.1 298.1 374.6 310.6z"/></svg>';
-            el.innerHTML =
-              "<span style='background-color: " +
-              dropPinColors.filter(
-                (color) => color.id == marker.properties.color
-              )[0].color +
-              ";'><b>" +
-              // marker.properties.number +
-              '<svg height="140" width="500"><ellipse cx="200" cy="80" rx="100" ry="50" style="fill:yellow;stroke:purple;stroke-width:2" />Sorry, your browser does not support inline SVG.  </svg>' +
-              "</b></span>";
+            // el.innerHTML =
+            //   "<span style='background-color: " +
+            //   markerColor +
+            //   ";'><b>" +
+            //   // marker.properties.number +
+            //   '<svg height="140" width="500"><ellipse cx="200" cy="80" rx="100" ry="50" style="fill:yellow;stroke:purple;stroke-width:2" />Sorry, your browser does not support inline SVG.  </svg>' +
+            //   "</b></span>";
             let newMarker = new mapboxgl.Marker(el)
               .setLngLat(marker.geometry.coordinates)
+              .setOffset([-6, -6])
               .addTo(map);
             // .setPopup(new mapboxgl.Popup({
             //     offset: 25
