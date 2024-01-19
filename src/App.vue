@@ -8889,17 +8889,17 @@ export default {
               document.getElementsByClassName("marker-small");
             if (map.getZoom() > zoomThreshold) {
               for (let i = 0; i < largeMarkerEls.length; i++) {
-                largeMarkerEls[i].style.display = "block";
-              }
-              for (let i = 0; i < smallMarkerEls.length; i++) {
-                smallMarkerEls[i].style.display = "none";
-              }
-            } else {
-              for (let i = 0; i < largeMarkerEls.length; i++) {
                 largeMarkerEls[i].style.display = "none";
               }
               for (let i = 0; i < smallMarkerEls.length; i++) {
                 smallMarkerEls[i].style.display = "block";
+              }
+            } else {
+              for (let i = 0; i < largeMarkerEls.length; i++) {
+                largeMarkerEls[i].style.display = "block";
+              }
+              for (let i = 0; i < smallMarkerEls.length; i++) {
+                smallMarkerEls[i].style.display = "none";
               }
             }
           });
