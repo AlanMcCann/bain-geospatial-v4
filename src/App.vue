@@ -7525,27 +7525,27 @@ export default {
       // ],
     });
 
-    // const largeMarkerEls = document.getElementsByClassName("marker");
-    // const smallMarkerEls = document.getElementsByClassName("marker-small");
-    // const zoomThreshold = 10;
-    // map.on("zoom", () => {
-    //   console.log("A zoom event occurred.");
-    //   if (map.getZoom() > zoomThreshold) {
-    //     for (let i = 0; i < largeMarkerEls.length; i++) {
-    //       largeMarkerEls[i].style.display = "block";
-    //     }
-    //     for (let i = 0; i < smallMarkerEls.length; i++) {
-    //       smallMarkerEls[i].style.display = "none";
-    //     }
-    //   } else {
-    //     for (let i = 0; i < largeMarkerEls.length; i++) {
-    //       largeMarkerEls[i].style.display = "none";
-    //     }
-    //     for (let i = 0; i < smallMarkerEls.length; i++) {
-    //       smallMarkerEls[i].style.display = "block";
-    //     }
-    //   }
-    // });
+    const largeMarkerEls = document.getElementsByClassName("marker");
+    const smallMarkerEls = document.getElementsByClassName("marker-small");
+    const zoomThreshold = 10;
+    map.on("zoom", () => {
+      console.log("A zoom event occurred.");
+      if (map.getZoom() > zoomThreshold) {
+        for (let i = 0; i < largeMarkerEls.length; i++) {
+          largeMarkerEls[i].style.display = "block";
+        }
+        for (let i = 0; i < smallMarkerEls.length; i++) {
+          smallMarkerEls[i].style.display = "none";
+        }
+      } else {
+        for (let i = 0; i < largeMarkerEls.length; i++) {
+          largeMarkerEls[i].style.display = "none";
+        }
+        for (let i = 0; i < smallMarkerEls.length; i++) {
+          smallMarkerEls[i].style.display = "block";
+        }
+      }
+    });
 
     this.map = map;
     this.map.resize();
@@ -8821,8 +8821,7 @@ export default {
         let dropPinColors = this.dropPinColors;
         // console.log("markers");
         // console.log(this.markerGeoJSON.features);
-        // ["marker", "marker-small"].forEach(function (markerClass) {
-        ["marker"].forEach(function (markerClass) {
+        ["marker", "marker-small"].forEach(function (markerClass) {
           vue.markerGeoJSON.features.forEach(function (marker) {
             index += 1;
             // create a HTML element for each feature
@@ -8888,21 +8887,21 @@ export default {
             const largeMarkerEls = document.getElementsByClassName("marker");
             const smallMarkerEls =
               document.getElementsByClassName("marker-small");
-            // if (map.getZoom() > zoomThreshold) {
-            //   for (let i = 0; i < largeMarkerEls.length; i++) {
-            //     largeMarkerEls[i].style.display = "block";
-            //   }
-            //   for (let i = 0; i < smallMarkerEls.length; i++) {
-            //     smallMarkerEls[i].style.display = "none";
-            //   }
-            // } else {
-            //   for (let i = 0; i < largeMarkerEls.length; i++) {
-            //     largeMarkerEls[i].style.display = "none";
-            //   }
-            //   for (let i = 0; i < smallMarkerEls.length; i++) {
-            //     smallMarkerEls[i].style.display = "block";
-            //   }
-            // }
+            if (map.getZoom() > zoomThreshold) {
+              for (let i = 0; i < largeMarkerEls.length; i++) {
+                largeMarkerEls[i].style.display = "block";
+              }
+              for (let i = 0; i < smallMarkerEls.length; i++) {
+                smallMarkerEls[i].style.display = "none";
+              }
+            } else {
+              for (let i = 0; i < largeMarkerEls.length; i++) {
+                largeMarkerEls[i].style.display = "none";
+              }
+              for (let i = 0; i < smallMarkerEls.length; i++) {
+                smallMarkerEls[i].style.display = "block";
+              }
+            }
           });
         });
 
