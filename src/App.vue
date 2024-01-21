@@ -15,6 +15,9 @@
     <p>intramarketMarketSettingsData {{ intramarketMarketSettingsData }}</p>
 
     -->
+    {{ this.selectedEthnicity }}
+    {{ this.selectedEthnicityOptions }}
+    {{ this.computedSelectedEthnicityOptions }}
 
     <div id="main" class="main_padd">
       <h1
@@ -2227,7 +2230,7 @@ export default {
         "Growth As A % Over Time (Nat Adj)",
       ],
 
-      ethnicityTypes: ["All", "Asian", "Black", "Hispanic", "Other", "White"],
+      ethnicityTypes: ["Asian", "Black", "Hispanic", "Other", "White", "All"],
       ethnicityMapping: {
         all: {
           full: "All",
@@ -2444,7 +2447,10 @@ export default {
         let newOptions = [];
         this.selectedAgeSegmentOptions.forEach((option) => {
           if (option.value === "All") {
-            if (this.selectedIncomeSegment === "All") {
+            if (
+              this.selectedIncomeSegment === "All" &&
+              this.selectedEthnicity === "All"
+            ) {
               let newOption = {
                 text: option.text,
                 value: option.value,
@@ -2494,7 +2500,10 @@ export default {
         let newOptions = [];
         this.selectedIncomeSegmentOptions.forEach((option) => {
           if (option.value === "All") {
-            if (this.selectedAgeSegment === "All") {
+            if (
+              this.selectedAgeSegment === "All" &&
+              this.selectedEthnicity === "All"
+            ) {
               let newOption = {
                 text: option.text,
                 value: option.value,
@@ -2514,16 +2523,27 @@ export default {
       }
     },
     computedSelectedEthnicityOptions() {
-      return ["Asian", "Black", "Hispanic", "Other", "White", "All"];
+      // return ["Asian", "Black", "Hispanic", "Other", "White", "All"];
       if (this.notAllAllTypes.includes(this.selectedDataType)) {
         let newOptions = [];
         this.selectedEthnicityOptions.forEach((option) => {
-          let newOption = {
-            text: option,
-            value: option.toLowerCase(),
-            disabled: false,
-          };
-          newOptions.push(option);
+          if (option.value === "All") {
+            if (
+              this.selectedAgeSegment === "All" &&
+              this.selectedIncomeSegment === "All"
+            ) {
+              let newOption = {
+                text: option.text,
+                value: option.value,
+                disabled: true,
+              };
+              newOptions.push(newOption);
+            } else {
+              newOptions.push(option);
+            }
+          } else {
+            newOptions.push(option);
+          }
         });
         return newOptions;
       } else {
@@ -5029,6 +5049,7 @@ export default {
       );
       console.log(flowDataResponse);
       const flowMapDataBase = await flowDataResponse.json();
+      console.log("flowMapDataBase");
       console.log(flowMapDataBase);
       this.flowMapDataBase = flowMapDataBase;
       if (this.flowSelectedMovementDirection == "net") {
@@ -7118,9 +7139,14 @@ export default {
     this.loading = true;
     this.initialFlowLoading = true;
     this.player = this.$refs.player;
-    this.selectedEthnicityOptions = this.ethnicityTypes;
+    this.selectedEthnicityOptions = optionsListToObjectArray([
+      ...new Set(this.ethnicityTypes.map((item) => item)),
+    ]);
     this.ethnicityMappingOptions = this.ethnicityMapping;
-    this.selectedEthnicity = this.selectedEthnicityOptions[0];
+    this.selectedEthnicity =
+      this.selectedEthnicityOptions[
+        this.selectedEthnicityOptions.length - 1
+      ].value;
     // source: Natural Earth http://www.naturalearthdata.com/ via geojson.xyz
     //  ************* test deckgl
     // const AIR_PORTS =

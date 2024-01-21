@@ -1,0 +1,10 @@
+{
+    "version": 1,
+    "layers": {
+        "districtofcolumbia_labels_v4": {
+            "source": "mapbox://tileset-source/stobieb/districtofcolumbia_labels_src_v4",
+            "minzoom": 0,
+            "maxzoom": 13
+        }
+    }
+}

@@ -970,7 +970,7 @@
     "Connecticut": {
         "CenterLat": 41.6219,
         "CenterLong": -72.7273,
-        "DefaultZoomLevel": "5",
+        "DefaultZoomLevel": "7",
         "GeoTypeGroup": "2 - States",
         "InterMarketMetro": "0",
         "MapboxMarketName": "Connecticut",
@@ -1113,7 +1113,7 @@
     "Delaware": {
         "CenterLat": 38.9896,
         "CenterLong": -75.505,
-        "DefaultZoomLevel": "5",
+        "DefaultZoomLevel": "7",
         "GeoTypeGroup": "2 - States",
         "InterMarketMetro": "0",
         "MapboxMarketName": "Delaware",
@@ -1165,14 +1165,14 @@
         "Market_Display_Name": "Detroit, MI",
         "StateFips": ""
     },
-    "DstrctOfColumbia": {
+    "DistrictOfColumbia": {
         "CenterLat": 38.9101,
         "CenterLong": -77.0147,
-        "DefaultZoomLevel": "5",
+        "DefaultZoomLevel": "10",
         "GeoTypeGroup": "2 - States",
         "InterMarketMetro": "0",
-        "MapboxMarketName": "DstrctOfColumbia",
-        "MarketName": "DstrctOfColumbia",
+        "MapboxMarketName": "DistrictOfColumbia",
+        "MarketName": "DistrictOfColumbia",
         "Market_Display_Name": "District of Columbia",
         "StateFips": ""
     },
@@ -2642,7 +2642,7 @@
     "Maryland": {
         "CenterLat": 39.055,
         "CenterLong": -76.7909,
-        "DefaultZoomLevel": "5",
+        "DefaultZoomLevel": "6",
         "GeoTypeGroup": "2 - States",
         "InterMarketMetro": "0",
         "MapboxMarketName": "Maryland",
@@ -3027,7 +3027,7 @@
     "NewHampshire": {
         "CenterLat": 43.6805,
         "CenterLong": -71.5811,
-        "DefaultZoomLevel": "5",
+        "DefaultZoomLevel": "6",
         "GeoTypeGroup": "2 - States",
         "InterMarketMetro": "0",
         "MapboxMarketName": "NewHampshire",
@@ -3049,7 +3049,7 @@
     "NewJersey": {
         "CenterLat": 40.1907,
         "CenterLong": -74.6728,
-        "DefaultZoomLevel": "5",
+        "DefaultZoomLevel": "6",
         "GeoTypeGroup": "2 - States",
         "InterMarketMetro": "0",
         "MapboxMarketName": "NewJersey",
@@ -3599,7 +3599,7 @@
     "RhodeIsland": {
         "CenterLat": 41.6762,
         "CenterLong": -71.5562,
-        "DefaultZoomLevel": "5",
+        "DefaultZoomLevel": "8",
         "GeoTypeGroup": "2 - States",
         "InterMarketMetro": "0",
         "MapboxMarketName": "RhodeIsland",
