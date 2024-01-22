@@ -12,7 +12,7 @@ module.exports = {
   //   : '/'
   // publicPath: 'https://mtg.bain.com/globalassets/mtg/geospatialtool/v1/'
   // publicPath: 'https://integration.mtg.bain.com/globalassets/mtg/geospatialtool/v1/'
-  publicPath: '/'
+  // publicPath: '/'
   // publicPath: process.env.NODE_ENV === 'production'
   //   ? 'https://integration.mtg.bain.com/globalassets/mtg/geospatialtool/v1/'
   //   : '/'

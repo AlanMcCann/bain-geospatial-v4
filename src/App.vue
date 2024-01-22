@@ -584,15 +584,15 @@
                     </b-form-group>
                   </b-col>
                 </b-row>-->
-                <b-row v-if="showSettings" align-content="between">
-                  <b-col>
+                <b-row v-if="showSettings" class="justify-content-between pl-3">
+                  <div>
                     <b-form-group
                       id="marketTypeSelectorIntra"
                       label-cols="auto"
                       label="Market type"
                       v-slot="{ ariaDescribedby3 }"
                       class="mb-0 mt-2"
-                      style="min-width: 280px"
+                      style="min-width: 340px"
                     >
                       <b-form-radio-group
                         id="marketTypeRadioIntra"
@@ -611,12 +611,12 @@
                       :reduce="(market) => market.code"
                       :clearable="false"
                       :disabled="disableInputs"
-                      class="col-9 pl-0"
-                      style="min-width: 280px"
+                      class="pl-0"
+                      style="min-width: 340px"
                     ></v-select>
                     <!-- </b-form-group> -->
-                  </b-col>
-                  <b-col class="pt-2">
+                  </div>
+                  <div class="pt-2">
                     <b-form-group
                       label="Head of household age"
                       v-slot="{ ariaDescribedby }"
@@ -636,8 +636,8 @@
                       >
                       </b-form-radio-group>
                     </b-form-group>
-                  </b-col>
-                  <b-col class="mt-2 px-0">
+                  </div>
+                  <div class="mt-2 px-0">
                     <b-form-group
                       label="Head of household income"
                       v-slot="{ ariaDescribedby }"
@@ -655,8 +655,8 @@
                       >
                       </b-form-radio-group>
                     </b-form-group>
-                  </b-col>
-                  <b-col class="mt-2 px-0">
+                  </div>
+                  <div class="mt-2 px-0">
                     <b-form-group
                       label="Ethnicity"
                       v-slot="{ ariaDescribedby }"
@@ -674,11 +674,15 @@
                       >
                       </b-form-radio-group>
                     </b-form-group>
-                  </b-col>
+                  </div>
                 </b-row>
-                <b-row align-content="between">
-                  <b-col>
-                    <b-form-group v-if="showSettings" label="Data type">
+                <b-row class="justify-content-between pl-3">
+                  <div>
+                    <b-form-group
+                      v-if="showSettings"
+                      label="Data type"
+                      style="min-width: 340px"
+                    >
                       <v-select
                         v-model="selectedDataType"
                         :options="selectedDataTypeOptions"
@@ -686,17 +690,18 @@
                         :clearable="false"
                         :selectable="(option) => selectableDataType(option)"
                         :disabled="disableInputs"
-                        class="col-9 pl-0"
+                        class="pl-0"
                       ></v-select>
                     </b-form-group>
-                  </b-col>
-                  <b-col>
+                  </div>
+                  <div>
                     <b-form-group
                       v-if="showSettings"
                       id="fieldset_horizontal_data_series"
                       label="Data series"
                       label-for="input_horizontal_data_series"
-                      class="col-8 pl-0"
+                      class="pl-0"
+                      style="min-width: 200px"
                     >
                       <v-select
                         v-model="selectedDataSeries"
@@ -705,10 +710,10 @@
                         :disabled="disableInputs"
                       ></v-select>
                     </b-form-group>
-                  </b-col>
+                  </div>
 
                   <!-- <b-col cols="12" class="float-right"> -->
-                  <b-col class="mt-4 pt-1 pr-0">
+                  <div class="mt-4 pt-1 pr-0">
                     <div v-if="showSettings">
                       <p
                         class="help-link text-right"
@@ -863,7 +868,7 @@
                         >
                       </div>
                     </div>
-                  </b-col>
+                  </div>
                 </b-row>
               </div>
             </div>
