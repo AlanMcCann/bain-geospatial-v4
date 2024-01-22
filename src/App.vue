@@ -15,9 +15,6 @@
     <p>intramarketMarketSettingsData {{ intramarketMarketSettingsData }}</p>
 
     -->
-    {{ this.selectedEthnicity }}
-    {{ this.selectedEthnicityOptions }}
-    {{ this.computedSelectedEthnicityOptions }}
 
     <div id="main" class="main_padd">
       <h1
@@ -587,21 +584,22 @@
                     </b-form-group>
                   </b-col>
                 </b-row>-->
-                <b-row v-if="showSettings">
-                  <b-col cols="3">
+                <b-row v-if="showSettings" align-content="between">
+                  <b-col>
                     <b-form-group
                       id="marketTypeSelectorIntra"
                       label-cols="auto"
                       label="Market type"
                       v-slot="{ ariaDescribedby3 }"
                       class="mb-0 mt-2"
+                      style="min-width: 280px"
                     >
                       <b-form-radio-group
                         id="marketTypeRadioIntra"
                         v-model="selectedMarketType"
                         :options="selectedMarketTypeOptions"
                         :aria-describedby="ariaDescribedby3"
-                        :disabled="false"
+                        :disabled="true"
                         name="radio-options-2"
                       >
                       </b-form-radio-group>
@@ -614,10 +612,11 @@
                       :clearable="false"
                       :disabled="disableInputs"
                       class="col-9 pl-0"
+                      style="min-width: 280px"
                     ></v-select>
                     <!-- </b-form-group> -->
                   </b-col>
-                  <b-col cols="3" class="pt-2">
+                  <b-col class="pt-2">
                     <b-form-group
                       label="Head of household age"
                       v-slot="{ ariaDescribedby }"
@@ -638,7 +637,7 @@
                       </b-form-radio-group>
                     </b-form-group>
                   </b-col>
-                  <b-col cols="3" class="mt-2 px-0">
+                  <b-col class="mt-2 px-0">
                     <b-form-group
                       label="Head of household income"
                       v-slot="{ ariaDescribedby }"
@@ -657,7 +656,7 @@
                       </b-form-radio-group>
                     </b-form-group>
                   </b-col>
-                  <b-col cols="3" class="mt-2 px-0">
+                  <b-col class="mt-2 px-0">
                     <b-form-group
                       label="Ethnicity"
                       v-slot="{ ariaDescribedby }"
@@ -677,8 +676,8 @@
                     </b-form-group>
                   </b-col>
                 </b-row>
-                <b-row>
-                  <b-col cols="5">
+                <b-row align-content="between">
+                  <b-col>
                     <b-form-group v-if="showSettings" label="Data type">
                       <v-select
                         v-model="selectedDataType"
@@ -691,7 +690,7 @@
                       ></v-select>
                     </b-form-group>
                   </b-col>
-                  <b-col cols="3">
+                  <b-col>
                     <b-form-group
                       v-if="showSettings"
                       id="fieldset_horizontal_data_series"
