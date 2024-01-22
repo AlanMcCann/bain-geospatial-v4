@@ -584,7 +584,10 @@
                     </b-form-group>
                   </b-col>
                 </b-row>-->
-                <b-row v-if="showSettings" class="justify-content-between pl-3">
+                <div
+                  v-if="showSettings"
+                  class="d-flex justify-content-between pl-3"
+                >
                   <div>
                     <b-form-group
                       id="marketTypeSelectorIntra"
@@ -599,7 +602,7 @@
                         v-model="selectedMarketType"
                         :options="selectedMarketTypeOptions"
                         :aria-describedby="ariaDescribedby3"
-                        :disabled="true"
+                        :disabled="false"
                         name="radio-options-2"
                       >
                       </b-form-radio-group>
@@ -675,8 +678,8 @@
                       </b-form-radio-group>
                     </b-form-group>
                   </div>
-                </b-row>
-                <b-row class="justify-content-between pl-3">
+                </div>
+                <div class="d-flex justify-content-between pl-3">
                   <div>
                     <b-form-group
                       v-if="showSettings"
@@ -869,7 +872,7 @@
                       </div>
                     </div>
                   </div>
-                </b-row>
+                </div>
               </div>
             </div>
             <!-- </b-collapse> -->
