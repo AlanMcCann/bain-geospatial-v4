@@ -38,12 +38,12 @@ published_data_base_path = f"/Users/alanmccann/Dropbox/bain/mtsds-data/v{MAP_VER
 # source_data_base_path = (
 #     "/Users/alanmccann/Dropbox/bain/bain-uploads/US_Geospatial_Jan10_Run2 Brian Stobie"
 # )
-# source_data_base_path = (
-#     "/Users/alanmccann/Dropbox/bain/bain-uploads/US_Geospatial_Jan17_Run1 Brian Stobie"
-# )
 source_data_base_path = (
-    "/Users/alanmccann/Dropbox/bain/bain-uploads/US_Geospatial_Jan21_Run1 Brian Stobie"
+    "/Users/alanmccann/Dropbox/bain/bain-uploads/US_Geospatial_Jan17_Run1 Brian Stobie"
 )
+# source_data_base_path = (
+#     "/Users/alanmccann/Dropbox/bain/bain-uploads/US_Geospatial_Jan21_Run1 Brian Stobie"
+# )
 
 published_data_base_path = f"/Users/alanmccann/Dropbox/bain/mtsds-data/v{MAP_VERSION}"
 csv_file_path = f"{source_data_base_path}/Market_Mapping_Settings_v{MAP_VERSION}.csv"
@@ -517,10 +517,10 @@ def create_jobs():
             count += 1
             # Create labels
             market_file_prefix = market_data["MarketName"].lower()
-            if market_file_prefix in [
-                "nebraska",
-                # "knoxvilletn",
-                # "washingtondc",
+            if market_file_prefix not in [
+                "dallasfortworthtx",
+                "knoxvilletn",
+                "washingtondc",
             ]:
                 # label_job = create_label_job(
                 #     count, market_count, market_file_prefix, published_data_base_path

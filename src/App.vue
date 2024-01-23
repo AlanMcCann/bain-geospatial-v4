@@ -896,7 +896,9 @@
                       v-show="showMapTitle"
                       id="attributionLogo"
                       class="attribution-logo"
-                      src="./assets/bain-attribution-small.svg"
+                      width="290px"
+                      height="45px"
+                      src="./assets/bain-macro-strategy-platform-logo.png"
                     />
 
                     <div id="mapContainer" :class="fullscreen"></div>
@@ -1258,7 +1260,7 @@
                       v-show="showFlowMapTitle"
                       id="flowAttributionLogo"
                       class="attribution-logo"
-                      src="./assets/bain-attribution-small.svg"
+                      src="./assets/bain-macro-strategy-platform-logo.png"
                     />
                     <div
                       id="flowmap"
