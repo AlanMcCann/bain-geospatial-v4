@@ -15,6 +15,11 @@
     <p>intramarketMarketSettingsData {{ intramarketMarketSettingsData }}</p>
 
     -->
+    {{ selectedMarket}}
+    {{ selectedFeatures}}
+    {{ this.intramarketMarketSettingsDataV4[this.selectedMarket] }}
+    {{ Array.from(mapSourceGeoidSet).slice(0, 100) }}
+    {{ selectedMarketDataTilesetLayer }}
 
     <div id="main" class="main_padd">
       <h1
@@ -1264,6 +1269,7 @@
                     />
                     <div
                       id="flowmap"
+                      style="min-height: 100px;"
                       :class="{ isFullScreen: flowFullScreen }"
                     ></div>
                     <div id="deckglmap"></div>
@@ -2126,7 +2132,7 @@ export default {
       selectedAgeSegmentOptions: [],
       selectedIncomeSegment: null,
       selectedIncomeSegmentOptions: [],
-      selectedEthnicity: null,
+      selectedEthnicity: "",
       selectedEthnicityOptions: [],
       ethnicityMappingOptions: [],
       selectedDataType: "1:Household Count",
@@ -2348,8 +2354,8 @@ export default {
       accessToken:
         "pk.eyJ1Ijoic3RvYmllYiIsImEiOiJja3c1dXlsaGk1bWlhMzJtb3hocjRocmJlIn0.Mlt1qagPsq8sTZowESi47A",
       // TODO: Fix for Mexico
-      // selectedMarket: "DallasFortWorthTX",
-      selectedMarket: "Texas", //Object.keys(marketSettingsData)[0],
+      selectedMarket: "Texas",
+      // selectedMarket: "Texas", //Object.keys(marketSettingsData)[0],
       // selectedMarket: "Mexico", //Object.keys(marketSettingsData)[0],
       selectedSummaryMarket: "DallasFortWorthTX",
       selectedComparisonMarkets: ["DallasFortWorthTX"],
@@ -2402,6 +2408,9 @@ export default {
       mapSourceData: {},
       mapSourceTotalData: {},
       mapLabelSourceData: {},
+      mapSourceGeoidSet: new Set(),
+      mapSourceTotalGeoidSet: new Set(),
+
       map: null,
       showMapTitle: false,
       navigationControl: null,
@@ -2420,6 +2429,63 @@ export default {
     };
   },
   computed: {
+    // const mapDataPromise = fetch(
+    //     `${
+    //       this.base_asset_url
+    //     }/${this.selectedMarket.toLowerCase()}_${ethnicityName}_${this.dataTypeSlugMappingV4[
+    //       this.selectedDataType
+    //     ].toLowerCase()}_data_v${this.mapVersion}.json`
+    //   );
+    //   const sourceDataPromise = mapDataPromise.then((response) => {
+    //     console.log(response);
+    //     console.log("loaded map source data");
+    //     // const mapData =  response.json();
+    //     return response.json();
+    //   });
+    //   sourceDataPromise.then((mapSourceData) => {
+    //     console.log("promised resolved");
+    //     this.mapSourceData = mapSourceData;
+    //     console.log("loaded mapSourceData");
+    //     console.log(this.mapSourceData);
+    //     this.updateSelectedSegments();
+    //     this.updateGeoidData(this.mapSourceData);
+    //   });
+    //   const mapTotalDataPromise = fetch(
+    //     `${
+    //       this.base_asset_url
+    //     }/${this.selectedMarket.toLowerCase()}_${ethnicityName}_${this.dataTypeSlugMappingV4[
+    //       this.selectedTotalDataType
+    //     ].toLowerCase()}_data_v${this.mapVersion}.json`
+    //   );
+    ethnicityName() {
+      if (!this.selectedEthnicity) {
+        return "all";
+      }
+      return this.ethnicityMappingOptions[this.selectedEthnicity.toLowerCase()]
+        .output_suffix;
+    },
+
+    mapSourceDataFilename() {
+      // if (this.ethnici)
+      // let ethnicityName =
+      //   this.ethnicityMappingOptions[this.selectedEthnicity.toLowerCase()]
+      //     .output_suffix;
+      return `${this.base_asset_url}/${this.selectedMarket.toLowerCase()}_${
+        this.ethnicityName
+      }_${this.dataTypeSlugMappingV4[
+        this.selectedDataType
+      ].toLowerCase()}_data_v${this.mapVersion}.json`;
+    },
+    mapSourceTotalDataFilename() {
+      // let ethnicityName =
+      //   this.ethnicityMappingOptions[this.selectedEthnicity.toLowerCase()]
+      //     .output_suffix;
+      return `${this.base_asset_url}/${this.selectedMarket.toLowerCase()}_${
+        this.ethnicityName
+      }_${this.dataTypeSlugMappingV4[
+        this.selectedTotalDataType
+      ].toLowerCase()}_data_v${this.mapVersion}.json`;
+    },
     videos() {
       return this.videoOptions.videos;
     },
@@ -2947,6 +3013,11 @@ export default {
       //   { rank: 2, market: "New York", percent: 0.4 },
       // ];
     },
+    useBaseState() {
+      let marketSettings =
+        this.intramarketMarketSettingsDataV4[this.selectedMarket];
+      return marketSettings["MultipleStates"] == "1" ? false : true;
+    },
 
     selectedMarketDataTilesetLayer() {
       console.log("selectedMarketDataTilesetLayer");
@@ -2961,6 +3032,13 @@ export default {
       console.log(this.selectedDataType);
       console.log("this.dataTypeSlugMappingV4");
       console.log(this.dataTypeSlugMappingV4);
+      let marketName =
+        marketSettings["MultipleStates"] == "1"
+          ? marketSettings["MapboxMarketName"]
+          : marketSettings["BaseState"];
+      marketName = marketName.toLowerCase();
+      console.log("marketName");
+      console.log(marketName);
       let dataTypeName =
         this.dataTypeSlugMappingV4[this.selectedDataType].toLowerCase();
       console.log("dataTypeName", dataTypeName);
@@ -2968,9 +3046,7 @@ export default {
         this.ethnicityMappingOptions[this.selectedEthnicity.toLowerCase()]
           .output_suffix;
       console.log("ethnicityName", ethnicityName);
-      return `${marketSettings[
-        "MarketName"
-      ].toLowerCase()}_${ethnicityName}_${dataTypeName}_v${this.mapVersion}`;
+      return `${marketName.toLowerCase()}_${ethnicityName}_${dataTypeName}_v${this.mapVersion}`;
     },
     selectedMarketDataTilesetURL() {
       console.log(
@@ -3871,6 +3947,31 @@ export default {
     },
   },
   methods: {
+    updateGeoidData(mapSourceData) {
+      if (!this.mapSourceData) {
+        this.mapSourceGeoidSet = new Set([]);
+        
+      }
+      // return this.mapSourceData;
+      const geoids = this.mapSourceData.map((item) => {
+        return item[this.geoJsonGeoProperty];
+      });
+      this.mapSourceGeoidSet = new Set(geoids);
+      
+    },
+    updateGeoidTotalData(mapSourceTotalData) {
+      if (!this.mapSourceTotalData) {
+        this.mapSourceTotalGeoidSet = new Set([]);
+        // this.mapSourceTotalGeoidString = "";
+      }
+      // return this.mapSourceData;
+      const geoids = this.mapSourceTotalData.map((item) => {
+        return item[this.geoJsonGeoProperty];
+      });
+      this.mapSourceTotalGeoidSet = new Set(geoids);
+      // this.mapSourceTotalGeoidString = Array.from(this.mapSourceTotalGeoidSet).join(",");
+    },
+
     selectableDataType(dataType) {
       console.log("checking selectableDataType");
       console.log(dataType);
@@ -4067,13 +4168,9 @@ export default {
           this.selectedDataType
         ].toLowerCase()}_data_v${this.mapVersion}.json`
       );
-      const mapDataPromise = fetch(
-        `${
-          this.base_asset_url
-        }/${this.selectedMarket.toLowerCase()}_${ethnicityName}_${this.dataTypeSlugMappingV4[
-          this.selectedDataType
-        ].toLowerCase()}_data_v${this.mapVersion}.json`
-      );
+      console.log("fetch 4171", this.mapSourceDataFilename)
+      const mapDataPromise = fetch(this.mapSourceDataFilename);
+
       const sourceDataPromise = mapDataPromise.then((response) => {
         console.log(response);
         console.log("loaded map source data");
@@ -4083,15 +4180,13 @@ export default {
       sourceDataPromise.then((mapSourceData) => {
         console.log("promised resolved");
         this.mapSourceData = mapSourceData;
+        console.log("loaded mapSourceData");
+        console.log(this.mapSourceData);
         this.updateSelectedSegments();
+        this.updateGeoidData(this.mapSourceData);
       });
-      const mapTotalDataPromise = fetch(
-        `${
-          this.base_asset_url
-        }/${this.selectedMarket.toLowerCase()}_${ethnicityName}_${this.dataTypeSlugMappingV4[
-          this.selectedTotalDataType
-        ].toLowerCase()}_data_v${this.mapVersion}.json`
-      );
+      console.log("fetch 4188", this.mapSourceTotalDataFilename)
+      const mapTotalDataPromise = fetch(this.mapSourceTotalDataFilename);
 
       const sourceTotalDataPromise = mapTotalDataPromise.then((response) => {
         // console.log(response);
@@ -4104,6 +4199,7 @@ export default {
         this.mapSourceTotalData = mapSourceTotalData;
         console.log("loaded mapSourceSourceTotalData");
         console.log(this.mapSourceTotalData);
+        this.updateGeoidTotalData(this.mapSourceTotalData);
       });
     },
 
@@ -4178,6 +4274,7 @@ export default {
           this.dataTypeNameMapping[this.selectedDataType]
         );
         console.log("line 4025");
+        console.log("current market", this.selectedMarket);
         let dataTypeName =
           this.dataTypeSlugMappingV4[this.selectedDataType].toLowerCase();
         let uri = `${
@@ -4186,6 +4283,7 @@ export default {
           this.mapVersion
         }.json`;
         console.log("uri", uri);
+        console.log("fetch 4286", uri)
         const settingsDataResponse = await fetch(uri);
         const mapSettingsData = await settingsDataResponse.json();
         console.log("line 4094");
@@ -4193,6 +4291,7 @@ export default {
         this.mapSettingsData = await mapSettingsData;
 
         console.log("line 4113");
+        console.log("current market", this.selectedMarket);
         let totalDataTypeName =
           this.dataTypeSlugMappingV4[this.selectedTotalDataType].toLowerCase();
         let totalUri = `${
@@ -4201,19 +4300,14 @@ export default {
           this.mapVersion
         }.json`;
         console.log("totalUri", totalUri);
+        console.log("fetch 4303", totalUri)
         const totalSettingsDataResponse = await fetch(totalUri);
         const totalMapSettingsData = await totalSettingsDataResponse.json();
         console.log("line 4094");
         console.log(uri);
         this.totalMapSettingsData = await totalMapSettingsData;
-
-        const mapTotalDataPromise = fetch(
-          `${
-            this.base_asset_url
-          }/${this.selectedMarket.toLowerCase()}_${ethnicityName}_${this.dataTypeSlugMappingV4[
-            this.selectedTotalDataType
-          ].toLowerCase()}_data_v${this.mapVersion}.json`
-        );
+        console.log("fetch 4309", this.mapSourceTotalDataFilename)
+        const mapTotalDataPromise = fetch(this.mapSourceTotalDataFilename);
 
         const sourceTotalDataPromise = mapTotalDataPromise.then((response) => {
           // console.log(response);
@@ -4403,6 +4497,7 @@ export default {
           console.log(this.segmentSettings);
           console.log("this.segmentSettings.SeriesShortUnique");
           console.log(this.segmentSettings.SeriesShortUnique);
+          console.log(this.selectedMarketDataTilesetLayer);
           this.map.addLayer(
             {
               id: this.segmentSettings.SeriesShortUnique,
@@ -4427,6 +4522,7 @@ export default {
                 "fill-opacity": this.opacity / 100,
                 "fill-outline-color": "#000000",
               },
+              filter: ["in", this.geoJsonGeoProperty, ...Array.from(this.mapSourceGeoidSet)],
             },
             firstSymbolId
           );
@@ -4458,6 +4554,7 @@ export default {
           let geoLayerVisibility =
             this.geoLabelVisibility == "On" ? "visible" : "none";
           // console.log(geoLayerVisibility);
+          console.log(this.selectedMarketDataTilesetLayer);
           this.map.addLayer({
             id: "geoLabels",
             type: "symbol",
@@ -4471,6 +4568,7 @@ export default {
               "text-offset": [-1, -1.25],
               "text-anchor": "top",
             },
+            filter: ["in", this.geoJsonGeoProperty, ...Array.from(this.mapSourceGeoidSet)],
           });
           // this.map.addLayer({
           //     'id': 'points',
@@ -4589,7 +4687,8 @@ export default {
           },
           ["in", geoJsonGeoProperty]
         );
-        // console.log(filter);
+        console.log('filtered filter updateSelectedSegments')
+        console.log(filter);
         this.map.setFilter(
           `${this.segmentSettings.SeriesShortUnique}-filtered`,
           filter
@@ -4777,6 +4876,8 @@ export default {
         },
         ["in", geoJsonGeoProperty]
       );
+      console.log("filtered filter showDataInRangeModal");
+      console.log(filter);
       this.map.setFilter(
         `${this.segmentSettings.SeriesShortUnique}-filtered`,
         filter
@@ -5116,7 +5217,7 @@ export default {
       // );
       let geo = this.country == "mexico" ? "geo" : this.selectedGeoUnits;
       console.log("line 4413");
-      console.log("market", this.selectedMarket);
+      console.log("current market", this.selectedMarket);
       // let settingsDataFilename = `${
       //   this.base_asset_url
       // }/${this.selectedMarket.toLowerCase()}_${geo}_settings_data_v${
@@ -5139,6 +5240,7 @@ export default {
         this.mapVersion
       }.json`;
       console.log(settingsDataFilename);
+      console.log("fetch 5243", settingsDataFilename)
       const settingsDataResponse = await fetch(settingsDataFilename);
       const mapSettingsData = await settingsDataResponse.json();
       this.mapSettingsData = mapSettingsData;
@@ -5346,6 +5448,7 @@ export default {
       console.log("line 4613");
       console.log("market", this.selectedMarket);
       console.log("geo", this.selectedGeoUnits);
+      console.log("current market", this.selectedMarket);
       // FIX NOW TODO
       let ethnicityName =
         this.ethnicityMappingOptions[this.selectedEthnicity.toLowerCase()]
@@ -5358,6 +5461,7 @@ export default {
         this.mapVersion
       }.json`;
       console.log(settingsDataFilename);
+      console.log("5464 4188", settingsDataFilename)
       const settingsDataResponse = await fetch(settingsDataFilename);
       const mapSettingsData = await settingsDataResponse.json();
       this.mapSettingsData = mapSettingsData;
@@ -5518,10 +5622,12 @@ export default {
       console.log("line 4760");
       console.log("market", this.selectedMarket);
       // FIX NOW TODO
-      fetch(
-        `${this.base_asset_url}/${this.selectedMarket.toLowerCase()}_${
+      let filename =         `${this.base_asset_url}/${this.selectedMarket.toLowerCase()}_${
           this.selectedGeoUnits
         }_settings_data_v${this.mapVersion}.json`
+      console.log("fetch 5268",filename)
+      fetch(
+        filename
       )
         .then(async (response) => {
           const data = await response.json();
@@ -7313,117 +7419,117 @@ export default {
     let DEFAULT_ZOOM_OUT = 0.4;
 
     // TODO - uncomment after mexico is working
-    this.flowMap = new mapboxgl.Map({
-      container: "flowmap",
-      preserveDrawingBuffer: true,
-      accessToken: this.accessToken,
-      style: "mapbox://styles/stobieb/cl03cgll7000114p6t44bqa0d",
-      // Note: deck.gl will be in charge of interaction and event handling
-      interactive: true,
-      center: [INITIAL_VIEW_STATE.longitude, INITIAL_VIEW_STATE.latitude],
-      zoom: INITIAL_VIEW_STATE.zoom - DEFAULT_ZOOM_OUT,
-      bearing: INITIAL_VIEW_STATE.bearing,
-      pitch: INITIAL_VIEW_STATE.pitch,
-    });
-    console.log("this.INITIAL_VIEW_STATE");
-    console.log(this.INITIAL_VIEW_STATE);
-    let flowData = this.intermarketData;
-    this.flowmapDeckOverlay = new DeckOverlay({
-      initialViewState: INITIAL_VIEW_STATE,
-      glOptions: {
-        preserveDrawingBuffer: true,
-      },
-      getTooltip: ({ object }) =>
-        object && {
-          // html: `<h2>${object.name}</h2><div>${object.message}</div>`,
-          html: tooltipHtml(object),
-          style: {
-            backgroundColor: "#fff",
-            fontSize: "12px",
-            color: "black",
-          },
-        },
-      width: "100%",
-      height: "100%",
-      layers: [
-        new FlowmapLayer({
-          id: "my-flowmap-layer",
-          flowData,
-          pickable: true,
-          visible: vue.flowMapLayerVisible,
-          opacity: vue.flowMapConfig.opacity,
-          darkMode: vue.flowMapConfig.darkMode,
-          colorScheme: vue.flowMapConfig.colorScheme,
-          fadeAmount: vue.flowMapConfig.fadeAmount,
-          fadeEnabled: vue.flowMapConfig.fadeEnabled,
-          fadeOpacityEnabled: vue.flowMapConfig.fadeOpacityEnabled,
-          locationTotalsEnabled: vue.flowMapConfig.locationTotalsEnabled,
-          animationEnabled: vue.flowMapConfig.animationEnabled,
-          clusteringEnabled: vue.flowMapConfig.clusteringEnabled,
-          clusteringAuto: vue.flowMapConfig.clusteringAuto,
-          clusteringLevel: vue.flowMapConfig.clusteringLevel,
-          adaptiveScalesEnabled: vue.flowMapConfig.adaptiveScalesEnabled,
-          highlightColor: vue.flowMapConfig.highlightColor,
-          getLocationId: (loc) => loc.id,
-          getLocationLat: (loc) => loc.lat,
-          getLocationLon: (loc) => loc.lon,
-          getFlowOriginId: (flow) => flow.origin,
-          getFlowDestId: (flow) => flow.dest,
-          getFlowMagnitude: (flow) => flow.count,
-          getLocationName: (loc) => loc.name,
+    // this.flowMap = new mapboxgl.Map({
+    //   container: "flowmap",
+    //   preserveDrawingBuffer: true,
+    //   accessToken: this.accessToken,
+    //   style: "mapbox://styles/stobieb/cl03cgll7000114p6t44bqa0d",
+    //   // Note: deck.gl will be in charge of interaction and event handling
+    //   interactive: true,
+    //   center: [INITIAL_VIEW_STATE.longitude, INITIAL_VIEW_STATE.latitude],
+    //   zoom: INITIAL_VIEW_STATE.zoom - DEFAULT_ZOOM_OUT,
+    //   bearing: INITIAL_VIEW_STATE.bearing,
+    //   pitch: INITIAL_VIEW_STATE.pitch,
+    // });
+    // console.log("this.INITIAL_VIEW_STATE");
+    // console.log(this.INITIAL_VIEW_STATE);
+    // let flowData = this.intermarketData;
+    // this.flowmapDeckOverlay = new DeckOverlay({
+    //   initialViewState: INITIAL_VIEW_STATE,
+    //   glOptions: {
+    //     preserveDrawingBuffer: true,
+    //   },
+    //   getTooltip: ({ object }) =>
+    //     object && {
+    //       // html: `<h2>${object.name}</h2><div>${object.message}</div>`,
+    //       html: tooltipHtml(object),
+    //       style: {
+    //         backgroundColor: "#fff",
+    //         fontSize: "12px",
+    //         color: "black",
+    //       },
+    //     },
+    //   width: "100%",
+    //   height: "100%",
+    //   layers: [
+    //     new FlowmapLayer({
+    //       id: "my-flowmap-layer",
+    //       flowData,
+    //       pickable: true,
+    //       visible: vue.flowMapLayerVisible,
+    //       opacity: vue.flowMapConfig.opacity,
+    //       darkMode: vue.flowMapConfig.darkMode,
+    //       colorScheme: vue.flowMapConfig.colorScheme,
+    //       fadeAmount: vue.flowMapConfig.fadeAmount,
+    //       fadeEnabled: vue.flowMapConfig.fadeEnabled,
+    //       fadeOpacityEnabled: vue.flowMapConfig.fadeOpacityEnabled,
+    //       locationTotalsEnabled: vue.flowMapConfig.locationTotalsEnabled,
+    //       animationEnabled: vue.flowMapConfig.animationEnabled,
+    //       clusteringEnabled: vue.flowMapConfig.clusteringEnabled,
+    //       clusteringAuto: vue.flowMapConfig.clusteringAuto,
+    //       clusteringLevel: vue.flowMapConfig.clusteringLevel,
+    //       adaptiveScalesEnabled: vue.flowMapConfig.adaptiveScalesEnabled,
+    //       highlightColor: vue.flowMapConfig.highlightColor,
+    //       getLocationId: (loc) => loc.id,
+    //       getLocationLat: (loc) => loc.lat,
+    //       getLocationLon: (loc) => loc.lon,
+    //       getFlowOriginId: (flow) => flow.origin,
+    //       getFlowDestId: (flow) => flow.dest,
+    //       getFlowMagnitude: (flow) => flow.count,
+    //       getLocationName: (loc) => loc.name,
 
-          // onHover: (info) => setTooltip(getTooltipState(info)),
-          onHover: (info) => console.log(info),
-          // onClick: (info) => console.log('clicked', info.type, info.object),
-          // onClick: (info) =>
-          //   alert(`clicked: ${info.type}  ${JSON.stringify(info.object)}`),
-        }),
-      ],
-    });
+    //       // onHover: (info) => setTooltip(getTooltipState(info)),
+    //       onHover: (info) => console.log(info),
+    //       // onClick: (info) => console.log('clicked', info.type, info.object),
+    //       // onClick: (info) =>
+    //       //   alert(`clicked: ${info.type}  ${JSON.stringify(info.object)}`),
+    //     }),
+    //   ],
+    // });
 
-    this.flowMap.addControl(this.flowmapDeckOverlay);
-    // flowmap.addControl(new mapboxgl.NavigationControl());
+    // this.flowMap.addControl(this.flowmapDeckOverlay);
+    // // flowmap.addControl(new mapboxgl.NavigationControl());
 
-    this.flowmapScaleControl = new mapboxgl.ScaleControl({
-      maxWidth: 400,
-      unit: "imperial",
-    });
-    this.flowMap.addControl(this.flowmapScaleControl);
-    this.flowmapNavigationControl = new mapboxgl.NavigationControl();
-    this.addFlowHomeButton(this.flowMap, this);
-    let flowmapNavigationPosition = this.isFullscreen
-      ? "bottom-right"
-      : "top-right";
-    this.flowMap.addControl(this.flowmapNavigationControl, "bottom-left");
+    // this.flowmapScaleControl = new mapboxgl.ScaleControl({
+    //   maxWidth: 400,
+    //   unit: "imperial",
+    // });
+    // this.flowMap.addControl(this.flowmapScaleControl);
+    // this.flowmapNavigationControl = new mapboxgl.NavigationControl();
+    // this.addFlowHomeButton(this.flowMap, this);
+    // let flowmapNavigationPosition = this.isFullscreen
+    //   ? "bottom-right"
+    //   : "top-right";
+    // this.flowMap.addControl(this.flowmapNavigationControl, "bottom-left");
 
-    // ************* end test flowmap
-    this.flowMap.on("resize", () => {
-      console.log("A resize event occurred.");
-      this.flowLoading = true;
-      vue.updateDeck(false);
-      // this.flowMap.removeControl(this.flowmapDeckOverlay);
-      // this.updateFlowData();
-      // this.flowMap.addControl(this.flowmapDeckOverlay);
+    // // ************* end test flowmap
+    // this.flowMap.on("resize", () => {
+    //   console.log("A resize event occurred.");
+    //   this.flowLoading = true;
+    //   vue.updateDeck(false);
+    //   // this.flowMap.removeControl(this.flowmapDeckOverlay);
+    //   // this.updateFlowData();
+    //   // this.flowMap.addControl(this.flowmapDeckOverlay);
 
-      // let direction = vue.flowSelectedMovementDirection;
-      // vue.flowSelectedMovementDirection = direction == "in" ? "out" : "in";
-      setTimeout(() => {
-        // vue.updateDeck();
-        // this.updateFlowData();
-        // this.flowMap.addControl(this.flowmapDeckOverlay);
-        console.log("updating deck from map resize");
-        this.flowOpacity = 99;
-        this.updateFlowData();
-        // if (vue.flowFirstTime) {
-        //   vue.flowSelectedMovementDirection = "out";
-        //   vue.flowFirstTime = false;
-        // }
-        vue.flowLoading = false;
-        vue.initialFlowLoading = false;
-        vue.updateDeck();
-      }, 1000);
-    });
-    this.updateDeck(false);
+    //   // let direction = vue.flowSelectedMovementDirection;
+    //   // vue.flowSelectedMovementDirection = direction == "in" ? "out" : "in";
+    //   setTimeout(() => {
+    //     // vue.updateDeck();
+    //     // this.updateFlowData();
+    //     // this.flowMap.addControl(this.flowmapDeckOverlay);
+    //     console.log("updating deck from map resize");
+    //     this.flowOpacity = 99;
+    //     this.updateFlowData();
+    //     // if (vue.flowFirstTime) {
+    //     //   vue.flowSelectedMovementDirection = "out";
+    //     //   vue.flowFirstTime = false;
+    //     // }
+    //     vue.flowLoading = false;
+    //     vue.initialFlowLoading = false;
+    //     vue.updateDeck();
+    //   }, 1000);
+    // });
+    // this.updateDeck(false);
     this.$root.$on("bv::modal::show", (bvEvent, modalId) => {
       // console.log('Modal is about to be shown', bvEvent, modalId)
       if (modalId == "modal-drop-location") {
@@ -7824,6 +7930,8 @@ export default {
           },
           ["in", geoJsonGeoProperty]
         );
+        console.log("filter mounted finish");
+        console.log(filter);
         map.setFilter(
           `${vue.segmentSettings.SeriesShortUnique}-filtered`,
           filter
@@ -7971,6 +8079,8 @@ export default {
           console.log(vue.segmentSettings);
           console.log("this.segmentSettings.SeriesShortUnique");
           console.log(vue.segmentSettings.SeriesShortUnique);
+          console.log("vue.selectedMarketDataTilesetLayer");
+          console.log(vue.selectedMarketLabelTilesetLayer);
           map.addLayer(
             {
               id: vue.segmentSettings.SeriesShortUnique,
@@ -7996,6 +8106,7 @@ export default {
                 "fill-opacity": vue.opacity / 100,
                 "fill-outline-color": "#000000",
               },
+              filter: ["in", vue.geoJsonGeoProperty, ...Array.from(vue.mapSourceGeoidSet)],
             },
             firstSymbolId
           );
@@ -8052,6 +8163,7 @@ export default {
               "text-offset": [-1, -1.25],
               "text-anchor": "top",
             },
+            filter: ["in", vue.geoJsonGeoProperty, ...Array.from(vue.mapSourceGeoidSet)],
           });
           // Add a symbol layer
           // map.addLayer({
@@ -8176,8 +8288,8 @@ export default {
       if (this.country == "us") {
         this.intramarketMarketSettingsData = this.usMarketSettingsData;
         this.pointData = [];
-        this.selectedMarket = "DallasFortWrthTX";
-        this.selectedMarketType = "dma";
+        this.selectedMarket = "Texas";
+        this.selectedMarketType = "state";
         this.selectedGeoUnits = "bg";
       }
       if (this.country == "mexico") {
@@ -9123,6 +9235,7 @@ export default {
           console.log(this.segmentSettings);
           console.log("this.segmentSettings.SeriesShortUnique");
           console.log(this.segmentSettings.SeriesShortUnique);
+          console.log(this.selectedMarketDataTilesetLayer);
           this.map.addLayer(
             {
               id: this.segmentSettings.SeriesShortUnique,
@@ -9155,11 +9268,12 @@ export default {
                 "fill-outline-color": "#000000",
                 "fill-opacity": this.opacity / 100,
               },
+              filter: ["in", this.geoJsonGeoProperty, ...Array.from(this.mapSourceGeoidSet)],
             },
             firstSymbolId
           );
           // console.log("this.segmentSettings.mapbox_segment");
-          // console.log(this.segmentSettings.mapbox_segment);
+          console.log(this.selectedMarketDataTilesetLayer);
           this.map.addLayer(
             {
               id: `${this.segmentSettings.SeriesShortUnique}-filtered`,
@@ -9188,6 +9302,7 @@ export default {
           // console.log(geoLayerVisibility);
           // console.log("this.segmentSettings.mapbox_segment");
           // console.log(this.segmentSettings.mapbox_segment);
+          console.log(this.selectedMarketDataTilesetLayer);
           this.map.addLayer({
             id: "geoLabels",
             type: "symbol",
@@ -9259,14 +9374,16 @@ export default {
       let ethnicityName =
         this.ethnicityMappingOptions[this.selectedEthnicity.toLowerCase()]
           .output_suffix;
-
-      const mapDataResponse = await fetch(
-        // `${this.base_asset_url}/${this.selectedMarket}_${this.selectedGeoUnits}_data.json`
-        `${
+      let filename =         `${
           this.base_asset_url
         }/${this.selectedMarket.toLowerCase()}_${ethnicityName}_${this.selectedDataType.toLowerCase()}_data_v${
           this.mapVersion
         }.json`
+
+      console.log("fetch 9383",filename)
+      const mapDataResponse = await fetch(
+        // `${this.base_asset_url}/${this.selectedMarket}_${this.selectedGeoUnits}_data.json`
+        filename
       );
 
       const mapData = await mapDataResponse.json();
@@ -9287,10 +9404,12 @@ export default {
       // );
       console.log("line 7633");
       console.log("market", this.selectedMarket);
-      const settingsDataResponse = await fetch(
-        `${this.base_asset_url}/${this.selectedMarket.toLowerCase()}_${
+      let filename2 = `${this.base_asset_url}/${this.selectedMarket.toLowerCase()}_${
           this.selectedGeoUnits
         }_settings_data.json`
+      console.log("line 9410 fetch", filename2)
+      const settingsDataResponse = await fetch(
+        filename2
       );
       // console.log("fetching file");
       // console.log(
@@ -9432,6 +9551,7 @@ export default {
         console.log(this.segmentSettings);
         console.log("this.segmentSettings.SeriesShortUnique");
         console.log(this.segmentSettings.SeriesShortUnique);
+        console.log(this.selectedMarketDataTilesetLayer);
         this.map.addLayer(
           {
             id: this.segmentSettings.SeriesShortUnique,
@@ -9457,11 +9577,13 @@ export default {
               "fill-opacity": this.opacity / 100,
               "fill-outline-color": "#000000",
             },
+            filter: ["in", this.geoJsonGeoProperty, ...Array.from(this.mapSourceGeoidSet)],
           },
           firstSymbolId
         );
         // console.log("this.segmentSettings.mapbox_segment");
         // console.log(this.segmentSettings.mapbox_segment);
+        console.log(this.selectedMarketDataTilesetLayer);
         this.map.addLayer(
           {
             id: `${this.segmentSettings.SeriesShortUnique}-filtered`,
@@ -9489,6 +9611,7 @@ export default {
         let geoLayerVisibility =
           this.geoLabelVisibility == "On" ? "visible" : "none";
         // console.log(geoLayerVisibility);
+        console.log(this.selectedMarketDataTilesetLayer);
         this.map.addLayer({
           id: "geoLabels",
           type: "symbol",
@@ -9506,6 +9629,7 @@ export default {
             "text-offset": [-1, -1.25],
             "text-anchor": "top",
           },
+          filter: ["in", this.geoJsonGeoProperty, ...Array.from(this.mapSourceGeoidSet)],
         });
         // this.map.addLayer({
         //     'id': 'points',
@@ -9776,6 +9900,8 @@ export default {
             },
             ["in", geoJsonGeoProperty]
           );
+          console.log("filtered filter pointdata");
+          console.log(filter);
           if (this.map) {
             this.map.setFilter(
               `${this.segmentSettings.SeriesShortUnique}-filtered`,

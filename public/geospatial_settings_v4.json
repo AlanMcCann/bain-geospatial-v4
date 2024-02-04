@@ -1,4193 +1,5618 @@
 {
     "AbileneTX": {
+        "BaseState": "Texas",
         "CenterLat": 32.453549,
         "CenterLong": -99.730981,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "AbileneTX",
+        "MapboxState": "Texas",
         "MarketName": "AbileneTX",
         "Market_Display_Name": "Abilene, TX",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "AkronOH": {
+        "BaseState": "Ohio",
         "CenterLat": 41.080491,
         "CenterLong": -81.517454,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "1",
         "MapboxMarketName": "AkronOH",
+        "MapboxState": "Ohio",
         "MarketName": "AkronOH",
         "Market_Display_Name": "Akron, OH",
-        "StateFips": ""
+        "MultipleStates": ""
+    },
+    "Alabama": {
+        "BaseState": "Alabama",
+        "CenterLat": 32.7794,
+        "CenterLong": -86.8287,
+        "DefaultZoomLevel": "5",
+        "GeoTypeGroup": "2 - States",
+        "InterMarketMetro": "0",
+        "MapboxMarketName": "Alabama",
+        "MapboxState": "",
+        "MarketName": "Alabama",
+        "Market_Display_Name": "Alabama",
+        "MultipleStates": ""
+    },
+    "Alaska": {
+        "BaseState": "Alaska",
+        "CenterLat": 62.46751,
+        "CenterLong": -145.456457,
+        "DefaultZoomLevel": "5",
+        "GeoTypeGroup": "2 - States",
+        "InterMarketMetro": "0",
+        "MapboxMarketName": "Alaska",
+        "MapboxState": "",
+        "MarketName": "Alaska",
+        "Market_Display_Name": "Alaska",
+        "MultipleStates": ""
     },
     "AlbanyGA": {
+        "BaseState": "Georgia",
         "CenterLat": 31.577248,
         "CenterLong": -84.152334,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "AlbanyGA",
+        "MapboxState": "Georgia",
         "MarketName": "AlbanyGA",
         "Market_Display_Name": "Albany, GA",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "AlbanyNY": {
+        "BaseState": "NewYork",
         "CenterLat": 42.65164,
         "CenterLong": -73.754175,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "1",
         "MapboxMarketName": "AlbanyNY",
+        "MapboxState": "New",
         "MarketName": "AlbanyNY",
         "Market_Display_Name": "Albany, NY",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "AlbanyOR": {
+        "BaseState": "Oregon",
         "CenterLat": 44.635272,
         "CenterLong": -123.10634,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "AlbanyOR",
+        "MapboxState": "Oregon",
         "MarketName": "AlbanyOR",
         "Market_Display_Name": "Albany, OR",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "AlbuquerqueNM": {
+        "BaseState": "NewMexico",
         "CenterLat": 35.087707,
         "CenterLong": -106.651097,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "1",
         "MapboxMarketName": "AlbuquerqueNM",
+        "MapboxState": "",
         "MarketName": "AlbuquerqueNM",
         "Market_Display_Name": "Albuquerque, NM",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "AlexandriaLA": {
+        "BaseState": "Louisiana",
         "CenterLat": 31.311631,
         "CenterLong": -92.444484,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "AlexandriaLA",
+        "MapboxState": "",
         "MarketName": "AlexandriaLA",
         "Market_Display_Name": "Alexandria, LA",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "AllentownPA": {
+        "BaseState": "Pennsylvania",
         "CenterLat": 40.603692,
         "CenterLong": -75.467035,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "1",
         "MapboxMarketName": "AllentownPA",
+        "MapboxState": "",
         "MarketName": "AllentownPA",
         "Market_Display_Name": "Allentown, PA",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "AltoonaPA": {
+        "BaseState": "Pennsylvania",
         "CenterLat": 40.516972,
         "CenterLong": -78.402261,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "AltoonaPA",
+        "MapboxState": "",
         "MarketName": "AltoonaPA",
         "Market_Display_Name": "Altoona, PA",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "AmarilloTX": {
+        "BaseState": "Texas",
         "CenterLat": 35.207216,
         "CenterLong": -101.830982,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "AmarilloTX",
+        "MapboxState": "",
         "MarketName": "AmarilloTX",
         "Market_Display_Name": "Amarillo, TX",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "AmesIA": {
+        "BaseState": "Iowa",
         "CenterLat": 42.026621,
         "CenterLong": -93.61704,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "AmesIA",
+        "MapboxState": "",
         "MarketName": "AmesIA",
         "Market_Display_Name": "Ames, IA",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "AnchorageAK": {
+        "BaseState": "Alaska",
         "CenterLat": 61.217051,
         "CenterLong": -149.89571,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "AnchorageAK",
+        "MapboxState": "",
         "MarketName": "AnchorageAK",
         "Market_Display_Name": "Anchorage, AK",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "AnnArborMI": {
+        "BaseState": "Michigan",
         "CenterLat": 42.281679,
         "CenterLong": -83.746035,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "AnnArborMI",
+        "MapboxState": "",
         "MarketName": "AnnArborMI",
         "Market_Display_Name": "Ann Arbor, MI",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "AnnistonAL": {
+        "BaseState": "Alabama",
         "CenterLat": 33.69839,
         "CenterLong": -85.822162,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "AnnistonAL",
+        "MapboxState": "",
         "MarketName": "AnnistonAL",
         "Market_Display_Name": "Anniston, AL",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "AppletonWI": {
+        "BaseState": "Wisconsin",
         "CenterLat": 44.26213,
         "CenterLong": -88.407415,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "AppletonWI",
+        "MapboxState": "",
         "MarketName": "AppletonWI",
         "Market_Display_Name": "Appleton, WI",
-        "StateFips": ""
+        "MultipleStates": ""
+    },
+    "Arizona": {
+        "BaseState": "Arizona",
+        "CenterLat": 34.2744,
+        "CenterLong": -111.6602,
+        "DefaultZoomLevel": "5",
+        "GeoTypeGroup": "2 - States",
+        "InterMarketMetro": "0",
+        "MapboxMarketName": "Arizona",
+        "MapboxState": "",
+        "MarketName": "Arizona",
+        "Market_Display_Name": "Arizona",
+        "MultipleStates": ""
+    },
+    "Arkansas": {
+        "BaseState": "Arkansas",
+        "CenterLat": 34.8938,
+        "CenterLong": -92.4426,
+        "DefaultZoomLevel": "5",
+        "GeoTypeGroup": "2 - States",
+        "InterMarketMetro": "0",
+        "MapboxMarketName": "Arkansas",
+        "MapboxState": "",
+        "MarketName": "Arkansas",
+        "Market_Display_Name": "Arkansas",
+        "MultipleStates": ""
     },
     "AshevilleNC": {
+        "BaseState": "NorthCarolina",
         "CenterLat": 35.595548,
         "CenterLong": -82.548192,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "1",
         "MapboxMarketName": "AshevilleNC",
+        "MapboxState": "",
         "MarketName": "AshevilleNC",
         "Market_Display_Name": "Asheville, NC",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "AthensGA": {
+        "BaseState": "Georgia",
         "CenterLat": 33.959652,
         "CenterLong": -83.375996,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "AthensGA",
+        "MapboxState": "",
         "MarketName": "AthensGA",
         "Market_Display_Name": "Athens, GA",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "AtlantaGA": {
+        "BaseState": "Georgia",
         "CenterLat": 33.748169,
         "CenterLong": -84.39009,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "1",
         "MapboxMarketName": "AtlantaGA",
+        "MapboxState": "",
         "MarketName": "AtlantaGA",
         "Market_Display_Name": "Atlanta, GA",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "AtlanticCityNJ": {
+        "BaseState": "NewJersey",
         "CenterLat": 39.363081,
         "CenterLong": -74.428184,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "AtlanticCityNJ",
+        "MapboxState": "",
         "MarketName": "AtlanticCityNJ",
         "Market_Display_Name": "Atlantic City, NJ",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "AuburnAL": {
+        "BaseState": "Alabama",
         "CenterLat": 32.607886,
         "CenterLong": -85.479981,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "AuburnAL",
+        "MapboxState": "",
         "MarketName": "AuburnAL",
         "Market_Display_Name": "Auburn, AL",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "AugustaGA": {
+        "BaseState": "Georgia",
         "CenterLat": 33.470821,
         "CenterLong": -81.962092,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "1",
         "MapboxMarketName": "AugustaGA",
+        "MapboxState": "",
         "MarketName": "AugustaGA",
         "Market_Display_Name": "Augusta, GA",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "AustinTX": {
+        "BaseState": "Texas",
         "CenterLat": 30.2652,
         "CenterLong": -97.747404,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "1",
         "MapboxMarketName": "AustinTX",
+        "MapboxState": "",
         "MarketName": "AustinTX",
         "Market_Display_Name": "Austin, TX",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "BakersfieldCA": {
+        "BaseState": "California",
         "CenterLat": 35.373587,
         "CenterLong": -119.020996,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "1",
         "MapboxMarketName": "BakersfieldCA",
+        "MapboxState": "",
         "MarketName": "BakersfieldCA",
         "Market_Display_Name": "Bakersfield, CA",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "BaltimoreMD": {
+        "BaseState": "Maryland",
         "CenterLat": 39.290407,
         "CenterLong": -76.610967,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "1",
         "MapboxMarketName": "BaltimoreMD",
+        "MapboxState": "",
         "MarketName": "BaltimoreMD",
         "Market_Display_Name": "Baltimore, MD",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "BangorME": {
+        "BaseState": "Maine",
         "CenterLat": 44.803561,
         "CenterLong": -68.769751,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "BangorME",
+        "MapboxState": "",
         "MarketName": "BangorME",
         "Market_Display_Name": "Bangor, ME",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "BarnstableTownMA": {
+        "BaseState": "Massachusetts",
         "CenterLat": 41.652409,
         "CenterLong": -70.282568,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "BarnstableTownMA",
+        "MapboxState": "",
         "MarketName": "BarnstableTownMA",
         "Market_Display_Name": "Barnstable Town, MA",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "BatonRougeLA": {
+        "BaseState": "Louisiana",
         "CenterLat": 30.445777,
         "CenterLong": -91.187609,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "1",
         "MapboxMarketName": "BatonRougeLA",
+        "MapboxState": "",
         "MarketName": "BatonRougeLA",
         "Market_Display_Name": "Baton Rouge, LA",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "BattleCreekMI": {
+        "BaseState": "Michigan",
         "CenterLat": 42.31651,
         "CenterLong": -85.179446,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "BattleCreekMI",
+        "MapboxState": "",
         "MarketName": "BattleCreekMI",
         "Market_Display_Name": "Battle Creek, MI",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "BayCityMI": {
+        "BaseState": "Michigan",
         "CenterLat": 43.59309,
         "CenterLong": -83.889075,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "BayCityMI",
+        "MapboxState": "",
         "MarketName": "BayCityMI",
         "Market_Display_Name": "Bay City, MI",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "BeaumontTX": {
+        "BaseState": "Texas",
         "CenterLat": 30.082159,
         "CenterLong": -94.094551,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "BeaumontTX",
+        "MapboxState": "",
         "MarketName": "BeaumontTX",
         "Market_Display_Name": "Beaumont, TX",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "BeckleyWV": {
+        "BaseState": "WestVirginia",
         "CenterLat": 37.776628,
         "CenterLong": -81.185271,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "BeckleyWV",
+        "MapboxState": "",
         "MarketName": "BeckleyWV",
         "Market_Display_Name": "Beckley, WV",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "BellinghamWA": {
+        "BaseState": "Washington",
         "CenterLat": 48.75507,
         "CenterLong": -122.478342,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "BellinghamWA",
+        "MapboxState": "",
         "MarketName": "BellinghamWA",
         "Market_Display_Name": "Bellingham, WA",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "BendOR": {
+        "BaseState": "Oregon",
         "CenterLat": 44.057229,
         "CenterLong": -121.315571,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "BendOR",
+        "MapboxState": "",
         "MarketName": "BendOR",
         "Market_Display_Name": "Bend, OR",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "BillingsMT": {
+        "BaseState": "Montana",
         "CenterLat": 45.783408,
         "CenterLong": -108.505966,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "BillingsMT",
+        "MapboxState": "",
         "MarketName": "BillingsMT",
         "Market_Display_Name": "Billings, MT",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "BinghamtonNY": {
+        "BaseState": "NewYork",
         "CenterLat": 42.096843,
         "CenterLong": -75.911543,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "BinghamtonNY",
+        "MapboxState": "",
         "MarketName": "BinghamtonNY",
         "Market_Display_Name": "Binghamton, NY",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "BirminghamAL": {
+        "BaseState": "Alabama",
         "CenterLat": 33.519245,
         "CenterLong": -86.81012,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "1",
         "MapboxMarketName": "BirminghamAL",
+        "MapboxState": "",
         "MarketName": "BirminghamAL",
         "Market_Display_Name": "Birmingham, AL",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "BismarckND": {
+        "BaseState": "NorthDakota",
         "CenterLat": 46.807022,
         "CenterLong": -100.784188,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "BismarckND",
+        "MapboxState": "",
         "MarketName": "BismarckND",
         "Market_Display_Name": "Bismarck, ND",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "BlacksburgVA": {
+        "BaseState": "Virginia",
         "CenterLat": 37.226856,
         "CenterLong": -80.412563,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "BlacksburgVA",
+        "MapboxState": "",
         "MarketName": "BlacksburgVA",
         "Market_Display_Name": "Blacksburg, VA",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "BloomingtonIL": {
+        "BaseState": "Illinois",
         "CenterLat": 40.475981,
         "CenterLong": -88.992831,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "BloomingtonIL",
+        "MapboxState": "",
         "MarketName": "BloomingtonIL",
         "Market_Display_Name": "Bloomington, IL",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "BloomingtonIN": {
+        "BaseState": "Indiana",
         "CenterLat": 39.170246,
         "CenterLong": -86.537409,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "BloomingtonIN",
+        "MapboxState": "",
         "MarketName": "BloomingtonIN",
         "Market_Display_Name": "Bloomington, IN",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "BloomsburgPA": {
+        "BaseState": "Pennsylvania",
         "CenterLat": 41.004679,
         "CenterLong": -76.45325,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "BloomsburgPA",
+        "MapboxState": "",
         "MarketName": "BloomsburgPA",
         "Market_Display_Name": "Bloomsburg, PA",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "BoiseCityID": {
+        "BaseState": "Idaho",
         "CenterLat": 43.614831,
         "CenterLong": -116.202172,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "1",
         "MapboxMarketName": "BoiseCityID",
+        "MapboxState": "",
         "MarketName": "BoiseCityID",
         "Market_Display_Name": "Boise City, ID",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "BostonMA": {
+        "BaseState": "Massachusetts",
         "CenterLat": 42.360381,
         "CenterLong": -71.058626,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "1",
         "MapboxMarketName": "BostonMA",
+        "MapboxState": "",
         "MarketName": "BostonMA",
         "Market_Display_Name": "Boston, MA",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "BoulderCO": {
+        "BaseState": "Colorado",
         "CenterLat": 40.01837,
         "CenterLong": -105.274153,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "BoulderCO",
+        "MapboxState": "",
         "MarketName": "BoulderCO",
         "Market_Display_Name": "Boulder, CO",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "BowlingGreenKY": {
+        "BaseState": "Kentucky",
         "CenterLat": 36.992875,
         "CenterLong": -86.44307,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "BowlingGreenKY",
+        "MapboxState": "",
         "MarketName": "BowlingGreenKY",
         "Market_Display_Name": "Bowling Green, KY",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "BremertonWA": {
+        "BaseState": "Washington",
         "CenterLat": 47.567208,
         "CenterLong": -122.626595,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "BremertonWA",
+        "MapboxState": "",
         "MarketName": "BremertonWA",
         "Market_Display_Name": "Bremerton, WA",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "BridgeportCT": {
+        "BaseState": "Connecticut",
         "CenterLat": 41.18053,
         "CenterLong": -73.191859,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "1",
         "MapboxMarketName": "BridgeportCT",
+        "MapboxState": "",
         "MarketName": "BridgeportCT",
         "Market_Display_Name": "Bridgeport, CT",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "BrownsvilleTX": {
+        "BaseState": "Texas",
         "CenterLat": 25.902419,
         "CenterLong": -97.499657,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "BrownsvilleTX",
+        "MapboxState": "",
         "MarketName": "BrownsvilleTX",
         "Market_Display_Name": "Brownsville, TX",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "BrunswickGA": {
+        "BaseState": "Georgia",
         "CenterLat": 31.149349,
         "CenterLong": -81.493996,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "BrunswickGA",
+        "MapboxState": "",
         "MarketName": "BrunswickGA",
         "Market_Display_Name": "Brunswick, GA",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "BuffaloNY": {
+        "BaseState": "NewYork",
         "CenterLat": 42.886682,
         "CenterLong": -78.878327,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "1",
         "MapboxMarketName": "BuffaloNY",
+        "MapboxState": "",
         "MarketName": "BuffaloNY",
         "Market_Display_Name": "Buffalo, NY",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "BurlingtonNC": {
+        "BaseState": "NorthCarolina",
         "CenterLat": 36.09134,
         "CenterLong": -79.434785,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "BurlingtonNC",
+        "MapboxState": "",
         "MarketName": "BurlingtonNC",
         "Market_Display_Name": "Burlington, NC",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "BurlingtonVT": {
+        "BaseState": "Vermont",
         "CenterLat": 44.475925,
         "CenterLong": -73.21274,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "BurlingtonVT",
+        "MapboxState": "",
         "MarketName": "BurlingtonVT",
         "Market_Display_Name": "Burlington, VT",
-        "StateFips": ""
+        "MultipleStates": ""
+    },
+    "California": {
+        "BaseState": "California",
+        "CenterLat": 37.1841,
+        "CenterLong": -119.4696,
+        "DefaultZoomLevel": "5",
+        "GeoTypeGroup": "2 - States",
+        "InterMarketMetro": "0",
+        "MapboxMarketName": "California",
+        "MapboxState": "",
+        "MarketName": "California",
+        "Market_Display_Name": "California",
+        "MultipleStates": ""
     },
     "CaliforniaMD": {
+        "BaseState": "Maryland",
         "CenterLat": 38.300619,
         "CenterLong": -76.520252,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "CaliforniaMD",
+        "MapboxState": "",
         "MarketName": "CaliforniaMD",
         "Market_Display_Name": "California, MD",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "CantonOH": {
+        "BaseState": "Ohio",
         "CenterLat": 40.797568,
         "CenterLong": -81.376922,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "CantonOH",
+        "MapboxState": "",
         "MarketName": "CantonOH",
         "Market_Display_Name": "Canton, OH",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "CapeCoralFL": {
+        "BaseState": "Florida",
         "CenterLat": 26.632463,
         "CenterLong": -81.957503,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "1",
         "MapboxMarketName": "CapeCoralFL",
+        "MapboxState": "",
         "MarketName": "CapeCoralFL",
         "Market_Display_Name": "Cape Coral, FL",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "CapeGirardeauMO": {
+        "BaseState": "Missouri",
         "CenterLat": 37.304638,
         "CenterLong": -89.52013,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "CapeGirardeauMO",
+        "MapboxState": "",
         "MarketName": "CapeGirardeauMO",
         "Market_Display_Name": "Cape Girardeau, MO",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "CarbondaleIL": {
+        "BaseState": "Illinois",
         "CenterLat": 37.725238,
         "CenterLong": -89.217415,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "CarbondaleIL",
+        "MapboxState": "",
         "MarketName": "CarbondaleIL",
         "Market_Display_Name": "Carbondale, IL",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "CarsonCityNV": {
+        "BaseState": "Nevada",
         "CenterLat": 39.164816,
         "CenterLong": -119.766299,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "CarsonCityNV",
+        "MapboxState": "",
         "MarketName": "CarsonCityNV",
         "Market_Display_Name": "Carson City, NV",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "CasperWY": {
+        "BaseState": "Wyoming",
         "CenterLat": 42.851937,
         "CenterLong": -106.327381,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "CasperWY",
+        "MapboxState": "",
         "MarketName": "CasperWY",
         "Market_Display_Name": "Casper, WY",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "CedarRapidsIA": {
+        "BaseState": "Iowa",
         "CenterLat": 41.977654,
         "CenterLong": -91.669334,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "CedarRapidsIA",
+        "MapboxState": "",
         "MarketName": "CedarRapidsIA",
         "Market_Display_Name": "Cedar Rapids, IA",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "ChambersburgPA": {
+        "BaseState": "Pennsylvania",
         "CenterLat": 39.935411,
         "CenterLong": -77.659568,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "ChambersburgPA",
+        "MapboxState": "",
         "MarketName": "ChambersburgPA",
         "Market_Display_Name": "Chambersburg, PA",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "ChampaignIL": {
+        "BaseState": "Illinois",
         "CenterLat": 40.116464,
         "CenterLong": -88.243468,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "ChampaignIL",
+        "MapboxState": "",
         "MarketName": "ChampaignIL",
         "Market_Display_Name": "Champaign, IL",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "CharlestonSC": {
+        "BaseState": "SouthCarolina",
         "CenterLat": 32.77657,
         "CenterLong": -79.931085,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "1",
         "MapboxMarketName": "CharlestonSC",
+        "MapboxState": "",
         "MarketName": "CharlestonSC",
         "Market_Display_Name": "Charleston, SC",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "CharlestonWV": {
+        "BaseState": "WestVirginia",
         "CenterLat": 38.350715,
         "CenterLong": -81.638391,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "CharlestonWV",
+        "MapboxState": "",
         "MarketName": "CharlestonWV",
         "Market_Display_Name": "Charleston, WV",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "CharlotteNC": {
+        "BaseState": "NorthCarolina",
         "CenterLat": 35.223278,
         "CenterLong": -80.833512,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "1",
         "MapboxMarketName": "CharlotteNC",
+        "MapboxState": "",
         "MarketName": "CharlotteNC",
         "Market_Display_Name": "Charlotte, NC",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "CharlottesvilleVA": {
+        "BaseState": "Virginia",
         "CenterLat": 38.030285,
         "CenterLong": -78.477064,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "CharlottesvilleVA",
+        "MapboxState": "",
         "MarketName": "CharlottesvilleVA",
         "Market_Display_Name": "Charlottesville, VA",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "ChattanoogaTN": {
+        "BaseState": "Tennessee",
         "CenterLat": 35.043291,
         "CenterLong": -85.307591,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "1",
         "MapboxMarketName": "ChattanoogaTN",
+        "MapboxState": "",
         "MarketName": "ChattanoogaTN",
         "Market_Display_Name": "Chattanooga, TN",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "CheyenneWY": {
+        "BaseState": "Wyoming",
         "CenterLat": 41.135602,
         "CenterLong": -104.821694,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "CheyenneWY",
+        "MapboxState": "",
         "MarketName": "CheyenneWY",
         "Market_Display_Name": "Cheyenne, WY",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "ChicagoIL": {
+        "BaseState": "Illinois",
         "CenterLat": 41.883703,
         "CenterLong": -87.632239,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "1",
         "MapboxMarketName": "ChicagoIL",
+        "MapboxState": "",
         "MarketName": "ChicagoIL",
         "Market_Display_Name": "Chicago, IL",
-        "StateFips": ""
+        "MultipleStates": "1"
     },
     "ChicoCA": {
+        "BaseState": "California",
         "CenterLat": 39.728902,
         "CenterLong": -121.837789,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "ChicoCA",
+        "MapboxState": "",
         "MarketName": "ChicoCA",
         "Market_Display_Name": "Chico, CA",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "CincinnatiOH": {
+        "BaseState": "Ohio",
         "CenterLat": 39.10401,
         "CenterLong": -84.518817,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "1",
         "MapboxMarketName": "CincinnatiOH",
+        "MapboxState": "",
         "MarketName": "CincinnatiOH",
         "Market_Display_Name": "Cincinnati, OH",
-        "StateFips": ""
+        "MultipleStates": "1"
     },
     "ClarksvilleTN": {
+        "BaseState": "Tennessee",
         "CenterLat": 36.527643,
         "CenterLong": -87.360516,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "ClarksvilleTN",
+        "MapboxState": "",
         "MarketName": "ClarksvilleTN",
         "Market_Display_Name": "Clarksville, TN",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "ClevelandOH": {
+        "BaseState": "Ohio",
         "CenterLat": 41.505095,
         "CenterLong": -81.692758,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "1",
         "MapboxMarketName": "ClevelandOH",
+        "MapboxState": "",
         "MarketName": "ClevelandOH",
         "Market_Display_Name": "Cleveland, OH",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "ClevelandTN": {
+        "BaseState": "Tennessee",
         "CenterLat": 35.159549,
         "CenterLong": -84.873579,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "ClevelandTN",
+        "MapboxState": "",
         "MarketName": "ClevelandTN",
         "Market_Display_Name": "Cleveland, TN",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "CoeurDaleneID": {
+        "BaseState": "Idaho",
         "CenterLat": 47.671217,
         "CenterLong": -116.775885,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "CoeurDaleneID",
+        "MapboxState": "",
         "MarketName": "CoeurDaleneID",
         "Market_Display_Name": "Coeur D'alene, ID",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "CollegeStationTX": {
+        "BaseState": "Texas",
         "CenterLat": 30.62084,
         "CenterLong": -96.326451,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "CollegeStationTX",
+        "MapboxState": "",
         "MarketName": "CollegeStationTX",
         "Market_Display_Name": "College Station, TX",
-        "StateFips": ""
+        "MultipleStates": ""
+    },
+    "Colorado": {
+        "BaseState": "Colorado",
+        "CenterLat": 38.9972,
+        "CenterLong": -105.5478,
+        "DefaultZoomLevel": "5",
+        "GeoTypeGroup": "2 - States",
+        "InterMarketMetro": "0",
+        "MapboxMarketName": "Colorado",
+        "MapboxState": "",
+        "MarketName": "Colorado",
+        "Market_Display_Name": "Colorado",
+        "MultipleStates": ""
     },
     "ColoradoSpringsCO": {
+        "BaseState": "Colorado",
         "CenterLat": 38.835541,
         "CenterLong": -104.820695,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "1",
         "MapboxMarketName": "ColoradoSpringsCO",
+        "MapboxState": "",
         "MarketName": "ColoradoSpringsCO",
         "Market_Display_Name": "Colorado Springs, CO",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "ColumbiaMO": {
+        "BaseState": "Missouri",
         "CenterLat": 38.951588,
         "CenterLong": -92.328967,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "ColumbiaMO",
+        "MapboxState": "",
         "MarketName": "ColumbiaMO",
         "Market_Display_Name": "Columbia, MO",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "ColumbiaSC": {
+        "BaseState": "SouthCarolina",
         "CenterLat": 34.008754,
         "CenterLong": -81.037494,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "1",
         "MapboxMarketName": "ColumbiaSC",
+        "MapboxState": "",
         "MarketName": "ColumbiaSC",
         "Market_Display_Name": "Columbia, SC",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "ColumbusGA": {
+        "BaseState": "Georgia",
         "CenterLat": 32.464105,
         "CenterLong": -84.991397,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "ColumbusGA",
+        "MapboxState": "",
         "MarketName": "ColumbusGA",
         "Market_Display_Name": "Columbus, GA",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "ColumbusIN": {
+        "BaseState": "Indiana",
         "CenterLat": 39.200262,
         "CenterLong": -85.920875,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "ColumbusIN",
+        "MapboxState": "",
         "MarketName": "ColumbusIN",
         "Market_Display_Name": "Columbus, IN",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "ColumbusOH": {
+        "BaseState": "Ohio",
         "CenterLat": 39.96233,
         "CenterLong": -83.002601,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "1",
         "MapboxMarketName": "ColumbusOH",
+        "MapboxState": "",
         "MarketName": "ColumbusOH",
         "Market_Display_Name": "Columbus, OH",
-        "StateFips": ""
+        "MultipleStates": ""
+    },
+    "Connecticut": {
+        "BaseState": "Connecticut",
+        "CenterLat": 41.6219,
+        "CenterLong": -72.7273,
+        "DefaultZoomLevel": "7",
+        "GeoTypeGroup": "2 - States",
+        "InterMarketMetro": "0",
+        "MapboxMarketName": "Connecticut",
+        "MapboxState": "",
+        "MarketName": "Connecticut",
+        "Market_Display_Name": "Connecticut",
+        "MultipleStates": ""
     },
     "CorpusChristiTX": {
+        "BaseState": "Texas",
         "CenterLat": 27.796395,
         "CenterLong": -97.40418,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "CorpusChristiTX",
+        "MapboxState": "",
         "MarketName": "CorpusChristiTX",
         "Market_Display_Name": "Corpus Christi, TX",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "CorvallisOR": {
+        "BaseState": "Oregon",
         "CenterLat": 44.564073,
         "CenterLong": -123.263935,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "CorvallisOR",
+        "MapboxState": "",
         "MarketName": "CorvallisOR",
         "Market_Display_Name": "Corvallis, OR",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "CrestviewFL": {
+        "BaseState": "Florida",
         "CenterLat": 30.757434,
         "CenterLong": -86.571126,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "CrestviewFL",
+        "MapboxState": "",
         "MarketName": "CrestviewFL",
         "Market_Display_Name": "Crestview, FL",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "CumberlandMD": {
+        "BaseState": "Maryland",
         "CenterLat": 39.6531,
         "CenterLong": -78.762393,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "CumberlandMD",
+        "MapboxState": "",
         "MarketName": "CumberlandMD",
         "Market_Display_Name": "Cumberland, MD",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "DallasFortWorthTX": {
+        "BaseState": "Texas",
         "CenterLat": 32.775862,
         "CenterLong": -96.796877,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "1",
         "MapboxMarketName": "DallasFortWorthTX",
+        "MapboxState": "",
         "MarketName": "DallasFortWorthTX",
         "Market_Display_Name": "Dallas Fort Worth, TX",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "DaltonGA": {
+        "BaseState": "Georgia",
         "CenterLat": 34.774398,
         "CenterLong": -84.969833,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "DaltonGA",
+        "MapboxState": "",
         "MarketName": "DaltonGA",
         "Market_Display_Name": "Dalton, GA",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "DanvilleIL": {
+        "BaseState": "Illinois",
         "CenterLat": 40.12451,
         "CenterLong": -87.630915,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "DanvilleIL",
+        "MapboxState": "",
         "MarketName": "DanvilleIL",
         "Market_Display_Name": "Danville, IL",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "DaphneAL": {
+        "BaseState": "Alabama",
         "CenterLat": 30.602366,
         "CenterLong": -87.904134,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "DaphneAL",
+        "MapboxState": "",
         "MarketName": "DaphneAL",
         "Market_Display_Name": "Daphne, AL",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "DavenportIA": {
+        "BaseState": "Iowa",
         "CenterLat": 41.523803,
         "CenterLong": -90.576973,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "DavenportIA",
+        "MapboxState": "",
         "MarketName": "DavenportIA",
         "Market_Display_Name": "Davenport, IA",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "DaytonOH": {
+        "BaseState": "Ohio",
         "CenterLat": 39.759319,
         "CenterLong": -84.19354,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "1",
         "MapboxMarketName": "DaytonOH",
+        "MapboxState": "",
         "MarketName": "DaytonOH",
         "Market_Display_Name": "Dayton, OH",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "DecaturAL": {
+        "BaseState": "Alabama",
         "CenterLat": 34.605713,
         "CenterLong": -86.983424,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "DecaturAL",
+        "MapboxState": "",
         "MarketName": "DecaturAL",
         "Market_Display_Name": "Decatur, AL",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "DecaturIL": {
+        "BaseState": "Illinois",
         "CenterLat": 39.845467,
         "CenterLong": -88.95291,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "DecaturIL",
+        "MapboxState": "",
         "MarketName": "DecaturIL",
         "Market_Display_Name": "Decatur, IL",
-        "StateFips": ""
+        "MultipleStates": ""
+    },
+    "Delaware": {
+        "BaseState": "Delaware",
+        "CenterLat": 38.9896,
+        "CenterLong": -75.505,
+        "DefaultZoomLevel": "7",
+        "GeoTypeGroup": "2 - States",
+        "InterMarketMetro": "0",
+        "MapboxMarketName": "Delaware",
+        "MapboxState": "",
+        "MarketName": "Delaware",
+        "Market_Display_Name": "Delaware",
+        "MultipleStates": ""
     },
     "DeltonaFL": {
+        "BaseState": "Florida",
         "CenterLat": 28.927598,
         "CenterLong": -81.221359,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "1",
         "MapboxMarketName": "DeltonaFL",
+        "MapboxState": "",
         "MarketName": "DeltonaFL",
         "Market_Display_Name": "Deltona, FL",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "DenverCO": {
+        "BaseState": "Colorado",
         "CenterLat": 39.739275,
         "CenterLong": -104.991688,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "1",
         "MapboxMarketName": "DenverCO",
+        "MapboxState": "",
         "MarketName": "DenverCO",
         "Market_Display_Name": "Denver, CO",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "DesMoinesIA": {
+        "BaseState": "Iowa",
         "CenterLat": 41.588828,
         "CenterLong": -93.616002,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "1",
         "MapboxMarketName": "DesMoinesIA",
+        "MapboxState": "",
         "MarketName": "DesMoinesIA",
         "Market_Display_Name": "Des Moines, IA",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "DetroitMI": {
+        "BaseState": "Michigan",
         "CenterLat": 42.422292,
         "CenterLong": -83.168714,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "1",
         "MapboxMarketName": "DetroitMI",
+        "MapboxState": "",
         "MarketName": "DetroitMI",
         "Market_Display_Name": "Detroit, MI",
-        "StateFips": ""
+        "MultipleStates": ""
+    },
+    "DistrictOfColumbia": {
+        "BaseState": "DistrictOfColumbia",
+        "CenterLat": 38.9101,
+        "CenterLong": -77.0147,
+        "DefaultZoomLevel": "10",
+        "GeoTypeGroup": "2 - States",
+        "InterMarketMetro": "0",
+        "MapboxMarketName": "DistrictOfColumbia",
+        "MapboxState": "",
+        "MarketName": "DistrictOfColumbia",
+        "Market_Display_Name": "District of Columbia",
+        "MultipleStates": ""
     },
     "DothanAL": {
+        "BaseState": "Alabama",
         "CenterLat": 31.224541,
         "CenterLong": -85.390807,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "DothanAL",
+        "MapboxState": "",
         "MarketName": "DothanAL",
         "Market_Display_Name": "Dothan, AL",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "DoverDE": {
+        "BaseState": "Delaware",
         "CenterLat": 39.158621,
         "CenterLong": -75.523093,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "DoverDE",
+        "MapboxState": "",
         "MarketName": "DoverDE",
         "Market_Display_Name": "Dover, DE",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "DubuqueIA": {
+        "BaseState": "Iowa",
         "CenterLat": 42.505127,
         "CenterLong": -90.66736,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "DubuqueIA",
+        "MapboxState": "",
         "MarketName": "DubuqueIA",
         "Market_Display_Name": "Dubuque, IA",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "DuluthMN": {
+        "BaseState": "Minnesota",
         "CenterLat": 46.783403,
         "CenterLong": -92.105737,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "DuluthMN",
+        "MapboxState": "",
         "MarketName": "DuluthMN",
         "Market_Display_Name": "Duluth, MN",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "DurhamNC": {
+        "BaseState": "NorthCarolina",
         "CenterLat": 35.994188,
         "CenterLong": -78.898538,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "1",
         "MapboxMarketName": "DurhamNC",
+        "MapboxState": "",
         "MarketName": "DurhamNC",
         "Market_Display_Name": "Durham, NC",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "EastStroudsburgPA": {
+        "BaseState": "Pennsylvania",
         "CenterLat": 40.99903,
         "CenterLong": -75.181768,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "EastStroudsburgPA",
+        "MapboxState": "",
         "MarketName": "EastStroudsburgPA",
         "Market_Display_Name": "East Stroudsburg, PA",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "EauClaireWI": {
+        "BaseState": "Wisconsin",
         "CenterLat": 44.80824,
         "CenterLong": -91.503339,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "EauClaireWI",
+        "MapboxState": "",
         "MarketName": "EauClaireWI",
         "Market_Display_Name": "Eau Claire, WI",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "ElCentroCA": {
+        "BaseState": "California",
         "CenterLat": 32.792372,
         "CenterLong": -115.56681,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "ElCentroCA",
+        "MapboxState": "",
         "MarketName": "ElCentroCA",
         "Market_Display_Name": "El Centro, CA",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "ElPasoTX": {
+        "BaseState": "Texas",
         "CenterLat": 31.761522,
         "CenterLong": -106.484875,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "1",
         "MapboxMarketName": "ElPasoTX",
+        "MapboxState": "",
         "MarketName": "ElPasoTX",
         "Market_Display_Name": "El Paso, TX",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "ElizabethtownKY": {
+        "BaseState": "Kentucky",
         "CenterLat": 37.693535,
         "CenterLong": -85.859992,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "ElizabethtownKY",
+        "MapboxState": "",
         "MarketName": "ElizabethtownKY",
         "Market_Display_Name": "Elizabethtown, KY",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "ElkhartIN": {
+        "BaseState": "Indiana",
         "CenterLat": 41.684972,
         "CenterLong": -85.974766,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "ElkhartIN",
+        "MapboxState": "",
         "MarketName": "ElkhartIN",
         "Market_Display_Name": "Elkhart, IN",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "ElmiraNY": {
+        "BaseState": "NewYork",
         "CenterLat": 42.091469,
         "CenterLong": -76.802813,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "ElmiraNY",
+        "MapboxState": "",
         "MarketName": "ElmiraNY",
         "Market_Display_Name": "Elmira, NY",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "EriePA": {
+        "BaseState": "Pennsylvania",
         "CenterLat": 42.128773,
         "CenterLong": -80.085636,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "EriePA",
+        "MapboxState": "",
         "MarketName": "EriePA",
         "Market_Display_Name": "Erie, PA",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "EugeneOR": {
+        "BaseState": "Oregon",
         "CenterLat": 44.049101,
         "CenterLong": -123.094251,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "1",
         "MapboxMarketName": "EugeneOR",
+        "MapboxState": "",
         "MarketName": "EugeneOR",
         "Market_Display_Name": "Eugene, OR",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "EvansvilleIN": {
+        "BaseState": "Indiana",
         "CenterLat": 37.973457,
         "CenterLong": -87.567809,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "EvansvilleIN",
+        "MapboxState": "",
         "MarketName": "EvansvilleIN",
         "Market_Display_Name": "Evansville, IN",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "FairbanksAK": {
+        "BaseState": "Alaska",
         "CenterLat": 64.839767,
         "CenterLong": -147.720264,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "FairbanksAK",
+        "MapboxState": "",
         "MarketName": "FairbanksAK",
         "Market_Display_Name": "Fairbanks, AK",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "FargoND": {
+        "BaseState": "NorthDakota",
         "CenterLat": 46.878215,
         "CenterLong": -96.782541,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "FargoND",
+        "MapboxState": "",
         "MarketName": "FargoND",
         "Market_Display_Name": "Fargo, ND",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "FarmingtonNM": {
+        "BaseState": "NewMexico",
         "CenterLat": 36.737592,
         "CenterLong": -108.216726,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "FarmingtonNM",
+        "MapboxState": "",
         "MarketName": "FarmingtonNM",
         "Market_Display_Name": "Farmington, NM",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "FayettevilleAR": {
+        "BaseState": "Arkansas",
         "CenterLat": 36.06218,
         "CenterLong": -94.161856,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "1",
         "MapboxMarketName": "FayettevilleAR",
+        "MapboxState": "",
         "MarketName": "FayettevilleAR",
         "Market_Display_Name": "Fayetteville, AR",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "FayettevilleNC": {
+        "BaseState": "NorthCarolina",
         "CenterLat": 35.053717,
         "CenterLong": -78.883233,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "1",
         "MapboxMarketName": "FayettevilleNC",
+        "MapboxState": "",
         "MarketName": "FayettevilleNC",
         "Market_Display_Name": "Fayetteville, NC",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "FlagstaffAZ": {
+        "BaseState": "Arizona",
         "CenterLat": 35.198818,
         "CenterLong": -111.650726,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "FlagstaffAZ",
+        "MapboxState": "",
         "MarketName": "FlagstaffAZ",
         "Market_Display_Name": "Flagstaff, AZ",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "FlintMI": {
+        "BaseState": "Michigan",
         "CenterLat": 43.011785,
         "CenterLong": -83.684064,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "FlintMI",
+        "MapboxState": "",
         "MarketName": "FlintMI",
         "Market_Display_Name": "Flint, MI",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "FlorenceAL": {
+        "BaseState": "Alabama",
         "CenterLat": 34.799198,
         "CenterLong": -87.675818,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "FlorenceAL",
+        "MapboxState": "",
         "MarketName": "FlorenceAL",
         "Market_Display_Name": "Florence, AL",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "FlorenceSC": {
+        "BaseState": "SouthCarolina",
         "CenterLat": 34.199436,
         "CenterLong": -79.76847,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "FlorenceSC",
+        "MapboxState": "",
         "MarketName": "FlorenceSC",
         "Market_Display_Name": "Florence, SC",
-        "StateFips": ""
+        "MultipleStates": ""
+    },
+    "Florida": {
+        "BaseState": "Florida",
+        "CenterLat": 28.6305,
+        "CenterLong": -82.4497,
+        "DefaultZoomLevel": "5",
+        "GeoTypeGroup": "2 - States",
+        "InterMarketMetro": "0",
+        "MapboxMarketName": "Florida",
+        "MapboxState": "",
+        "MarketName": "Florida",
+        "Market_Display_Name": "Florida",
+        "MultipleStates": ""
     },
     "FondDuLacWI": {
+        "BaseState": "Wisconsin",
         "CenterLat": 43.774795,
         "CenterLong": -88.448583,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "FondDuLacWI",
+        "MapboxState": "",
         "MarketName": "FondDuLacWI",
         "Market_Display_Name": "Fond Du Lac, WI",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "FortCollinsCO": {
+        "BaseState": "Colorado",
         "CenterLat": 40.589926,
         "CenterLong": -105.082356,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "FortCollinsCO",
+        "MapboxState": "",
         "MarketName": "FortCollinsCO",
         "Market_Display_Name": "Fort Collins, CO",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "FortSmithAR": {
+        "BaseState": "Arkansas",
         "CenterLat": 35.387043,
         "CenterLong": -94.423996,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "FortSmithAR",
+        "MapboxState": "",
         "MarketName": "FortSmithAR",
         "Market_Display_Name": "Fort Smith, AR",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "FortWayneIN": {
+        "BaseState": "Indiana",
         "CenterLat": 41.079432,
         "CenterLong": -85.136886,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "FortWayneIN",
+        "MapboxState": "",
         "MarketName": "FortWayneIN",
         "Market_Display_Name": "Fort Wayne, IN",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "FresnoCA": {
+        "BaseState": "California",
         "CenterLat": 36.739435,
         "CenterLong": -119.784779,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "1",
         "MapboxMarketName": "FresnoCA",
+        "MapboxState": "",
         "MarketName": "FresnoCA",
         "Market_Display_Name": "Fresno, CA",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "GadsdenAL": {
+        "BaseState": "Alabama",
         "CenterLat": 34.01063,
         "CenterLong": -85.999465,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "GadsdenAL",
+        "MapboxState": "",
         "MarketName": "GadsdenAL",
         "Market_Display_Name": "Gadsden, AL",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "GainesvilleFL": {
+        "BaseState": "Florida",
         "CenterLat": 29.65238,
         "CenterLong": -82.323204,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "1",
         "MapboxMarketName": "GainesvilleFL",
+        "MapboxState": "",
         "MarketName": "GainesvilleFL",
         "Market_Display_Name": "Gainesville, FL",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "GainesvilleGA": {
+        "BaseState": "Georgia",
         "CenterLat": 34.29852,
         "CenterLong": -83.82538,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "GainesvilleGA",
+        "MapboxState": "",
         "MarketName": "GainesvilleGA",
         "Market_Display_Name": "Gainesville, GA",
-        "StateFips": ""
+        "MultipleStates": ""
+    },
+    "Georgia": {
+        "BaseState": "Georgia",
+        "CenterLat": 32.6415,
+        "CenterLong": -83.4426,
+        "DefaultZoomLevel": "5",
+        "GeoTypeGroup": "2 - States",
+        "InterMarketMetro": "0",
+        "MapboxMarketName": "Georgia",
+        "MapboxState": "",
+        "MarketName": "Georgia",
+        "Market_Display_Name": "Georgia",
+        "MultipleStates": ""
     },
     "GettysburgPA": {
+        "BaseState": "Pennsylvania",
         "CenterLat": 39.827979,
         "CenterLong": -77.229656,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "GettysburgPA",
+        "MapboxState": "",
         "MarketName": "GettysburgPA",
         "Market_Display_Name": "Gettysburg, PA",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "GlensFallsNY": {
+        "BaseState": "NewYork",
         "CenterLat": 43.31067,
         "CenterLong": -73.643873,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "GlensFallsNY",
+        "MapboxState": "",
         "MarketName": "GlensFallsNY",
         "Market_Display_Name": "Glens Falls, NY",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "GoldsboroNC": {
+        "BaseState": "NorthCarolina",
         "CenterLat": 35.384281,
         "CenterLong": -77.995955,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "GoldsboroNC",
+        "MapboxState": "",
         "MarketName": "GoldsboroNC",
         "Market_Display_Name": "Goldsboro, NC",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "GrandForksND": {
+        "BaseState": "NorthDakota",
         "CenterLat": 47.926102,
         "CenterLong": -97.034962,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "GrandForksND",
+        "MapboxState": "",
         "MarketName": "GrandForksND",
         "Market_Display_Name": "Grand Forks, ND",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "GrandIslandNE": {
+        "BaseState": "Nebraska",
         "CenterLat": 40.924975,
         "CenterLong": -98.338981,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "GrandIslandNE",
+        "MapboxState": "",
         "MarketName": "GrandIslandNE",
         "Market_Display_Name": "Grand Island, NE",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "GrandJunctionCO": {
+        "BaseState": "Colorado",
         "CenterLat": 39.069182,
         "CenterLong": -108.564428,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "GrandJunctionCO",
+        "MapboxState": "",
         "MarketName": "GrandJunctionCO",
         "Market_Display_Name": "Grand Junction, CO",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "GrandRapidsMI": {
+        "BaseState": "Michigan",
         "CenterLat": 42.968077,
         "CenterLong": -85.671428,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "1",
         "MapboxMarketName": "GrandRapidsMI",
+        "MapboxState": "",
         "MarketName": "GrandRapidsMI",
         "Market_Display_Name": "Grand Rapids, MI",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "GrantsPassOR": {
+        "BaseState": "Oregon",
         "CenterLat": 42.44371,
         "CenterLong": -123.325189,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "GrantsPassOR",
+        "MapboxState": "",
         "MarketName": "GrantsPassOR",
         "Market_Display_Name": "Grants Pass, OR",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "GreatFallsMT": {
+        "BaseState": "Montana",
         "CenterLat": 47.506022,
         "CenterLong": -111.303527,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "GreatFallsMT",
+        "MapboxState": "",
         "MarketName": "GreatFallsMT",
         "Market_Display_Name": "Great Falls, MT",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "GreeleyCO": {
+        "BaseState": "Colorado",
         "CenterLat": 40.422935,
         "CenterLong": -104.695952,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "GreeleyCO",
+        "MapboxState": "",
         "MarketName": "GreeleyCO",
         "Market_Display_Name": "Greeley, CO",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "GreenBayWI": {
+        "BaseState": "Wisconsin",
         "CenterLat": 44.513171,
         "CenterLong": -88.012129,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "GreenBayWI",
+        "MapboxState": "",
         "MarketName": "GreenBayWI",
         "Market_Display_Name": "Green Bay, WI",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "GreensboroNC": {
+        "BaseState": "NorthCarolina",
         "CenterLat": 36.070514,
         "CenterLong": -79.792226,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "1",
         "MapboxMarketName": "GreensboroNC",
+        "MapboxState": "",
         "MarketName": "GreensboroNC",
         "Market_Display_Name": "Greensboro, NC",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "GreenvilleNC": {
+        "BaseState": "NorthCarolina",
         "CenterLat": 35.611837,
         "CenterLong": -77.374765,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "GreenvilleNC",
+        "MapboxState": "",
         "MarketName": "GreenvilleNC",
         "Market_Display_Name": "Greenville, NC",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "GreenvilleSC": {
+        "BaseState": "SouthCarolina",
         "CenterLat": 34.848195,
         "CenterLong": -82.400206,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "1",
         "MapboxMarketName": "GreenvilleSC",
+        "MapboxState": "",
         "MarketName": "GreenvilleSC",
         "Market_Display_Name": "Greenville, SC",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "GulfportMS": {
+        "BaseState": "Mississippi",
         "CenterLat": 30.369199,
         "CenterLong": -89.091231,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "GulfportMS",
+        "MapboxState": "",
         "MarketName": "GulfportMS",
         "Market_Display_Name": "Gulfport, MS",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "HagerstownMD": {
+        "BaseState": "Maryland",
         "CenterLat": 39.643169,
         "CenterLong": -77.719411,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "HagerstownMD",
+        "MapboxState": "",
         "MarketName": "HagerstownMD",
         "Market_Display_Name": "Hagerstown, MD",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "HammondLA": {
+        "BaseState": "Louisiana",
         "CenterLat": 30.505234,
         "CenterLong": -90.457948,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "HammondLA",
+        "MapboxState": "",
         "MarketName": "HammondLA",
         "Market_Display_Name": "Hammond, LA",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "HanfordCA": {
+        "BaseState": "California",
         "CenterLat": 36.328369,
         "CenterLong": -119.646002,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "HanfordCA",
+        "MapboxState": "",
         "MarketName": "HanfordCA",
         "Market_Display_Name": "Hanford, CA",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "HarrisburgPA": {
+        "BaseState": "Pennsylvania",
         "CenterLat": 40.260855,
         "CenterLong": -76.882628,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "1",
         "MapboxMarketName": "HarrisburgPA",
+        "MapboxState": "",
         "MarketName": "HarrisburgPA",
         "Market_Display_Name": "Harrisburg, PA",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "HarrisonburgVA": {
+        "BaseState": "Virginia",
         "CenterLat": 38.44559,
         "CenterLong": -78.86976,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "HarrisonburgVA",
+        "MapboxState": "",
         "MarketName": "HarrisonburgVA",
         "Market_Display_Name": "Harrisonburg, VA",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "HartfordCT": {
+        "BaseState": "Connecticut",
         "CenterLat": 41.762749,
         "CenterLong": -72.673427,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "1",
         "MapboxMarketName": "HartfordCT",
+        "MapboxState": "",
         "MarketName": "HartfordCT",
         "Market_Display_Name": "Hartford, CT",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "HattiesburgMS": {
+        "BaseState": "Mississippi",
         "CenterLat": 31.325566,
         "CenterLong": -89.29071,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "HattiesburgMS",
+        "MapboxState": "",
         "MarketName": "HattiesburgMS",
         "Market_Display_Name": "Hattiesburg, MS",
-        "StateFips": ""
+        "MultipleStates": ""
+    },
+    "Hawaii": {
+        "BaseState": "Hawaii",
+        "CenterLat": 20.813579,
+        "CenterLong": -156.485423,
+        "DefaultZoomLevel": "5",
+        "GeoTypeGroup": "2 - States",
+        "InterMarketMetro": "0",
+        "MapboxMarketName": "Hawaii",
+        "MapboxState": "",
+        "MarketName": "Hawaii",
+        "Market_Display_Name": "Hawaii",
+        "MultipleStates": ""
     },
     "HickoryNC": {
+        "BaseState": "NorthCarolina",
         "CenterLat": 35.732012,
         "CenterLong": -81.337621,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "HickoryNC",
+        "MapboxState": "",
         "MarketName": "HickoryNC",
         "Market_Display_Name": "Hickory, NC",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "HiltonHeadIslandSC": {
+        "BaseState": "SouthCarolina",
         "CenterLat": 32.161935,
         "CenterLong": -80.751726,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "HiltonHeadIslandSC",
+        "MapboxState": "",
         "MarketName": "HiltonHeadIslandSC",
         "Market_Display_Name": "Hilton Head Island, SC",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "HinesvilleGA": {
+        "BaseState": "Georgia",
         "CenterLat": 31.846462,
         "CenterLong": -81.594976,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "HinesvilleGA",
+        "MapboxState": "",
         "MarketName": "HinesvilleGA",
         "Market_Display_Name": "Hinesville, GA",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "HomosassaSpringsFL": {
+        "BaseState": "Florida",
         "CenterLat": 28.899799,
         "CenterLong": -82.594841,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "HomosassaSpringsFL",
+        "MapboxState": "",
         "MarketName": "HomosassaSpringsFL",
         "Market_Display_Name": "Homosassa Springs, FL",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "HotSpringsAR": {
+        "BaseState": "Arkansas",
         "CenterLat": 34.509602,
         "CenterLong": -93.051844,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "HotSpringsAR",
+        "MapboxState": "",
         "MarketName": "HotSpringsAR",
         "Market_Display_Name": "Hot Springs, AR",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "HoumaLA": {
+        "BaseState": "Louisiana",
         "CenterLat": 29.597458,
         "CenterLong": -90.718335,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "HoumaLA",
+        "MapboxState": "",
         "MarketName": "HoumaLA",
         "Market_Display_Name": "Houma, LA",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "HoustonTX": {
+        "BaseState": "Texas",
         "CenterLat": 29.760317,
         "CenterLong": -95.369836,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "1",
         "MapboxMarketName": "HoustonTX",
+        "MapboxState": "",
         "MarketName": "HoustonTX",
         "Market_Display_Name": "Houston, TX",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "HuntingtonWV": {
+        "BaseState": "WestVirginia",
         "CenterLat": 38.419457,
         "CenterLong": -82.445289,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "HuntingtonWV",
+        "MapboxState": "",
         "MarketName": "HuntingtonWV",
         "Market_Display_Name": "Huntington, WV",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "HuntsvilleAL": {
+        "BaseState": "Alabama",
         "CenterLat": 34.728731,
         "CenterLong": -86.586034,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "1",
         "MapboxMarketName": "HuntsvilleAL",
+        "MapboxState": "",
         "MarketName": "HuntsvilleAL",
         "Market_Display_Name": "Huntsville, AL",
-        "StateFips": ""
+        "MultipleStates": ""
+    },
+    "Idaho": {
+        "BaseState": "Idaho",
+        "CenterLat": 44.3509,
+        "CenterLong": -114.613,
+        "DefaultZoomLevel": "5",
+        "GeoTypeGroup": "2 - States",
+        "InterMarketMetro": "0",
+        "MapboxMarketName": "Idaho",
+        "MapboxState": "",
+        "MarketName": "Idaho",
+        "Market_Display_Name": "Idaho",
+        "MultipleStates": ""
     },
     "IdahoFallsID": {
+        "BaseState": "Idaho",
         "CenterLat": 43.494792,
         "CenterLong": -112.038055,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "IdahoFallsID",
+        "MapboxState": "",
         "MarketName": "IdahoFallsID",
         "Market_Display_Name": "Idaho Falls, ID",
-        "StateFips": ""
+        "MultipleStates": ""
+    },
+    "Illinois": {
+        "BaseState": "Illinois",
+        "CenterLat": 40.0417,
+        "CenterLong": -89.1965,
+        "DefaultZoomLevel": "5",
+        "GeoTypeGroup": "2 - States",
+        "InterMarketMetro": "0",
+        "MapboxMarketName": "Illinois",
+        "MapboxState": "",
+        "MarketName": "Illinois",
+        "Market_Display_Name": "Illinois",
+        "MultipleStates": ""
+    },
+    "Indiana": {
+        "BaseState": "Indiana",
+        "CenterLat": 39.8942,
+        "CenterLong": -86.2816,
+        "DefaultZoomLevel": "5",
+        "GeoTypeGroup": "2 - States",
+        "InterMarketMetro": "0",
+        "MapboxMarketName": "Indiana",
+        "MapboxState": "",
+        "MarketName": "Indiana",
+        "Market_Display_Name": "Indiana",
+        "MultipleStates": ""
     },
     "IndianapolisIN": {
+        "BaseState": "Indiana",
         "CenterLat": 39.767916,
         "CenterLong": -86.154237,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "1",
         "MapboxMarketName": "IndianapolisIN",
+        "MapboxState": "",
         "MarketName": "IndianapolisIN",
         "Market_Display_Name": "Indianapolis, IN",
-        "StateFips": ""
+        "MultipleStates": ""
+    },
+    "Iowa": {
+        "BaseState": "Iowa",
+        "CenterLat": 42.0751,
+        "CenterLong": -93.496,
+        "DefaultZoomLevel": "5",
+        "GeoTypeGroup": "2 - States",
+        "InterMarketMetro": "0",
+        "MapboxMarketName": "Iowa",
+        "MapboxState": "",
+        "MarketName": "Iowa",
+        "Market_Display_Name": "Iowa",
+        "MultipleStates": ""
     },
     "IowaCityIA": {
+        "BaseState": "Iowa",
         "CenterLat": 41.660221,
         "CenterLong": -91.52894,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "IowaCityIA",
+        "MapboxState": "",
         "MarketName": "IowaCityIA",
         "Market_Display_Name": "Iowa City, IA",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "IthacaNY": {
+        "BaseState": "NewYork",
         "CenterLat": 42.438915,
         "CenterLong": -76.498874,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "IthacaNY",
+        "MapboxState": "",
         "MarketName": "IthacaNY",
         "Market_Display_Name": "Ithaca, NY",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "JacksonMI": {
+        "BaseState": "Michigan",
         "CenterLat": 42.247524,
         "CenterLong": -84.4083,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "JacksonMI",
+        "MapboxState": "",
         "MarketName": "JacksonMI",
         "Market_Display_Name": "Jackson, MI",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "JacksonMS": {
+        "BaseState": "Mississippi",
         "CenterLat": 32.298018,
         "CenterLong": -90.182822,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "1",
         "MapboxMarketName": "JacksonMS",
+        "MapboxState": "",
         "MarketName": "JacksonMS",
         "Market_Display_Name": "Jackson, MS",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "JacksonTN": {
+        "BaseState": "Tennessee",
         "CenterLat": 35.614685,
         "CenterLong": -88.819393,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "JacksonTN",
+        "MapboxState": "",
         "MarketName": "JacksonTN",
         "Market_Display_Name": "Jackson, TN",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "JacksonvilleFL": {
+        "BaseState": "Florida",
         "CenterLat": 30.330065,
         "CenterLong": -81.660261,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "1",
         "MapboxMarketName": "JacksonvilleFL",
+        "MapboxState": "",
         "MarketName": "JacksonvilleFL",
         "Market_Display_Name": "Jacksonville, FL",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "JacksonvilleNC": {
+        "BaseState": "NorthCarolina",
         "CenterLat": 34.749392,
         "CenterLong": -77.421464,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "JacksonvilleNC",
+        "MapboxState": "",
         "MarketName": "JacksonvilleNC",
         "Market_Display_Name": "Jacksonville, NC",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "JanesvilleWI": {
+        "BaseState": "Wisconsin",
         "CenterLat": 42.681864,
         "CenterLong": -89.027214,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "JanesvilleWI",
+        "MapboxState": "",
         "MarketName": "JanesvilleWI",
         "Market_Display_Name": "Janesville, WI",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "JeffersonCityMO": {
+        "BaseState": "Missouri",
         "CenterLat": 38.573005,
         "CenterLong": -92.170033,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "JeffersonCityMO",
+        "MapboxState": "",
         "MarketName": "JeffersonCityMO",
         "Market_Display_Name": "Jefferson City, MO",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "JohnsonCityTN": {
+        "BaseState": "Tennessee",
         "CenterLat": 36.312887,
         "CenterLong": -82.351351,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "JohnsonCityTN",
+        "MapboxState": "",
         "MarketName": "JohnsonCityTN",
         "Market_Display_Name": "Johnson City, TN",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "JohnstownPA": {
+        "BaseState": "Pennsylvania",
         "CenterLat": 40.326249,
         "CenterLong": -78.919661,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "JohnstownPA",
+        "MapboxState": "",
         "MarketName": "JohnstownPA",
         "Market_Display_Name": "Johnstown, PA",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "JonesboroAR": {
+        "BaseState": "Arkansas",
         "CenterLat": 35.840659,
         "CenterLong": -90.703999,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "JonesboroAR",
+        "MapboxState": "",
         "MarketName": "JonesboroAR",
         "Market_Display_Name": "Jonesboro, AR",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "JoplinMO": {
+        "BaseState": "Missouri",
         "CenterLat": 37.085288,
         "CenterLong": -94.514086,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "JoplinMO",
+        "MapboxState": "",
         "MarketName": "JoplinMO",
         "Market_Display_Name": "Joplin, MO",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "KahuluiHI": {
+        "BaseState": "Hawaii",
         "CenterLat": 20.886089,
         "CenterLong": -156.504015,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "KahuluiHI",
+        "MapboxState": "",
         "MarketName": "KahuluiHI",
         "Market_Display_Name": "Kahului, HI",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "KalamazooMI": {
+        "BaseState": "Michigan",
         "CenterLat": 42.289524,
         "CenterLong": -85.585761,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "KalamazooMI",
+        "MapboxState": "",
         "MarketName": "KalamazooMI",
         "Market_Display_Name": "Kalamazoo, MI",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "KankakeeIL": {
+        "BaseState": "Illinois",
         "CenterLat": 41.117104,
         "CenterLong": -87.860993,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "KankakeeIL",
+        "MapboxState": "",
         "MarketName": "KankakeeIL",
         "Market_Display_Name": "Kankakee, IL",
-        "StateFips": ""
+        "MultipleStates": ""
+    },
+    "Kansas": {
+        "BaseState": "Kansas",
+        "CenterLat": 38.4937,
+        "CenterLong": -98.3804,
+        "DefaultZoomLevel": "5",
+        "GeoTypeGroup": "2 - States",
+        "InterMarketMetro": "0",
+        "MapboxMarketName": "Kansas",
+        "MapboxState": "",
+        "MarketName": "Kansas",
+        "Market_Display_Name": "Kansas",
+        "MultipleStates": ""
     },
     "KansasCityMO": {
+        "BaseState": "Missouri",
         "CenterLat": 39.100614,
         "CenterLong": -94.578448,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "1",
         "MapboxMarketName": "KansasCityMO",
+        "MapboxState": "",
         "MarketName": "KansasCityMO",
         "Market_Display_Name": "Kansas City, MO",
-        "StateFips": ""
+        "MultipleStates": "1"
     },
     "KennewickWA": {
+        "BaseState": "Washington",
         "CenterLat": 46.203369,
         "CenterLong": -119.122006,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "KennewickWA",
+        "MapboxState": "",
         "MarketName": "KennewickWA",
         "Market_Display_Name": "Kennewick, WA",
-        "StateFips": ""
+        "MultipleStates": ""
+    },
+    "Kentucky": {
+        "BaseState": "Kentucky",
+        "CenterLat": 37.5347,
+        "CenterLong": -85.3021,
+        "DefaultZoomLevel": "5",
+        "GeoTypeGroup": "2 - States",
+        "InterMarketMetro": "0",
+        "MapboxMarketName": "Kentucky",
+        "MapboxState": "",
+        "MarketName": "Kentucky",
+        "Market_Display_Name": "Kentucky",
+        "MultipleStates": ""
     },
     "KilleenTX": {
+        "BaseState": "Texas",
         "CenterLat": 31.120536,
         "CenterLong": -97.734615,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "1",
         "MapboxMarketName": "KilleenTX",
+        "MapboxState": "",
         "MarketName": "KilleenTX",
         "Market_Display_Name": "Killeen, TX",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "KingsportTN": {
+        "BaseState": "Tennessee",
         "CenterLat": 36.548995,
         "CenterLong": -82.558321,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "KingsportTN",
+        "MapboxState": "",
         "MarketName": "KingsportTN",
         "Market_Display_Name": "Kingsport, TN",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "KingstonNY": {
+        "BaseState": "NewYork",
         "CenterLat": 41.926877,
         "CenterLong": -73.996294,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "KingstonNY",
+        "MapboxState": "",
         "MarketName": "KingstonNY",
         "Market_Display_Name": "Kingston, NY",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "KnoxvilleTN": {
+        "BaseState": "Tennessee",
         "CenterLat": 35.960552,
         "CenterLong": -83.917405,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "1",
         "MapboxMarketName": "KnoxvilleTN",
+        "MapboxState": "",
         "MarketName": "KnoxvilleTN",
         "Market_Display_Name": "Knoxville, TN",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "KokomoIN": {
+        "BaseState": "Indiana",
         "CenterLat": 40.48592,
         "CenterLong": -86.129117,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "KokomoIN",
+        "MapboxState": "",
         "MarketName": "KokomoIN",
         "Market_Display_Name": "Kokomo, IN",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "LaCrosseWI": {
+        "BaseState": "Wisconsin",
         "CenterLat": 43.817039,
         "CenterLong": -91.248409,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "LaCrosseWI",
+        "MapboxState": "",
         "MarketName": "LaCrosseWI",
         "Market_Display_Name": "La Crosse, WI",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "LafayetteIN": {
+        "BaseState": "Indiana",
         "CenterLat": 40.417457,
         "CenterLong": -86.89097,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "LafayetteIN",
+        "MapboxState": "",
         "MarketName": "LafayetteIN",
         "Market_Display_Name": "Lafayette, IN",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "LafayetteLA": {
+        "BaseState": "Louisiana",
         "CenterLat": 30.221942,
         "CenterLong": -92.02094,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "1",
         "MapboxMarketName": "LafayetteLA",
+        "MapboxState": "",
         "MarketName": "LafayetteLA",
         "Market_Display_Name": "Lafayette, LA",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "LakeCharlesLA": {
+        "BaseState": "Louisiana",
         "CenterLat": 30.22715,
         "CenterLong": -93.216428,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "LakeCharlesLA",
+        "MapboxState": "",
         "MarketName": "LakeCharlesLA",
         "Market_Display_Name": "Lake Charles, LA",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "LakeHavasuCityAZ": {
+        "BaseState": "Arizona",
         "CenterLat": 34.476873,
         "CenterLong": -114.319344,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "LakeHavasuCityAZ",
+        "MapboxState": "",
         "MarketName": "LakeHavasuCityAZ",
         "Market_Display_Name": "Lake Havasu City, AZ",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "LakelandFL": {
+        "BaseState": "Florida",
         "CenterLat": 28.042119,
         "CenterLong": -81.954098,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "1",
         "MapboxMarketName": "LakelandFL",
+        "MapboxState": "",
         "MarketName": "LakelandFL",
         "Market_Display_Name": "Lakeland, FL",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "LancasterPA": {
+        "BaseState": "Pennsylvania",
         "CenterLat": 40.040306,
         "CenterLong": -76.30405,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "1",
         "MapboxMarketName": "LancasterPA",
+        "MapboxState": "",
         "MarketName": "LancasterPA",
         "Market_Display_Name": "Lancaster, PA",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "LansingMI": {
+        "BaseState": "Michigan",
         "CenterLat": 42.734207,
         "CenterLong": -84.552913,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "1",
         "MapboxMarketName": "LansingMI",
+        "MapboxState": "",
         "MarketName": "LansingMI",
         "Market_Display_Name": "Lansing, MI",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "LaredoTX": {
+        "BaseState": "Texas",
         "CenterLat": 27.507467,
         "CenterLong": -99.507101,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "LaredoTX",
+        "MapboxState": "",
         "MarketName": "LaredoTX",
         "Market_Display_Name": "Laredo, TX",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "LasCrucesNM": {
+        "BaseState": "NewMexico",
         "CenterLat": 32.314708,
         "CenterLong": -106.779529,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "LasCrucesNM",
+        "MapboxState": "",
         "MarketName": "LasCrucesNM",
         "Market_Display_Name": "Las Cruces, NM",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "LasVegasNV": {
+        "BaseState": "Nevada",
         "CenterLat": 36.167226,
         "CenterLong": -115.147567,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "1",
         "MapboxMarketName": "LasVegasNV",
+        "MapboxState": "",
         "MarketName": "LasVegasNV",
         "Market_Display_Name": "Las Vegas, NV",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "LawrenceKS": {
+        "BaseState": "Kansas",
         "CenterLat": 38.973585,
         "CenterLong": -95.235649,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "LawrenceKS",
+        "MapboxState": "",
         "MarketName": "LawrenceKS",
         "Market_Display_Name": "Lawrence, KS",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "LawtonOK": {
+        "BaseState": "Oklahoma",
         "CenterLat": 34.605726,
         "CenterLong": -98.400256,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "LawtonOK",
+        "MapboxState": "",
         "MarketName": "LawtonOK",
         "Market_Display_Name": "Lawton, OK",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "LebanonPA": {
+        "BaseState": "Pennsylvania",
         "CenterLat": 40.332453,
         "CenterLong": -76.422869,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "LebanonPA",
+        "MapboxState": "",
         "MarketName": "LebanonPA",
         "Market_Display_Name": "Lebanon, PA",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "LewistonID": {
+        "BaseState": "Idaho",
         "CenterLat": 46.417649,
         "CenterLong": -117.017966,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "LewistonID",
+        "MapboxState": "",
         "MarketName": "LewistonID",
         "Market_Display_Name": "Lewiston, ID",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "LewistonME": {
+        "BaseState": "Maine",
         "CenterLat": 44.095475,
         "CenterLong": -70.215461,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "LewistonME",
+        "MapboxState": "",
         "MarketName": "LewistonME",
         "Market_Display_Name": "Lewiston, ME",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "LexingtonKY": {
+        "BaseState": "Kentucky",
         "CenterLat": 38.044816,
         "CenterLong": -84.496419,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "1",
         "MapboxMarketName": "LexingtonKY",
+        "MapboxState": "",
         "MarketName": "LexingtonKY",
         "Market_Display_Name": "Lexington, KY",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "LimaOH": {
+        "BaseState": "Ohio",
         "CenterLat": 40.740394,
         "CenterLong": -84.104693,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "LimaOH",
+        "MapboxState": "",
         "MarketName": "LimaOH",
         "Market_Display_Name": "Lima, OH",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "LincolnNE": {
+        "BaseState": "Nebraska",
         "CenterLat": 40.813942,
         "CenterLong": -96.707229,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "LincolnNE",
+        "MapboxState": "",
         "MarketName": "LincolnNE",
         "Market_Display_Name": "Lincoln, NE",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "LittleRockAR": {
+        "BaseState": "Arkansas",
         "CenterLat": 34.748942,
         "CenterLong": -92.275141,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "1",
         "MapboxMarketName": "LittleRockAR",
+        "MapboxState": "",
         "MarketName": "LittleRockAR",
         "Market_Display_Name": "Little Rock, AR",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "LoganUT": {
+        "BaseState": "Utah",
         "CenterLat": 41.736601,
         "CenterLong": -111.837261,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "LoganUT",
+        "MapboxState": "",
         "MarketName": "LoganUT",
         "Market_Display_Name": "Logan, UT",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "LongviewTX": {
+        "BaseState": "Texas",
         "CenterLat": 32.494427,
         "CenterLong": -94.745464,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "LongviewTX",
+        "MapboxState": "",
         "MarketName": "LongviewTX",
         "Market_Display_Name": "Longview, TX",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "LongviewWA": {
+        "BaseState": "Washington",
         "CenterLat": 46.138682,
         "CenterLong": -122.937189,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "LongviewWA",
+        "MapboxState": "",
         "MarketName": "LongviewWA",
         "Market_Display_Name": "Longview, WA",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "LosAngelesCA": {
+        "BaseState": "California",
         "CenterLat": 34.0543,
         "CenterLong": -118.241929,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "1",
         "MapboxMarketName": "LosAngelesCA",
+        "MapboxState": "",
         "MarketName": "LosAngelesCA",
         "Market_Display_Name": "Los Angeles, CA",
-        "StateFips": ""
+        "MultipleStates": ""
+    },
+    "Louisiana": {
+        "BaseState": "Louisiana",
+        "CenterLat": 31.0689,
+        "CenterLong": -91.9968,
+        "DefaultZoomLevel": "5",
+        "GeoTypeGroup": "2 - States",
+        "InterMarketMetro": "0",
+        "MapboxMarketName": "Louisiana",
+        "MapboxState": "",
+        "MarketName": "Louisiana",
+        "Market_Display_Name": "Louisiana",
+        "MultipleStates": ""
     },
     "LouisvilleKY": {
+        "BaseState": "Kentucky",
         "CenterLat": 38.254645,
         "CenterLong": -85.760251,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "1",
         "MapboxMarketName": "LouisvilleKY",
+        "MapboxState": "",
         "MarketName": "LouisvilleKY",
         "Market_Display_Name": "Louisville, KY",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "LubbockTX": {
+        "BaseState": "Texas",
         "CenterLat": 33.58281,
         "CenterLong": -101.84861,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "LubbockTX",
+        "MapboxState": "",
         "MarketName": "LubbockTX",
         "Market_Display_Name": "Lubbock, TX",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "LynchburgVA": {
+        "BaseState": "Virginia",
         "CenterLat": 37.414031,
         "CenterLong": -79.142913,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "LynchburgVA",
+        "MapboxState": "",
         "MarketName": "LynchburgVA",
         "Market_Display_Name": "Lynchburg, VA",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "MaconGA": {
+        "BaseState": "Georgia",
         "CenterLat": 32.835918,
         "CenterLong": -83.632536,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "MaconGA",
+        "MapboxState": "",
         "MarketName": "MaconGA",
         "Market_Display_Name": "Macon, GA",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "MaderaCA": {
+        "BaseState": "California",
         "CenterLat": 36.962502,
         "CenterLong": -120.064894,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "MaderaCA",
+        "MapboxState": "",
         "MarketName": "MaderaCA",
         "Market_Display_Name": "Madera, CA",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "MadisonWI": {
+        "BaseState": "Wisconsin",
         "CenterLat": 43.072678,
         "CenterLong": -89.380586,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "1",
         "MapboxMarketName": "MadisonWI",
+        "MapboxState": "",
         "MarketName": "MadisonWI",
         "Market_Display_Name": "Madison, WI",
-        "StateFips": ""
+        "MultipleStates": ""
+    },
+    "Maine": {
+        "BaseState": "Maine",
+        "CenterLat": 45.3695,
+        "CenterLong": -69.2428,
+        "DefaultZoomLevel": "5",
+        "GeoTypeGroup": "2 - States",
+        "InterMarketMetro": "0",
+        "MapboxMarketName": "Maine",
+        "MapboxState": "",
+        "MarketName": "Maine",
+        "Market_Display_Name": "Maine",
+        "MultipleStates": ""
     },
     "ManchesterNH": {
+        "BaseState": "NewHampshire",
         "CenterLat": 42.990862,
         "CenterLong": -71.463645,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "ManchesterNH",
+        "MapboxState": "",
         "MarketName": "ManchesterNH",
         "Market_Display_Name": "Manchester, NH",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "ManhattanKS": {
+        "BaseState": "Kansas",
         "CenterLat": 39.17958,
         "CenterLong": -96.574503,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "ManhattanKS",
+        "MapboxState": "",
         "MarketName": "ManhattanKS",
         "Market_Display_Name": "Manhattan, KS",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "MankatoMN": {
+        "BaseState": "Minnesota",
         "CenterLat": 44.165464,
         "CenterLong": -94.005486,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "MankatoMN",
+        "MapboxState": "",
         "MarketName": "MankatoMN",
         "Market_Display_Name": "Mankato, MN",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "MansfieldOH": {
+        "BaseState": "Ohio",
         "CenterLat": 40.758529,
         "CenterLong": -82.513003,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "MansfieldOH",
+        "MapboxState": "",
         "MarketName": "MansfieldOH",
         "Market_Display_Name": "Mansfield, OH",
-        "StateFips": ""
+        "MultipleStates": ""
+    },
+    "Maryland": {
+        "BaseState": "Maryland",
+        "CenterLat": 39.055,
+        "CenterLong": -76.7909,
+        "DefaultZoomLevel": "6",
+        "GeoTypeGroup": "2 - States",
+        "InterMarketMetro": "0",
+        "MapboxMarketName": "Maryland",
+        "MapboxState": "",
+        "MarketName": "Maryland",
+        "Market_Display_Name": "Maryland",
+        "MultipleStates": ""
+    },
+    "Massachusetts": {
+        "BaseState": "Massachusetts",
+        "CenterLat": 42.2596,
+        "CenterLong": -71.8083,
+        "DefaultZoomLevel": "5",
+        "GeoTypeGroup": "2 - States",
+        "InterMarketMetro": "0",
+        "MapboxMarketName": "Massachusetts",
+        "MapboxState": "",
+        "MarketName": "Massachusetts",
+        "Market_Display_Name": "Massachusetts",
+        "MultipleStates": ""
     },
     "McAllenTX": {
+        "BaseState": "Texas",
         "CenterLat": 26.196977,
         "CenterLong": -98.234712,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "1",
         "MapboxMarketName": "McAllenTX",
+        "MapboxState": "",
         "MarketName": "McAllenTX",
         "Market_Display_Name": "McAllen, TX",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "MedfordOR": {
+        "BaseState": "Oregon",
         "CenterLat": 42.322397,
         "CenterLong": -122.876528,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "MedfordOR",
+        "MapboxState": "",
         "MarketName": "MedfordOR",
         "Market_Display_Name": "Medford, OR",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "MemphisTN": {
+        "BaseState": "Tennessee",
         "CenterLat": 35.149371,
         "CenterLong": -90.050889,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "1",
         "MapboxMarketName": "MemphisTN",
+        "MapboxState": "",
         "MarketName": "MemphisTN",
         "Market_Display_Name": "Memphis, TN",
-        "StateFips": ""
+        "MultipleStates": "1"
     },
     "MercedCA": {
+        "BaseState": "California",
         "CenterLat": 37.303321,
         "CenterLong": -120.485159,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "MercedCA",
+        "MapboxState": "",
         "MarketName": "MercedCA",
         "Market_Display_Name": "Merced, CA",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "MiamiFL": {
+        "BaseState": "Florida",
         "CenterLat": 25.728134,
         "CenterLong": -80.233815,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "1",
         "MapboxMarketName": "MiamiFL",
+        "MapboxState": "",
         "MarketName": "MiamiFL",
         "Market_Display_Name": "Miami, FL",
-        "StateFips": ""
+        "MultipleStates": ""
+    },
+    "Michigan": {
+        "BaseState": "Michigan",
+        "CenterLat": 44.3467,
+        "CenterLong": -85.4102,
+        "DefaultZoomLevel": "5",
+        "GeoTypeGroup": "2 - States",
+        "InterMarketMetro": "0",
+        "MapboxMarketName": "Michigan",
+        "MapboxState": "",
+        "MarketName": "Michigan",
+        "Market_Display_Name": "Michigan",
+        "MultipleStates": ""
     },
     "MichiganCityIN": {
+        "BaseState": "Indiana",
         "CenterLat": 41.719963,
         "CenterLong": -86.902509,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "MichiganCityIN",
+        "MapboxState": "",
         "MarketName": "MichiganCityIN",
         "Market_Display_Name": "Michigan City, IN",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "MidlandMI": {
+        "BaseState": "Michigan",
         "CenterLat": 43.61536,
         "CenterLong": -84.244099,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "MidlandMI",
+        "MapboxState": "",
         "MarketName": "MidlandMI",
         "Market_Display_Name": "Midland, MI",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "MidlandTX": {
+        "BaseState": "Texas",
         "CenterLat": 32.000128,
         "CenterLong": -102.075658,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "MidlandTX",
+        "MapboxState": "",
         "MarketName": "MidlandTX",
         "Market_Display_Name": "Midland, TX",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "MilwaukeeWI": {
+        "BaseState": "Wisconsin",
         "CenterLat": 43.041599,
         "CenterLong": -87.91002,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "1",
         "MapboxMarketName": "MilwaukeeWI",
+        "MapboxState": "",
         "MarketName": "MilwaukeeWI",
         "Market_Display_Name": "Milwaukee, WI",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "MinneapolisMN": {
+        "BaseState": "Minnesota",
         "CenterLat": 44.977587,
         "CenterLong": -93.266084,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "1",
         "MapboxMarketName": "MinneapolisMN",
+        "MapboxState": "",
         "MarketName": "MinneapolisMN",
         "Market_Display_Name": "Minneapolis, MN",
-        "StateFips": ""
+        "MultipleStates": ""
+    },
+    "Minnesota": {
+        "BaseState": "Minnesota",
+        "CenterLat": 46.2807,
+        "CenterLong": -94.3053,
+        "DefaultZoomLevel": "5",
+        "GeoTypeGroup": "2 - States",
+        "InterMarketMetro": "0",
+        "MapboxMarketName": "Minnesota",
+        "MapboxState": "",
+        "MarketName": "Minnesota",
+        "Market_Display_Name": "Minnesota",
+        "MultipleStates": ""
+    },
+    "Mississippi": {
+        "BaseState": "Mississippi",
+        "CenterLat": 32.7364,
+        "CenterLong": -89.6678,
+        "DefaultZoomLevel": "5",
+        "GeoTypeGroup": "2 - States",
+        "InterMarketMetro": "0",
+        "MapboxMarketName": "Mississippi",
+        "MapboxState": "",
+        "MarketName": "Mississippi",
+        "Market_Display_Name": "Mississippi",
+        "MultipleStates": ""
     },
     "MissoulaMT": {
+        "BaseState": "Montana",
         "CenterLat": 46.874167,
         "CenterLong": -113.994659,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "MissoulaMT",
+        "MapboxState": "",
         "MarketName": "MissoulaMT",
         "Market_Display_Name": "Missoula, MT",
-        "StateFips": ""
+        "MultipleStates": ""
+    },
+    "Missouri": {
+        "BaseState": "Missouri",
+        "CenterLat": 38.3566,
+        "CenterLong": -92.458,
+        "DefaultZoomLevel": "5",
+        "GeoTypeGroup": "2 - States",
+        "InterMarketMetro": "0",
+        "MapboxMarketName": "Missouri",
+        "MapboxState": "",
+        "MarketName": "Missouri",
+        "Market_Display_Name": "Missouri",
+        "MultipleStates": ""
     },
     "MobileAL": {
+        "BaseState": "Alabama",
         "CenterLat": 30.688976,
         "CenterLong": -88.041898,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "MobileAL",
+        "MapboxState": "",
         "MarketName": "MobileAL",
         "Market_Display_Name": "Mobile, AL",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "ModestoCA": {
+        "BaseState": "California",
         "CenterLat": 37.640918,
         "CenterLong": -121.000675,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "1",
         "MapboxMarketName": "ModestoCA",
+        "MapboxState": "",
         "MarketName": "ModestoCA",
         "Market_Display_Name": "Modesto, CA",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "MonroeLA": {
+        "BaseState": "Louisiana",
         "CenterLat": 32.501182,
         "CenterLong": -92.110268,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "MonroeLA",
+        "MapboxState": "",
         "MarketName": "MonroeLA",
         "Market_Display_Name": "Monroe, LA",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "MonroeMI": {
+        "BaseState": "Michigan",
         "CenterLat": 41.914648,
         "CenterLong": -83.395996,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "MonroeMI",
+        "MapboxState": "",
         "MarketName": "MonroeMI",
         "Market_Display_Name": "Monroe, MI",
-        "StateFips": ""
+        "MultipleStates": ""
+    },
+    "Montana": {
+        "BaseState": "Montana",
+        "CenterLat": 47.0527,
+        "CenterLong": -109.6333,
+        "DefaultZoomLevel": "5",
+        "GeoTypeGroup": "2 - States",
+        "InterMarketMetro": "0",
+        "MapboxMarketName": "Montana",
+        "MapboxState": "",
+        "MarketName": "Montana",
+        "Market_Display_Name": "Montana",
+        "MultipleStates": ""
     },
     "MontgomeryAL": {
+        "BaseState": "Alabama",
         "CenterLat": 32.379282,
         "CenterLong": -86.307556,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "MontgomeryAL",
+        "MapboxState": "",
         "MarketName": "MontgomeryAL",
         "Market_Display_Name": "Montgomery, AL",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "MorgantownWV": {
+        "BaseState": "WestVirginia",
         "CenterLat": 39.630172,
         "CenterLong": -79.954218,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "MorgantownWV",
+        "MapboxState": "",
         "MarketName": "MorgantownWV",
         "Market_Display_Name": "Morgantown, WV",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "MorristownTN": {
+        "BaseState": "Tennessee",
         "CenterLat": 36.2145,
         "CenterLong": -83.293718,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "MorristownTN",
+        "MapboxState": "",
         "MarketName": "MorristownTN",
         "Market_Display_Name": "Morristown, TN",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "MountVernonWA": {
+        "BaseState": "Washington",
         "CenterLat": 48.416346,
         "CenterLong": -122.337789,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "MountVernonWA",
+        "MapboxState": "",
         "MarketName": "MountVernonWA",
         "Market_Display_Name": "Mount Vernon, WA",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "MuncieIN": {
+        "BaseState": "Indiana",
         "CenterLat": 40.19561,
         "CenterLong": -85.387371,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "MuncieIN",
+        "MapboxState": "",
         "MarketName": "MuncieIN",
         "Market_Display_Name": "Muncie, IN",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "MuskegonMI": {
+        "BaseState": "Michigan",
         "CenterLat": 43.234869,
         "CenterLong": -86.245731,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "MuskegonMI",
+        "MapboxState": "",
         "MarketName": "MuskegonMI",
         "Market_Display_Name": "Muskegon, MI",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "MyrtleBeachSC": {
+        "BaseState": "SouthCarolina",
         "CenterLat": 33.695545,
         "CenterLong": -78.882373,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "1",
         "MapboxMarketName": "MyrtleBeachSC",
+        "MapboxState": "",
         "MarketName": "MyrtleBeachSC",
         "Market_Display_Name": "Myrtle Beach, SC",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "NapaCA": {
+        "BaseState": "California",
         "CenterLat": 38.296945,
         "CenterLong": -122.289213,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "NapaCA",
+        "MapboxState": "",
         "MarketName": "NapaCA",
         "Market_Display_Name": "Napa, CA",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "NaplesFL": {
+        "BaseState": "Florida",
         "CenterLat": 26.138964,
         "CenterLong": -81.795678,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "NaplesFL",
+        "MapboxState": "",
         "MarketName": "NaplesFL",
         "Market_Display_Name": "Naples, FL",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "NashvilleTN": {
+        "BaseState": "Tennessee",
         "CenterLat": 36.16715,
         "CenterLong": -86.777289,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "1",
         "MapboxMarketName": "NashvilleTN",
+        "MapboxState": "",
         "MarketName": "NashvilleTN",
         "Market_Display_Name": "Nashville, TN",
-        "StateFips": ""
+        "MultipleStates": ""
+    },
+    "Nebraska": {
+        "BaseState": "Nebraska",
+        "CenterLat": 41.5378,
+        "CenterLong": -99.7951,
+        "DefaultZoomLevel": "5",
+        "GeoTypeGroup": "2 - States",
+        "InterMarketMetro": "0",
+        "MapboxMarketName": "Nebraska",
+        "MapboxState": "",
+        "MarketName": "Nebraska",
+        "Market_Display_Name": "Nebraska",
+        "MultipleStates": ""
+    },
+    "Nevada": {
+        "BaseState": "Nevada",
+        "CenterLat": 39.491038,
+        "CenterLong": -117.067442,
+        "DefaultZoomLevel": "5",
+        "GeoTypeGroup": "2 - States",
+        "InterMarketMetro": "0",
+        "MapboxMarketName": "Nevada",
+        "MapboxState": "",
+        "MarketName": "Nevada",
+        "Market_Display_Name": "Nevada",
+        "MultipleStates": ""
     },
     "NewBernNC": {
+        "BaseState": "NorthCarolina",
         "CenterLat": 35.106982,
         "CenterLong": -77.038207,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "NewBernNC",
+        "MapboxState": "",
         "MarketName": "NewBernNC",
         "Market_Display_Name": "New Bern, NC",
-        "StateFips": ""
+        "MultipleStates": ""
+    },
+    "NewHampshire": {
+        "BaseState": "NewHampshire",
+        "CenterLat": 43.6805,
+        "CenterLong": -71.5811,
+        "DefaultZoomLevel": "6",
+        "GeoTypeGroup": "2 - States",
+        "InterMarketMetro": "0",
+        "MapboxMarketName": "NewHampshire",
+        "MapboxState": "",
+        "MarketName": "NewHampshire",
+        "Market_Display_Name": "New Hampshire",
+        "MultipleStates": ""
     },
     "NewHavenCT": {
+        "BaseState": "Connecticut",
         "CenterLat": 41.307057,
         "CenterLong": -72.924334,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "1",
         "MapboxMarketName": "NewHavenCT",
+        "MapboxState": "",
         "MarketName": "NewHavenCT",
         "Market_Display_Name": "New Haven, CT",
-        "StateFips": ""
+        "MultipleStates": ""
+    },
+    "NewJersey": {
+        "BaseState": "NewJersey",
+        "CenterLat": 40.1907,
+        "CenterLong": -74.6728,
+        "DefaultZoomLevel": "6",
+        "GeoTypeGroup": "2 - States",
+        "InterMarketMetro": "0",
+        "MapboxMarketName": "NewJersey",
+        "MapboxState": "",
+        "MarketName": "NewJersey",
+        "Market_Display_Name": "New Jersey",
+        "MultipleStates": ""
+    },
+    "NewMexico": {
+        "BaseState": "NewMexico",
+        "CenterLat": 34.4071,
+        "CenterLong": -106.1126,
+        "DefaultZoomLevel": "5",
+        "GeoTypeGroup": "2 - States",
+        "InterMarketMetro": "0",
+        "MapboxMarketName": "NewMexico",
+        "MapboxState": "",
+        "MarketName": "NewMexico",
+        "Market_Display_Name": "New Mexico",
+        "MultipleStates": ""
     },
     "NewOrleansLA": {
+        "BaseState": "Louisiana",
         "CenterLat": 29.952624,
         "CenterLong": -90.077951,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "1",
         "MapboxMarketName": "NewOrleansLA",
+        "MapboxState": "",
         "MarketName": "NewOrleansLA",
         "Market_Display_Name": "New Orleans, LA",
-        "StateFips": ""
+        "MultipleStates": ""
+    },
+    "NewYork": {
+        "BaseState": "NewYork",
+        "CenterLat": 42.9538,
+        "CenterLong": -75.5268,
+        "DefaultZoomLevel": "5",
+        "GeoTypeGroup": "2 - States",
+        "InterMarketMetro": "0",
+        "MapboxMarketName": "NewYork",
+        "MapboxState": "",
+        "MarketName": "NewYork",
+        "Market_Display_Name": "New York",
+        "MultipleStates": ""
     },
     "NewYorkNY": {
+        "BaseState": "NewYork",
         "CenterLat": 40.71311,
         "CenterLong": -74.006016,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "1",
         "MapboxMarketName": "NewYorkNY",
+        "MapboxState": "",
         "MarketName": "NewYorkNY",
         "Market_Display_Name": "New York, NY",
-        "StateFips": ""
+        "MultipleStates": "1"
     },
     "NilesMI": {
+        "BaseState": "Michigan",
         "CenterLat": 41.831689,
         "CenterLong": -86.257404,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "NilesMI",
+        "MapboxState": "",
         "MarketName": "NilesMI",
         "Market_Display_Name": "Niles, MI",
-        "StateFips": ""
+        "MultipleStates": ""
+    },
+    "NorthCarolina": {
+        "BaseState": "NorthCarolina",
+        "CenterLat": 35.5557,
+        "CenterLong": -79.3877,
+        "DefaultZoomLevel": "5",
+        "GeoTypeGroup": "2 - States",
+        "InterMarketMetro": "0",
+        "MapboxMarketName": "NorthCarolina",
+        "MapboxState": "",
+        "MarketName": "NorthCarolina",
+        "Market_Display_Name": "North Carolina",
+        "MultipleStates": ""
+    },
+    "NorthDakota": {
+        "BaseState": "NorthDakota",
+        "CenterLat": 47.4501,
+        "CenterLong": -100.4659,
+        "DefaultZoomLevel": "5",
+        "GeoTypeGroup": "2 - States",
+        "InterMarketMetro": "0",
+        "MapboxMarketName": "NorthDakota",
+        "MapboxState": "",
+        "MarketName": "NorthDakota",
+        "Market_Display_Name": "North Dakota",
+        "MultipleStates": ""
     },
     "NorthPortFL": {
+        "BaseState": "Florida",
         "CenterLat": 27.075119,
         "CenterLong": -82.206884,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "1",
         "MapboxMarketName": "NorthPortFL",
+        "MapboxState": "",
         "MarketName": "NorthPortFL",
         "Market_Display_Name": "North Port, FL",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "NorwichCT": {
+        "BaseState": "Connecticut",
         "CenterLat": 41.526369,
         "CenterLong": -72.075729,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "NorwichCT",
+        "MapboxState": "",
         "MarketName": "NorwichCT",
         "Market_Display_Name": "Norwich, CT",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "OcalaFL": {
+        "BaseState": "Florida",
         "CenterLat": 29.18495,
         "CenterLong": -82.134711,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "1",
         "MapboxMarketName": "OcalaFL",
+        "MapboxState": "",
         "MarketName": "OcalaFL",
         "Market_Display_Name": "Ocala, FL",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "OceanCityNJ": {
+        "BaseState": "NewJersey",
         "CenterLat": 39.278607,
         "CenterLong": -74.575811,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "OceanCityNJ",
+        "MapboxState": "",
         "MarketName": "OceanCityNJ",
         "Market_Display_Name": "Ocean City, NJ",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "OdessaTX": {
+        "BaseState": "Texas",
         "CenterLat": 31.848404,
         "CenterLong": -102.374712,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "OdessaTX",
+        "MapboxState": "",
         "MarketName": "OdessaTX",
         "Market_Display_Name": "Odessa, TX",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "OgdenUT": {
+        "BaseState": "Utah",
         "CenterLat": 41.219909,
         "CenterLong": -111.970269,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "1",
         "MapboxMarketName": "OgdenUT",
+        "MapboxState": "",
         "MarketName": "OgdenUT",
         "Market_Display_Name": "Ogden, UT",
-        "StateFips": ""
+        "MultipleStates": ""
+    },
+    "Ohio": {
+        "BaseState": "Ohio",
+        "CenterLat": 40.2862,
+        "CenterLong": -82.7937,
+        "DefaultZoomLevel": "5",
+        "GeoTypeGroup": "2 - States",
+        "InterMarketMetro": "0",
+        "MapboxMarketName": "Ohio",
+        "MapboxState": "",
+        "MarketName": "Ohio",
+        "Market_Display_Name": "Ohio",
+        "MultipleStates": ""
+    },
+    "Oklahoma": {
+        "BaseState": "Oklahoma",
+        "CenterLat": 35.5889,
+        "CenterLong": -97.4943,
+        "DefaultZoomLevel": "5",
+        "GeoTypeGroup": "2 - States",
+        "InterMarketMetro": "0",
+        "MapboxMarketName": "Oklahoma",
+        "MapboxState": "",
+        "MarketName": "Oklahoma",
+        "Market_Display_Name": "Oklahoma",
+        "MultipleStates": ""
     },
     "OklahomaCityOK": {
+        "BaseState": "Oklahoma",
         "CenterLat": 35.468785,
         "CenterLong": -97.520319,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "1",
         "MapboxMarketName": "OklahomaCityOK",
+        "MapboxState": "",
         "MarketName": "OklahomaCityOK",
         "Market_Display_Name": "Oklahoma City, OK",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "OlympiaWA": {
+        "BaseState": "Washington",
         "CenterLat": 47.045344,
         "CenterLong": -122.895401,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "OlympiaWA",
+        "MapboxState": "",
         "MarketName": "OlympiaWA",
         "Market_Display_Name": "Olympia, WA",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "OmahaNE": {
+        "BaseState": "Nebraska",
         "CenterLat": 41.256961,
         "CenterLong": -95.941125,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "1",
         "MapboxMarketName": "OmahaNE",
+        "MapboxState": "",
         "MarketName": "OmahaNE",
         "Market_Display_Name": "Omaha, NE",
-        "StateFips": ""
+        "MultipleStates": ""
+    },
+    "Oregon": {
+        "BaseState": "Oregon",
+        "CenterLat": 43.9336,
+        "CenterLong": -120.5583,
+        "DefaultZoomLevel": "5",
+        "GeoTypeGroup": "2 - States",
+        "InterMarketMetro": "0",
+        "MapboxMarketName": "Oregon",
+        "MapboxState": "",
+        "MarketName": "Oregon",
+        "Market_Display_Name": "Oregon",
+        "MultipleStates": ""
     },
     "OrlandoFL": {
+        "BaseState": "Florida",
         "CenterLat": 28.537301,
         "CenterLong": -81.379251,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "1",
         "MapboxMarketName": "OrlandoFL",
+        "MapboxState": "",
         "MarketName": "OrlandoFL",
         "Market_Display_Name": "Orlando, FL",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "OshkoshWI": {
+        "BaseState": "Wisconsin",
         "CenterLat": 44.019792,
         "CenterLong": -88.540826,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "OshkoshWI",
+        "MapboxState": "",
         "MarketName": "OshkoshWI",
         "Market_Display_Name": "Oshkosh, WI",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "OwensboroKY": {
+        "BaseState": "Kentucky",
         "CenterLat": 37.77278,
         "CenterLong": -87.110793,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "OwensboroKY",
+        "MapboxState": "",
         "MarketName": "OwensboroKY",
         "Market_Display_Name": "Owensboro, KY",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "OxnardCA": {
+        "BaseState": "California",
         "CenterLat": 34.199747,
         "CenterLong": -119.179948,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "1",
         "MapboxMarketName": "OxnardCA",
+        "MapboxState": "",
         "MarketName": "OxnardCA",
         "Market_Display_Name": "Oxnard, CA",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "PalmBayFL": {
+        "BaseState": "Florida",
         "CenterLat": 27.9984,
         "CenterLong": -80.669501,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "1",
         "MapboxMarketName": "PalmBayFL",
+        "MapboxState": "",
         "MarketName": "PalmBayFL",
         "Market_Display_Name": "Palm Bay, FL",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "PanamaCityFL": {
+        "BaseState": "Florida",
         "CenterLat": 30.22857,
         "CenterLong": -85.888742,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "PanamaCityFL",
+        "MapboxState": "",
         "MarketName": "PanamaCityFL",
         "Market_Display_Name": "Panama City, FL",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "ParkersburgWV": {
+        "BaseState": "WestVirginia",
         "CenterLat": 39.264074,
         "CenterLong": -81.562613,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "ParkersburgWV",
+        "MapboxState": "",
         "MarketName": "ParkersburgWV",
         "Market_Display_Name": "Parkersburg, WV",
-        "StateFips": ""
+        "MultipleStates": ""
+    },
+    "Pennsylvania": {
+        "BaseState": "Pennsylvania",
+        "CenterLat": 40.8781,
+        "CenterLong": -77.7996,
+        "DefaultZoomLevel": "5",
+        "GeoTypeGroup": "2 - States",
+        "InterMarketMetro": "0",
+        "MapboxMarketName": "Pennsylvania",
+        "MapboxState": "",
+        "MarketName": "Pennsylvania",
+        "Market_Display_Name": "Pennsylvania",
+        "MultipleStates": ""
     },
     "PensacolaFL": {
+        "BaseState": "Florida",
         "CenterLat": 30.407283,
         "CenterLong": -87.218356,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "1",
         "MapboxMarketName": "PensacolaFL",
+        "MapboxState": "",
         "MarketName": "PensacolaFL",
         "Market_Display_Name": "Pensacola, FL",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "PeoriaIL": {
+        "BaseState": "Illinois",
         "CenterLat": 40.692149,
         "CenterLong": -89.592878,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "PeoriaIL",
+        "MapboxState": "",
         "MarketName": "PeoriaIL",
         "Market_Display_Name": "Peoria, IL",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "PhiladelphiaPA": {
+        "BaseState": "Pennsylvania",
         "CenterLat": 39.953236,
         "CenterLong": -75.163859,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "1",
         "MapboxMarketName": "PhiladelphiaPA",
+        "MapboxState": "",
         "MarketName": "PhiladelphiaPA",
         "Market_Display_Name": "Philadelphia, PA",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "PhoenixAZ": {
+        "BaseState": "Arizona",
         "CenterLat": 33.448831,
         "CenterLong": -112.077685,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "1",
         "MapboxMarketName": "PhoenixAZ",
+        "MapboxState": "",
         "MarketName": "PhoenixAZ",
         "Market_Display_Name": "Phoenix, AZ",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "PineBluffAR": {
+        "BaseState": "Arkansas",
         "CenterLat": 34.221162,
         "CenterLong": -92.001075,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "PineBluffAR",
+        "MapboxState": "",
         "MarketName": "PineBluffAR",
         "Market_Display_Name": "Pine Bluff, AR",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "PittsburghPA": {
+        "BaseState": "Pennsylvania",
         "CenterLat": 40.438025,
         "CenterLong": -79.997816,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "1",
         "MapboxMarketName": "PittsburghPA",
+        "MapboxState": "",
         "MarketName": "PittsburghPA",
         "Market_Display_Name": "Pittsburgh, PA",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "PittsfieldMA": {
+        "BaseState": "Massachusetts",
         "CenterLat": 42.449934,
         "CenterLong": -73.252186,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "PittsfieldMA",
+        "MapboxState": "",
         "MarketName": "PittsfieldMA",
         "Market_Display_Name": "Pittsfield, MA",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "PocatelloID": {
+        "BaseState": "Idaho",
         "CenterLat": 42.873471,
         "CenterLong": -112.44929,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "PocatelloID",
+        "MapboxState": "",
         "MarketName": "PocatelloID",
         "Market_Display_Name": "Pocatello, ID",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "PortStLucieFL": {
+        "BaseState": "Florida",
         "CenterLat": 27.274668,
         "CenterLong": -80.34353,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "1",
         "MapboxMarketName": "PortStLucieFL",
+        "MapboxState": "",
         "MarketName": "PortStLucieFL",
         "Market_Display_Name": "Port St. Lucie, FL",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "PortlandME": {
+        "BaseState": "Maine",
         "CenterLat": 43.659378,
         "CenterLong": -70.257591,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "1",
         "MapboxMarketName": "PortlandME",
+        "MapboxState": "",
         "MarketName": "PortlandME",
         "Market_Display_Name": "Portland, ME",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "PortlandOR": {
+        "BaseState": "Oregon",
         "CenterLat": 45.513751,
         "CenterLong": -122.674206,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "1",
         "MapboxMarketName": "PortlandOR",
+        "MapboxState": "",
         "MarketName": "PortlandOR",
         "Market_Display_Name": "Portland, OR",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "PrescottAZ": {
+        "BaseState": "Arizona",
         "CenterLat": 34.596422,
         "CenterLong": -112.334348,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "PrescottAZ",
+        "MapboxState": "",
         "MarketName": "PrescottAZ",
         "Market_Display_Name": "Prescott, AZ",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "ProvidenceRI": {
+        "BaseState": "RhodeIsland",
         "CenterLat": 41.823923,
         "CenterLong": -71.412765,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "1",
         "MapboxMarketName": "ProvidenceRI",
+        "MapboxState": "",
         "MarketName": "ProvidenceRI",
         "Market_Display_Name": "Providence, RI",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "ProvoUT": {
+        "BaseState": "Utah",
         "CenterLat": 40.233385,
         "CenterLong": -111.665688,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "1",
         "MapboxMarketName": "ProvoUT",
+        "MapboxState": "",
         "MarketName": "ProvoUT",
         "Market_Display_Name": "Provo, UT",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "PuebloCO": {
+        "BaseState": "Colorado",
         "CenterLat": 38.265904,
         "CenterLong": -104.611704,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "PuebloCO",
+        "MapboxState": "",
         "MarketName": "PuebloCO",
         "Market_Display_Name": "Pueblo, CO",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "PuntaGordaFL": {
+        "BaseState": "Florida",
         "CenterLat": 26.93386,
         "CenterLong": -82.052959,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "PuntaGordaFL",
+        "MapboxState": "",
         "MarketName": "PuntaGordaFL",
         "Market_Display_Name": "Punta Gorda, FL",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "RacineWI": {
+        "BaseState": "Wisconsin",
         "CenterLat": 42.725591,
         "CenterLong": -87.79048,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "RacineWI",
+        "MapboxState": "",
         "MarketName": "RacineWI",
         "Market_Display_Name": "Racine, WI",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "RaleighNC": {
+        "BaseState": "NorthCarolina",
         "CenterLat": 35.776891,
         "CenterLong": -78.640465,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "1",
         "MapboxMarketName": "RaleighNC",
+        "MapboxState": "",
         "MarketName": "RaleighNC",
         "Market_Display_Name": "Raleigh, NC",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "RapidCitySD": {
+        "BaseState": "SouthDakota",
         "CenterLat": 44.08237,
         "CenterLong": -103.225892,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "RapidCitySD",
+        "MapboxState": "",
         "MarketName": "RapidCitySD",
         "Market_Display_Name": "Rapid City, SD",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "ReadingPA": {
+        "BaseState": "Pennsylvania",
         "CenterLat": 40.337059,
         "CenterLong": -75.92169,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "ReadingPA",
+        "MapboxState": "",
         "MarketName": "ReadingPA",
         "Market_Display_Name": "Reading, PA",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "ReddingCA": {
+        "BaseState": "California",
         "CenterLat": 40.57375,
         "CenterLong": -122.381342,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "ReddingCA",
+        "MapboxState": "",
         "MarketName": "ReddingCA",
         "Market_Display_Name": "Redding, CA",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "RenoNV": {
+        "BaseState": "Nevada",
         "CenterLat": 39.526124,
         "CenterLong": -119.813014,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "1",
         "MapboxMarketName": "RenoNV",
+        "MapboxState": "",
         "MarketName": "RenoNV",
         "Market_Display_Name": "Reno, NV",
-        "StateFips": ""
+        "MultipleStates": ""
+    },
+    "RhodeIsland": {
+        "BaseState": "RhodeIsland",
+        "CenterLat": 41.6762,
+        "CenterLong": -71.5562,
+        "DefaultZoomLevel": "8",
+        "GeoTypeGroup": "2 - States",
+        "InterMarketMetro": "0",
+        "MapboxMarketName": "RhodeIsland",
+        "MapboxState": "",
+        "MarketName": "RhodeIsland",
+        "Market_Display_Name": "Rhode Island",
+        "MultipleStates": ""
     },
     "RichmondVA": {
+        "BaseState": "Virginia",
         "CenterLat": 37.541123,
         "CenterLong": -77.432206,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "1",
         "MapboxMarketName": "RichmondVA",
+        "MapboxState": "",
         "MarketName": "RichmondVA",
         "Market_Display_Name": "Richmond, VA",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "RiversideCA": {
+        "BaseState": "California",
         "CenterLat": 33.980833,
         "CenterLong": -117.374784,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "1",
         "MapboxMarketName": "RiversideCA",
+        "MapboxState": "",
         "MarketName": "RiversideCA",
         "Market_Display_Name": "Riverside, CA",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "RoanokeVA": {
+        "BaseState": "Virginia",
         "CenterLat": 37.271132,
         "CenterLong": -79.944446,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "RoanokeVA",
+        "MapboxState": "",
         "MarketName": "RoanokeVA",
         "Market_Display_Name": "Roanoke, VA",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "RochesterMN": {
+        "BaseState": "Minnesota",
         "CenterLat": 44.020536,
         "CenterLong": -92.460635,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "RochesterMN",
+        "MapboxState": "",
         "MarketName": "RochesterMN",
         "Market_Display_Name": "Rochester, MN",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "RochesterNY": {
+        "BaseState": "NewYork",
         "CenterLat": 43.156829,
         "CenterLong": -77.614628,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "1",
         "MapboxMarketName": "RochesterNY",
+        "MapboxState": "",
         "MarketName": "RochesterNY",
         "Market_Display_Name": "Rochester, NY",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "RockfordIL": {
+        "BaseState": "Illinois",
         "CenterLat": 42.267523,
         "CenterLong": -89.087673,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "RockfordIL",
+        "MapboxState": "",
         "MarketName": "RockfordIL",
         "Market_Display_Name": "Rockford, IL",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "RockyMountNC": {
+        "BaseState": "NorthCarolina",
         "CenterLat": 35.93909,
         "CenterLong": -77.79908,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "RockyMountNC",
+        "MapboxState": "",
         "MarketName": "RockyMountNC",
         "Market_Display_Name": "Rocky Mount, NC",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "RomeGA": {
+        "BaseState": "Georgia",
         "CenterLat": 34.256409,
         "CenterLong": -85.168896,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "RomeGA",
+        "MapboxState": "",
         "MarketName": "RomeGA",
         "Market_Display_Name": "Rome, GA",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "SacramentoCA": {
+        "BaseState": "California",
         "CenterLat": 38.582601,
         "CenterLong": -121.492844,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "1",
         "MapboxMarketName": "SacramentoCA",
+        "MapboxState": "",
         "MarketName": "SacramentoCA",
         "Market_Display_Name": "Sacramento, CA",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "SaginawMI": {
+        "BaseState": "Michigan",
         "CenterLat": 43.419157,
         "CenterLong": -83.947471,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "SaginawMI",
+        "MapboxState": "",
         "MarketName": "SaginawMI",
         "Market_Display_Name": "Saginaw, MI",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "SalemOR": {
+        "BaseState": "Oregon",
         "CenterLat": 44.936118,
         "CenterLong": -123.042024,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "SalemOR",
+        "MapboxState": "",
         "MarketName": "SalemOR",
         "Market_Display_Name": "Salem, OR",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "SalinasCA": {
+        "BaseState": "California",
         "CenterLat": 36.675308,
         "CenterLong": -121.657413,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "SalinasCA",
+        "MapboxState": "",
         "MarketName": "SalinasCA",
         "Market_Display_Name": "Salinas, CA",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "SalisburyMD": {
+        "BaseState": "Maryland",
         "CenterLat": 38.366338,
         "CenterLong": -75.600268,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "SalisburyMD",
+        "MapboxState": "",
         "MarketName": "SalisburyMD",
         "Market_Display_Name": "Salisbury, MD",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "SaltLakeCityUT": {
+        "BaseState": "Utah",
         "CenterLat": 40.758651,
         "CenterLong": -111.886737,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "1",
         "MapboxMarketName": "SaltLakeCityUT",
+        "MapboxState": "",
         "MarketName": "SaltLakeCityUT",
         "Market_Display_Name": "Salt Lake City, UT",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "SanAngeloTX": {
+        "BaseState": "Texas",
         "CenterLat": 31.464527,
         "CenterLong": -100.439571,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "SanAngeloTX",
+        "MapboxState": "",
         "MarketName": "SanAngeloTX",
         "Market_Display_Name": "San Angelo, TX",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "SanAntonioTX": {
+        "BaseState": "Texas",
         "CenterLat": 29.424071,
         "CenterLong": -98.493864,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "1",
         "MapboxMarketName": "SanAntonioTX",
+        "MapboxState": "",
         "MarketName": "SanAntonioTX",
         "Market_Display_Name": "San Antonio, TX",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "SanDiegoCA": {
+        "BaseState": "California",
         "CenterLat": 32.716824,
         "CenterLong": -117.16276,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "1",
         "MapboxMarketName": "SanDiegoCA",
+        "MapboxState": "",
         "MarketName": "SanDiegoCA",
         "Market_Display_Name": "San Diego, CA",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "SanFranciscoCA": {
+        "BaseState": "California",
         "CenterLat": 37.779309,
         "CenterLong": -122.41848,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "1",
         "MapboxMarketName": "SanFranciscoCA",
+        "MapboxState": "",
         "MarketName": "SanFranciscoCA",
         "Market_Display_Name": "San Francisco, CA",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "SanJoseCA": {
+        "BaseState": "California",
         "CenterLat": 37.338003,
         "CenterLong": -121.885691,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "1",
         "MapboxMarketName": "SanJoseCA",
+        "MapboxState": "",
         "MarketName": "SanJoseCA",
         "Market_Display_Name": "San Jose, CA",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "SanLuisObispoCA": {
+        "BaseState": "California",
         "CenterLat": 35.282706,
         "CenterLong": -120.662512,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "SanLuisObispoCA",
+        "MapboxState": "",
         "MarketName": "SanLuisObispoCA",
         "Market_Display_Name": "San Luis Obispo, CA",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "SantaCruzCA": {
+        "BaseState": "California",
         "CenterLat": 36.974626,
         "CenterLong": -122.029939,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "SantaCruzCA",
+        "MapboxState": "",
         "MarketName": "SantaCruzCA",
         "Market_Display_Name": "Santa Cruz, CA",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "SantaFeNM": {
+        "BaseState": "NewMexico",
         "CenterLat": 35.689689,
         "CenterLong": -105.938029,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "SantaFeNM",
+        "MapboxState": "",
         "MarketName": "SantaFeNM",
         "Market_Display_Name": "Santa Fe, NM",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "SantaMariaCA": {
+        "BaseState": "California",
         "CenterLat": 34.949949,
         "CenterLong": -120.434363,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "SantaMariaCA",
+        "MapboxState": "",
         "MarketName": "SantaMariaCA",
         "Market_Display_Name": "Santa Maria, CA",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "SantaRosaCA": {
+        "BaseState": "California",
         "CenterLat": 38.43836,
         "CenterLong": -122.711499,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "1",
         "MapboxMarketName": "SantaRosaCA",
+        "MapboxState": "",
         "MarketName": "SantaRosaCA",
         "Market_Display_Name": "Santa Rosa, CA",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "SavannahGA": {
+        "BaseState": "Georgia",
         "CenterLat": 32.081027,
         "CenterLong": -81.091198,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "SavannahGA",
+        "MapboxState": "",
         "MarketName": "SavannahGA",
         "Market_Display_Name": "Savannah, GA",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "ScrantonPA": {
+        "BaseState": "Pennsylvania",
         "CenterLat": 41.409932,
         "CenterLong": -75.661386,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "1",
         "MapboxMarketName": "ScrantonPA",
+        "MapboxState": "",
         "MarketName": "ScrantonPA",
         "Market_Display_Name": "Scranton, PA",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "SeattleWA": {
+        "BaseState": "Washington",
         "CenterLat": 47.603563,
         "CenterLong": -122.329555,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "1",
         "MapboxMarketName": "SeattleWA",
+        "MapboxState": "",
         "MarketName": "SeattleWA",
         "Market_Display_Name": "Seattle, WA",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "SebastianFL": {
+        "BaseState": "Florida",
         "CenterLat": 27.817863,
         "CenterLong": -80.475265,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "SebastianFL",
+        "MapboxState": "",
         "MarketName": "SebastianFL",
         "Market_Display_Name": "Sebastian, FL",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "SebringFL": {
+        "BaseState": "Florida",
         "CenterLat": 27.493616,
         "CenterLong": -81.436825,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "SebringFL",
+        "MapboxState": "",
         "MarketName": "SebringFL",
         "Market_Display_Name": "Sebring, FL",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "SheboyganWI": {
+        "BaseState": "Wisconsin",
         "CenterLat": 43.750975,
         "CenterLong": -87.71407,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "SheboyganWI",
+        "MapboxState": "",
         "MarketName": "SheboyganWI",
         "Market_Display_Name": "Sheboygan, WI",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "ShermanTX": {
+        "BaseState": "Texas",
         "CenterLat": 33.639164,
         "CenterLong": -96.611902,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "ShermanTX",
+        "MapboxState": "",
         "MarketName": "ShermanTX",
         "Market_Display_Name": "Sherman, TX",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "ShreveportLA": {
+        "BaseState": "Louisiana",
         "CenterLat": 32.513981,
         "CenterLong": -93.746498,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "ShreveportLA",
+        "MapboxState": "",
         "MarketName": "ShreveportLA",
         "Market_Display_Name": "Shreveport, LA",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "SierraVistaAZ": {
+        "BaseState": "Arizona",
         "CenterLat": 31.564806,
         "CenterLong": -110.272679,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "SierraVistaAZ",
+        "MapboxState": "",
         "MarketName": "SierraVistaAZ",
         "Market_Display_Name": "Sierra Vista, AZ",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "SiouxCityIA": {
+        "BaseState": "Iowa",
         "CenterLat": 42.496602,
         "CenterLong": -96.406407,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "SiouxCityIA",
+        "MapboxState": "",
         "MarketName": "SiouxCityIA",
         "Market_Display_Name": "Sioux City, IA",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "SiouxFallsSD": {
+        "BaseState": "SouthDakota",
         "CenterLat": 43.547311,
         "CenterLong": -96.729358,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "SiouxFallsSD",
+        "MapboxState": "",
         "MarketName": "SiouxFallsSD",
         "Market_Display_Name": "Sioux Falls, SD",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "SouthBendIN": {
+        "BaseState": "Indiana",
         "CenterLat": 41.675604,
         "CenterLong": -86.252407,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "SouthBendIN",
+        "MapboxState": "",
         "MarketName": "SouthBendIN",
         "Market_Display_Name": "South Bend, IN",
-        "StateFips": ""
+        "MultipleStates": ""
+    },
+    "SouthCarolina": {
+        "BaseState": "SouthCarolina",
+        "CenterLat": 33.9169,
+        "CenterLong": -80.8964,
+        "DefaultZoomLevel": "5",
+        "GeoTypeGroup": "2 - States",
+        "InterMarketMetro": "0",
+        "MapboxMarketName": "SouthCarolina",
+        "MapboxState": "",
+        "MarketName": "SouthCarolina",
+        "Market_Display_Name": "South Carolina",
+        "MultipleStates": ""
+    },
+    "SouthDakota": {
+        "BaseState": "SouthDakota",
+        "CenterLat": 44.4443,
+        "CenterLong": -100.2263,
+        "DefaultZoomLevel": "5",
+        "GeoTypeGroup": "2 - States",
+        "InterMarketMetro": "0",
+        "MapboxMarketName": "SouthDakota",
+        "MapboxState": "",
+        "MarketName": "SouthDakota",
+        "Market_Display_Name": "South Dakota",
+        "MultipleStates": ""
     },
     "SpartanburgSC": {
+        "BaseState": "SouthCarolina",
         "CenterLat": 34.947843,
         "CenterLong": -81.932823,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "SpartanburgSC",
+        "MapboxState": "",
         "MarketName": "SpartanburgSC",
         "Market_Display_Name": "Spartanburg, SC",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "SpokaneWA": {
+        "BaseState": "Washington",
         "CenterLat": 47.660135,
         "CenterLong": -117.423901,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "1",
         "MapboxMarketName": "SpokaneWA",
+        "MapboxState": "",
         "MarketName": "SpokaneWA",
         "Market_Display_Name": "Spokane, WA",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "SpringfieldIL": {
+        "BaseState": "Illinois",
         "CenterLat": 39.799336,
         "CenterLong": -89.645137,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "SpringfieldIL",
+        "MapboxState": "",
         "MarketName": "SpringfieldIL",
         "Market_Display_Name": "Springfield, IL",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "SpringfieldMA": {
+        "BaseState": "Massachusetts",
         "CenterLat": 42.101098,
         "CenterLong": -72.589667,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "1",
         "MapboxMarketName": "SpringfieldMA",
+        "MapboxState": "",
         "MarketName": "SpringfieldMA",
         "Market_Display_Name": "Springfield, MA",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "SpringfieldMO": {
+        "BaseState": "Missouri",
         "CenterLat": 37.216891,
         "CenterLong": -93.292428,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "1",
         "MapboxMarketName": "SpringfieldMO",
+        "MapboxState": "",
         "MarketName": "SpringfieldMO",
         "Market_Display_Name": "Springfield, MO",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "SpringfieldOH": {
+        "BaseState": "Ohio",
         "CenterLat": 39.923373,
         "CenterLong": -83.810233,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "SpringfieldOH",
+        "MapboxState": "",
         "MarketName": "SpringfieldOH",
         "Market_Display_Name": "Springfield, OH",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "StCloudMN": {
+        "BaseState": "Minnesota",
         "CenterLat": 45.553112,
         "CenterLong": -94.163019,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "StCloudMN",
+        "MapboxState": "",
         "MarketName": "StCloudMN",
         "Market_Display_Name": "St. Cloud, MN",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "StGeorgeUT": {
+        "BaseState": "Utah",
         "CenterLat": 37.11191,
         "CenterLong": -113.579435,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "StGeorgeUT",
+        "MapboxState": "",
         "MarketName": "StGeorgeUT",
         "Market_Display_Name": "St. George, UT",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "StJosephMO": {
+        "BaseState": "Missouri",
         "CenterLat": 39.767679,
         "CenterLong": -94.847708,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "StJosephMO",
+        "MapboxState": "",
         "MarketName": "StJosephMO",
         "Market_Display_Name": "St. Joseph, MO",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "StLouisMO": {
+        "BaseState": "Missouri",
         "CenterLat": 38.626815,
         "CenterLong": -90.197676,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "1",
         "MapboxMarketName": "StLouisMO",
+        "MapboxState": "",
         "MarketName": "StLouisMO",
         "Market_Display_Name": "St. Louis, MO",
-        "StateFips": ""
+        "MultipleStates": "1"
     },
     "StateCollegePA": {
+        "BaseState": "Pennsylvania",
         "CenterLat": 40.762257,
         "CenterLong": -77.875479,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "StateCollegePA",
+        "MapboxState": "",
         "MarketName": "StateCollegePA",
         "Market_Display_Name": "State College, PA",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "StauntonVA": {
+        "BaseState": "Virginia",
         "CenterLat": 38.149399,
         "CenterLong": -79.074169,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "StauntonVA",
+        "MapboxState": "",
         "MarketName": "StauntonVA",
         "Market_Display_Name": "Staunton, VA",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "StocktonCA": {
+        "BaseState": "California",
         "CenterLat": 37.956115,
         "CenterLong": -121.291232,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "1",
         "MapboxMarketName": "StocktonCA",
+        "MapboxState": "",
         "MarketName": "StocktonCA",
         "Market_Display_Name": "Stockton, CA",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "SumterSC": {
+        "BaseState": "SouthCarolina",
         "CenterLat": 33.922846,
         "CenterLong": -80.339806,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "SumterSC",
+        "MapboxState": "",
         "MarketName": "SumterSC",
         "Market_Display_Name": "Sumter, SC",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "SyracuseNY": {
+        "BaseState": "NewYork",
         "CenterLat": 43.049585,
         "CenterLong": -76.149409,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "1",
         "MapboxMarketName": "SyracuseNY",
+        "MapboxState": "",
         "MarketName": "SyracuseNY",
         "Market_Display_Name": "Syracuse, NY",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "TallahasseeFL": {
+        "BaseState": "Florida",
         "CenterLat": 30.439292,
         "CenterLong": -84.282189,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "1",
         "MapboxMarketName": "TallahasseeFL",
+        "MapboxState": "",
         "MarketName": "TallahasseeFL",
         "Market_Display_Name": "Tallahassee, FL",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "TampaFL": {
+        "BaseState": "Florida",
         "CenterLat": 27.947765,
         "CenterLong": -82.456926,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "1",
         "MapboxMarketName": "TampaFL",
+        "MapboxState": "",
         "MarketName": "TampaFL",
         "Market_Display_Name": "Tampa, FL",
-        "StateFips": ""
+        "MultipleStates": ""
+    },
+    "Tennessee": {
+        "BaseState": "Tennessee",
+        "CenterLat": 35.858,
+        "CenterLong": -86.3505,
+        "DefaultZoomLevel": "5",
+        "GeoTypeGroup": "2 - States",
+        "InterMarketMetro": "0",
+        "MapboxMarketName": "Tennessee",
+        "MapboxState": "",
+        "MarketName": "Tennessee",
+        "Market_Display_Name": "Tennessee",
+        "MultipleStates": ""
     },
     "TerreHauteIN": {
+        "BaseState": "Indiana",
         "CenterLat": 39.465265,
         "CenterLong": -87.417023,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "TerreHauteIN",
+        "MapboxState": "",
         "MarketName": "TerreHauteIN",
         "Market_Display_Name": "Terre Haute, IN",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "TexarkanaTX": {
+        "BaseState": "Texas",
         "CenterLat": 33.42113,
         "CenterLong": -94.044951,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "TexarkanaTX",
+        "MapboxState": "",
         "MarketName": "TexarkanaTX",
         "Market_Display_Name": "Texarkana, TX",
-        "StateFips": ""
+        "MultipleStates": ""
+    },
+    "Texas": {
+        "BaseState": "Texas",
+        "CenterLat": 31.4757,
+        "CenterLong": -99.3312,
+        "DefaultZoomLevel": "5",
+        "GeoTypeGroup": "2 - States",
+        "InterMarketMetro": "0",
+        "MapboxMarketName": "Texas",
+        "MapboxState": "",
+        "MarketName": "Texas",
+        "Market_Display_Name": "Texas",
+        "MultipleStates": ""
     },
     "TheVillagesFL": {
+        "BaseState": "Florida",
         "CenterLat": 28.901923,
         "CenterLong": -81.914181,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "TheVillagesFL",
+        "MapboxState": "",
         "MarketName": "TheVillagesFL",
         "Market_Display_Name": "The Villages, FL",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "ToledoOH": {
+        "BaseState": "Ohio",
         "CenterLat": 41.65542,
         "CenterLong": -83.533325,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "1",
         "MapboxMarketName": "ToledoOH",
+        "MapboxState": "",
         "MarketName": "ToledoOH",
         "Market_Display_Name": "Toledo, OH",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "TopekaKS": {
+        "BaseState": "Kansas",
         "CenterLat": 39.051587,
         "CenterLong": -95.671368,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "TopekaKS",
+        "MapboxState": "",
         "MarketName": "TopekaKS",
         "Market_Display_Name": "Topeka, KS",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "TrentonNJ": {
+        "BaseState": "NewJersey",
         "CenterLat": 40.220057,
         "CenterLong": -74.759568,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "TrentonNJ",
+        "MapboxState": "",
         "MarketName": "TrentonNJ",
         "Market_Display_Name": "Trenton, NJ",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "TucsonAZ": {
+        "BaseState": "Arizona",
         "CenterLat": 32.222484,
         "CenterLong": -110.974394,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "1",
         "MapboxMarketName": "TucsonAZ",
+        "MapboxState": "",
         "MarketName": "TucsonAZ",
         "Market_Display_Name": "Tucson, AZ",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "TulsaOK": {
+        "BaseState": "Oklahoma",
         "CenterLat": 36.155146,
         "CenterLong": -95.989387,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "1",
         "MapboxMarketName": "TulsaOK",
+        "MapboxState": "",
         "MarketName": "TulsaOK",
         "Market_Display_Name": "Tulsa, OK",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "TuscaloosaAL": {
+        "BaseState": "Alabama",
         "CenterLat": 33.209769,
         "CenterLong": -87.566053,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "TuscaloosaAL",
+        "MapboxState": "",
         "MarketName": "TuscaloosaAL",
         "Market_Display_Name": "Tuscaloosa, AL",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "TylerTX": {
+        "BaseState": "Texas",
         "CenterLat": 32.352272,
         "CenterLong": -95.306324,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "TylerTX",
+        "MapboxState": "",
         "MarketName": "TylerTX",
         "Market_Display_Name": "Tyler, TX",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "UrbanHonoluluHI": {
+        "BaseState": "Hawaii",
         "CenterLat": 21.30504,
         "CenterLong": -157.857713,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "1",
         "MapboxMarketName": "UrbanHonoluluHI",
+        "MapboxState": "",
         "MarketName": "UrbanHonoluluHI",
         "Market_Display_Name": "Urban Honolulu, HI",
-        "StateFips": ""
+        "MultipleStates": ""
+    },
+    "Utah": {
+        "BaseState": "Utah",
+        "CenterLat": 39.3055,
+        "CenterLong": -111.6703,
+        "DefaultZoomLevel": "5",
+        "GeoTypeGroup": "2 - States",
+        "InterMarketMetro": "0",
+        "MapboxMarketName": "Utah",
+        "MapboxState": "",
+        "MarketName": "Utah",
+        "Market_Display_Name": "Utah",
+        "MultipleStates": ""
     },
     "UticaNY": {
+        "BaseState": "NewYork",
         "CenterLat": 43.100891,
         "CenterLong": -75.234738,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "UticaNY",
+        "MapboxState": "",
         "MarketName": "UticaNY",
         "Market_Display_Name": "Utica, NY",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "ValdostaGA": {
+        "BaseState": "Georgia",
         "CenterLat": 30.833633,
         "CenterLong": -83.278664,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "ValdostaGA",
+        "MapboxState": "",
         "MarketName": "ValdostaGA",
         "Market_Display_Name": "Valdosta, GA",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "VallejoCA": {
+        "BaseState": "California",
         "CenterLat": 38.102161,
         "CenterLong": -122.259973,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "VallejoCA",
+        "MapboxState": "",
         "MarketName": "VallejoCA",
         "Market_Display_Name": "Vallejo, CA",
-        "StateFips": ""
+        "MultipleStates": ""
+    },
+    "Vermont": {
+        "BaseState": "Vermont",
+        "CenterLat": 44.0687,
+        "CenterLong": -72.6658,
+        "DefaultZoomLevel": "5",
+        "GeoTypeGroup": "2 - States",
+        "InterMarketMetro": "0",
+        "MapboxMarketName": "Vermont",
+        "MapboxState": "",
+        "MarketName": "Vermont",
+        "Market_Display_Name": "Vermont",
+        "MultipleStates": ""
     },
     "VictoriaTX": {
+        "BaseState": "Texas",
         "CenterLat": 28.797403,
         "CenterLong": -97.007397,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "VictoriaTX",
+        "MapboxState": "",
         "MarketName": "VictoriaTX",
         "Market_Display_Name": "Victoria, TX",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "VinelandNJ": {
+        "BaseState": "NewJersey",
         "CenterLat": 39.487929,
         "CenterLong": -75.021295,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "VinelandNJ",
+        "MapboxState": "",
         "MarketName": "VinelandNJ",
         "Market_Display_Name": "Vineland, NJ",
-        "StateFips": ""
+        "MultipleStates": ""
+    },
+    "Virginia": {
+        "BaseState": "Virginia",
+        "CenterLat": 37.5215,
+        "CenterLong": -78.8537,
+        "DefaultZoomLevel": "5",
+        "GeoTypeGroup": "2 - States",
+        "InterMarketMetro": "0",
+        "MapboxMarketName": "Virginia",
+        "MapboxState": "",
+        "MarketName": "Virginia",
+        "Market_Display_Name": "Virginia",
+        "MultipleStates": ""
     },
     "VirginiaBeachVA": {
+        "BaseState": "Virginia",
         "CenterLat": 36.749438,
         "CenterLong": -76.054971,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "1",
         "MapboxMarketName": "VirginiaBeachVA",
+        "MapboxState": "",
         "MarketName": "VirginiaBeachVA",
         "Market_Display_Name": "Virginia Beach, VA",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "VisaliaCA": {
+        "BaseState": "California",
         "CenterLat": 36.329571,
         "CenterLong": -119.290585,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "1",
         "MapboxMarketName": "VisaliaCA",
+        "MapboxState": "",
         "MarketName": "VisaliaCA",
         "Market_Display_Name": "Visalia, CA",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "WacoTX": {
+        "BaseState": "Texas",
         "CenterLat": 31.558898,
         "CenterLong": -97.129983,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "WacoTX",
+        "MapboxState": "",
         "MarketName": "WacoTX",
         "Market_Display_Name": "Waco, TX",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "WallaWallaWA": {
+        "BaseState": "Washington",
         "CenterLat": 46.066634,
         "CenterLong": -118.341728,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "WallaWallaWA",
+        "MapboxState": "",
         "MarketName": "WallaWallaWA",
         "Market_Display_Name": "Walla Walla, WA",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "WarnerRobinsGA": {
+        "BaseState": "Georgia",
         "CenterLat": 32.619458,
         "CenterLong": -83.607397,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "WarnerRobinsGA",
+        "MapboxState": "",
         "MarketName": "WarnerRobinsGA",
         "Market_Display_Name": "Warner Robins, GA",
-        "StateFips": ""
+        "MultipleStates": ""
+    },
+    "Washington": {
+        "BaseState": "Washington",
+        "CenterLat": 47.3826,
+        "CenterLong": -120.4472,
+        "DefaultZoomLevel": "5",
+        "GeoTypeGroup": "2 - States",
+        "InterMarketMetro": "0",
+        "MapboxMarketName": "Washington",
+        "MapboxState": "",
+        "MarketName": "Washington",
+        "Market_Display_Name": "Washington",
+        "MultipleStates": ""
     },
     "WashingtonDC": {
+        "BaseState": "DistrictOfColumbia",
         "CenterLat": 38.895529,
         "CenterLong": -77.031564,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "1",
         "MapboxMarketName": "WashingtonDC",
+        "MapboxState": "",
         "MarketName": "WashingtonDC",
         "Market_Display_Name": "Washington, DC",
-        "StateFips": ""
+        "MultipleStates": "1"
     },
     "WaterlooIA": {
+        "BaseState": "Iowa",
         "CenterLat": 42.499377,
         "CenterLong": -92.331833,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "WaterlooIA",
+        "MapboxState": "",
         "MarketName": "WaterlooIA",
         "Market_Display_Name": "Waterloo, IA",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "WatertownNY": {
+        "BaseState": "NewYork",
         "CenterLat": 43.972846,
         "CenterLong": -75.909391,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "WatertownNY",
+        "MapboxState": "",
         "MarketName": "WatertownNY",
         "Market_Display_Name": "Watertown, NY",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "WausauWI": {
+        "BaseState": "Wisconsin",
         "CenterLat": 44.961667,
         "CenterLong": -89.626306,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "WausauWI",
+        "MapboxState": "",
         "MarketName": "WausauWI",
         "Market_Display_Name": "Wausau, WI",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "WeirtonWV": {
+        "BaseState": "WestVirginia",
         "CenterLat": 40.402002,
         "CenterLong": -80.588703,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "WeirtonWV",
+        "MapboxState": "",
         "MarketName": "WeirtonWV",
         "Market_Display_Name": "Weirton, WV",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "WenatcheeWA": {
+        "BaseState": "Washington",
         "CenterLat": 47.421662,
         "CenterLong": -120.312906,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "WenatcheeWA",
+        "MapboxState": "",
         "MarketName": "WenatcheeWA",
         "Market_Display_Name": "Wenatchee, WA",
-        "StateFips": ""
+        "MultipleStates": ""
+    },
+    "WestVirginia": {
+        "BaseState": "WestVirginia",
+        "CenterLat": 38.6409,
+        "CenterLong": -80.6227,
+        "DefaultZoomLevel": "5",
+        "GeoTypeGroup": "2 - States",
+        "InterMarketMetro": "0",
+        "MapboxMarketName": "WestVirginia",
+        "MapboxState": "",
+        "MarketName": "WestVirginia",
+        "Market_Display_Name": "West Virginia",
+        "MultipleStates": ""
     },
     "WheelingWV": {
+        "BaseState": "WestVirginia",
         "CenterLat": 40.064475,
         "CenterLong": -80.721245,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "WheelingWV",
+        "MapboxState": "",
         "MarketName": "WheelingWV",
         "Market_Display_Name": "Wheeling, WV",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "WichitaFallsTX": {
+        "BaseState": "Texas",
         "CenterLat": 33.909501,
         "CenterLong": -98.499833,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "WichitaFallsTX",
+        "MapboxState": "",
         "MarketName": "WichitaFallsTX",
         "Market_Display_Name": "Wichita Falls, TX",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "WichitaKS": {
+        "BaseState": "Kansas",
         "CenterLat": 37.69324,
         "CenterLong": -97.340939,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "1",
         "MapboxMarketName": "WichitaKS",
+        "MapboxState": "",
         "MarketName": "WichitaKS",
         "Market_Display_Name": "Wichita, KS",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "WilliamsportPA": {
+        "BaseState": "Pennsylvania",
         "CenterLat": 41.240037,
         "CenterLong": -77.00639,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "WilliamsportPA",
+        "MapboxState": "",
         "MarketName": "WilliamsportPA",
         "Market_Display_Name": "Williamsport, PA",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "WilmingtonNC": {
+        "BaseState": "NorthCarolina",
         "CenterLat": 34.237317,
         "CenterLong": -77.946455,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "WilmingtonNC",
+        "MapboxState": "",
         "MarketName": "WilmingtonNC",
         "Market_Display_Name": "Wilmington, NC",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "WinchesterVA": {
+        "BaseState": "Virginia",
         "CenterLat": 39.184086,
         "CenterLong": -78.163888,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "WinchesterVA",
+        "MapboxState": "",
         "MarketName": "WinchesterVA",
         "Market_Display_Name": "Winchester, VA",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "WinstonNC": {
+        "BaseState": "NorthCarolina",
         "CenterLat": 36.095002,
         "CenterLong": -80.242622,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "1",
         "MapboxMarketName": "WinstonNC",
+        "MapboxState": "",
         "MarketName": "WinstonNC",
         "Market_Display_Name": "Winston, NC",
-        "StateFips": ""
+        "MultipleStates": ""
+    },
+    "Wisconsin": {
+        "BaseState": "Wisconsin",
+        "CenterLat": 44.6243,
+        "CenterLong": -89.9941,
+        "DefaultZoomLevel": "5",
+        "GeoTypeGroup": "2 - States",
+        "InterMarketMetro": "0",
+        "MapboxMarketName": "Wisconsin",
+        "MapboxState": "",
+        "MarketName": "Wisconsin",
+        "Market_Display_Name": "Wisconsin",
+        "MultipleStates": ""
     },
     "WorcesterMA": {
+        "BaseState": "Massachusetts",
         "CenterLat": 42.262712,
         "CenterLong": -71.802237,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "1",
         "MapboxMarketName": "WorcesterMA",
+        "MapboxState": "",
         "MarketName": "WorcesterMA",
         "Market_Display_Name": "Worcester, MA",
-        "StateFips": ""
+        "MultipleStates": ""
+    },
+    "Wyoming": {
+        "BaseState": "Wyoming",
+        "CenterLat": 42.9957,
+        "CenterLong": -107.5512,
+        "DefaultZoomLevel": "5",
+        "GeoTypeGroup": "2 - States",
+        "InterMarketMetro": "0",
+        "MapboxMarketName": "Wyoming",
+        "MapboxState": "",
+        "MarketName": "Wyoming",
+        "Market_Display_Name": "Wyoming",
+        "MultipleStates": ""
     },
     "YakimaWA": {
+        "BaseState": "Washington",
         "CenterLat": 46.60734,
         "CenterLong": -120.488339,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "YakimaWA",
+        "MapboxState": "",
         "MarketName": "YakimaWA",
         "Market_Display_Name": "Yakima, WA",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "YorkPA": {
+        "BaseState": "Pennsylvania",
         "CenterLat": 39.96062,
         "CenterLong": -76.726678,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "1",
         "MapboxMarketName": "YorkPA",
+        "MapboxState": "",
         "MarketName": "YorkPA",
         "Market_Display_Name": "York, PA",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "YoungstownOH": {
+        "BaseState": "Ohio",
         "CenterLat": 39.96062,
         "CenterLong": -76.726678,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "1",
         "MapboxMarketName": "YoungstownOH",
+        "MapboxState": "",
         "MarketName": "YoungstownOH",
         "Market_Display_Name": "Youngstown, OH",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "YubaCityCA": {
+        "BaseState": "California",
         "CenterLat": 39.146297,
         "CenterLong": -121.637621,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "YubaCityCA",
+        "MapboxState": "",
         "MarketName": "YubaCityCA",
         "Market_Display_Name": "Yuba City, CA",
-        "StateFips": ""
+        "MultipleStates": ""
     },
     "YumaAZ": {
+        "BaseState": "Arizona",
         "CenterLat": 32.679134,
         "CenterLong": -114.646598,
         "DefaultZoomLevel": "8",
         "GeoTypeGroup": "1 - Designated Metro Areas",
         "InterMarketMetro": "0",
         "MapboxMarketName": "YumaAZ",
+        "MapboxState": "",
         "MarketName": "YumaAZ",
         "Market_Display_Name": "Yuma, AZ",
-        "StateFips": ""
+        "MultipleStates": ""
     }
 }
