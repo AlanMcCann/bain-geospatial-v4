@@ -15,11 +15,6 @@
     <p>intramarketMarketSettingsData {{ intramarketMarketSettingsData }}</p>
 
     -->
-    {{ selectedMarket}}
-    {{ selectedFeatures}}
-    {{ this.intramarketMarketSettingsDataV4[this.selectedMarket] }}
-    {{ Array.from(mapSourceGeoidSet).slice(0, 100) }}
-    {{ selectedMarketDataTilesetLayer }}
 
     <div id="main" class="main_padd">
       <h1
