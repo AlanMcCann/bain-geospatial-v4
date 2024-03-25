@@ -161,22 +161,22 @@ export default defineComponent({
       return window.devicePixelRatio;
     },
     urbanBackgroundColor() {
-      return this.highlightChartUrban ? "#CC0000" : "#333333";
+      return this.highlightChartUrban ? "#33ffff" : "#595959";
     },
     subUrbanBackgroundColor() {
-      return this.highlightChartSubUrban ? "#CC0000" : "#666666";
+      return this.highlightChartSubUrban ? "#33ffff" : "#898989";
     },
     exUrbanBackgroundColor() {
-      return this.highlightChartExUrban ? "#CC0000" : "#999999";
+      return this.highlightChartExUrban ? "#33ffff" : "#b9b9b9";
     },
     urbanTextColor() {
-      return this.highlightChartUrban ? "#ffffff" : "#ffffff";
+      return this.highlightChartUrban ? "#000000" : "#ffffff";
     },
     subUrbanTextColor() {
-      return this.highlightChartSubUrban ? "#ffffff" : "#ffffff";
+      return this.highlightChartSubUrban ? "#000000" : "#ffffff";
     },
     exUrbanTextColor() {
-      return this.highlightChartExUrban ? "#ffffff" : "#ffffff";
+      return this.highlightChartExUrban ? "#000000" : "#ffffff";
     },
     idTitle() {
       return this.title.replaceAll(" ", "_").replaceAll("+", "and");
