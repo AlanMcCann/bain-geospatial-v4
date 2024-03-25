@@ -1,8 +1,7 @@
 <template>
   <div
-    class="container-fluid bain-geospatial"
+    class=""
     :class="{ isFullScreen: fullscreen }"
-    style="background: white"
   >
     <!-- <p>selectedDataType {{ selectedDataType }}</p>
     <p>dataTypeNameMappingV4 {{ dataTypeNameMappingV4 }}</p>s
@@ -16,11 +15,11 @@
 
     -->
 
-    <div id="main" class="main_padd">
+    <div id="main">
       <h1
         class="bain_headline"
         style="
-          border-left: 4px solid #c00;
+          border-left: 4px solid #3ff;
           height: auto;
           padding-left: 25px;
           margin-top: 37px;
@@ -30,14 +29,14 @@
           font-weight: 600;
           line-height: 1.38;
           text-align: left;
-          color: #000;
+          color: #fff;
         "
       >
         US Geospatial Toolkit (Beta)
       </h1>
       <!-- <img src="@/assets/svgLogo.svg" /> -->
       <b-tabs content-class="mt-3" fill @input="onTabChange">
-        <b-tab title="Intra-Market Mapping" active>
+        <b-tab title="Intramarket Mapping" active>
           <fullscreen v-model="fullscreen" teleport>
             <!-- {{currentMarketChartData}} -->
             <!-- {{computedMarketOptions.length}} -->
@@ -121,14 +120,13 @@
                     class="help-link text-left"
                     style="font-size: 15px; font-family: graphik-medium"
                   >
-                    First time using this tool? Watch
+                    Please 
                     <a
-                      href="#"
-                      @click="showVideoTutorialModal"
+                      href="mailto:joe.cole@bain.com"
                       class="text-danger"
-                      >this</a
+                      >contact us</a
                     >
-                    first.
+                    if you need assistance with this tool. We will respond within 24 hours.
                   </p>
                 </b-col>
               </b-row>
@@ -398,18 +396,16 @@
             >
               <div class="table-container" style="width: 100%">
                 <b-row class="m-2 d-flex justify-content-end">
-                  <p
-                    class="help-link text-right"
+                 <p class="help-link text-left"
                     style="font-size: 15px; font-family: graphik-medium"
                   >
-                    First time using this tool? Watch
+                    Please 
                     <a
-                      href="#"
-                      @click="showVideoTutorialModal"
+                      href="mailto:joe.cole@bain.com"
                       class="text-danger"
-                      >this</a
+                      >contact us</a
                     >
-                    first.
+                    if you need assistance with this tool. We will respond within 24 hours.
                   </p>
                 </b-row>
                 <b-row class="mb-2 mx-2 d-flex justify-content-between">
@@ -592,7 +588,7 @@
                     <b-form-group
                       id="marketTypeSelectorIntra"
                       label-cols="auto"
-                      label="Market type"
+                      label="Market Type"
                       v-slot="{ ariaDescribedby3 }"
                       class="mb-0 mt-2"
                       style="min-width: 340px"
@@ -621,7 +617,7 @@
                   </div>
                   <div class="pt-2">
                     <b-form-group
-                      label="Head of household age"
+                      label="Head of Household Age"
                       v-slot="{ ariaDescribedby }"
                       class="py-2"
                       label-class="py-0"
@@ -683,7 +679,7 @@
                   <div>
                     <b-form-group
                       v-if="showSettings"
-                      label="Data type"
+                      label="Data Type"
                       style="min-width: 340px"
                     >
                       <v-select
@@ -701,7 +697,7 @@
                     <b-form-group
                       v-if="showSettings"
                       id="fieldset_horizontal_data_series"
-                      label="Data series"
+                      label="Data Series"
                       label-for="input_horizontal_data_series"
                       class="pl-0"
                       style="min-width: 200px"
@@ -719,17 +715,16 @@
                   <div class="mt-4 pt-1 pr-0">
                     <div v-if="showSettings">
                       <p
-                        class="help-link text-right"
+                          class="help-link text-left"
                         style="font-size: 15px; font-family: graphik-medium"
                       >
-                        First time using this tool? Watch
+                        Please 
                         <a
-                          href="#"
-                          @click="showVideoTutorialModal"
+                          href="mailto:joe.cole@bain.com"
                           class="text-danger"
-                          >this</a
+                          >contact us</a
                         >
-                        first.
+                        if you need assistance with this tool. We will respond within 24 hours.
                       </p>
                     </div>
                     <div :class="showSettings ? 'float-right' : 'float-right'">
@@ -952,7 +947,7 @@
             <b-row style="min-height: 60px"> </b-row>
           </fullscreen>
         </b-tab>
-        <b-tab title="Inter-Market Flows">
+        <b-tab title="Intermarket Flows">
           <fullscreen
             v-model="flowFullScreen"
             v-on:change="toggleFlowFullScreen"
@@ -968,7 +963,7 @@
                     <b-form-group
                       id="flowMarketTypeSelectorRadio"
                       label-cols="auto"
-                      label="Market type"
+                      label="Market Type"
                       v-slot="{ ariaDescribedby2 }"
                       class="mb-0"
                     >
@@ -996,7 +991,7 @@
                   </b-col>
                   <b-col cols="3" class="pt-2">
                     <b-form-group
-                      label="Head of household age"
+                      label="Head of Household Age"
                       v-slot="{ ariaDescribedby }"
                       class="py-2"
                       label-class="py-0"
@@ -1017,7 +1012,7 @@
                   </b-col>
                   <b-col cols="4" class="mt-2">
                     <b-form-group
-                      label="Head of household income"
+                      label="Head of Household Income"
                       v-slot="{ ariaDescribedby }"
                     >
                       <b-form-radio-group
@@ -1038,7 +1033,7 @@
                 <b-row>
                   <b-col cols="10">
                     <b-form-group
-                      label="Movement direction"
+                      label="Movement Direction"
                       v-slot="{ ariaDescribedby }"
                       class=""
                       style="display: inline-block"
@@ -1081,7 +1076,7 @@
                     </b-form-group>
 
                     <b-form-group
-                      label="# of top movement markets to display"
+                      label="Number of Top Movement Markets to Display"
                       v-slot="{ ariaDescribedby }"
                       class="ml-3"
                       style="display: inline-block"
@@ -1103,7 +1098,7 @@
                       </b-form-radio-group>
                     </b-form-group>
                     <b-form-group
-                      label="# of top movement markets to display"
+                      label="Number of Top Movement Markets to Display"
                       v-slot="{ ariaDescribedby }"
                       v-if="
                         flowSelectedMarketType == 'metro_areas' &&
@@ -1406,7 +1401,7 @@
             <b-row style="min-height: 160px"> </b-row>
           </fullscreen>
         </b-tab>
-        <!-- 
+
         <b-tab title="Market Summary">
           <b-row class="mb-3">
             <b-col cols="3">
@@ -1579,8 +1574,7 @@
 
           <b-row> </b-row>
         </b-tab>
-        -->
-        <b-tab title="Multi-Market Comparison">
+        <b-tab title="Multimarket Comparison">
           <b-row>
             <b-col cols="3">
               <b-button
@@ -1611,7 +1605,7 @@
             </b-col>
             <b-col cols="5">
               <b-form-group
-                label="Head of household income"
+                label="Head of Household Income"
                 v-slot="{ ariaDescribedby }"
               >
                 <b-form-radio-group
@@ -1905,10 +1899,10 @@ import {
   optionsListToObjectArrayWithMappingCodeLabelForDataSeries,
   renameDataSeries,
 } from "./helpers/market_segment";
-// import FullChart from "./components/FullChart";
-// import AllChart from "./components/AllChart";
-// import AgeChart from "./components/AgeChart";
-// import IncomeChart from "./components/IncomeChart";
+import FullChart from "./components/FullChart";
+import AllChart from "./components/AllChart";
+import AgeChart from "./components/AgeChart";
+import IncomeChart from "./components/IncomeChart";
 import ComparisonChart from "./components/ComparisonChart";
 // import DonutChart from "./components/DonutChart";
 import vSelect from "vue-select";
@@ -1929,10 +1923,10 @@ export default {
   components: {
     BIconX,
     BEditableTable,
-    // FullChart,
-    // AllChart,
-    // AgeChart,
-    // IncomeChart,
+    FullChart,
+    AllChart,
+    AgeChart,
+    IncomeChart,
     ComparisonChart,
     vSelect,
   }, //VSwatches,DonutChart
@@ -2115,7 +2109,7 @@ export default {
       selectedMarketsComp3: "ChicagoIL",
       selectedMarketsComp4: "ClevelandOH",
       selectedMarketsComp5: "HoustonTX",
-      selectedMarketsComp6: "WashingtonDC",
+      selectedMarketsComp6: "DallasFortWorthTX",
       selectedFeatures: [],
       selectedFeaturesCSV: [],
       selectedTotalFeatures: [],
@@ -2293,7 +2287,7 @@ export default {
       selectedSegmentOptionsComp: {},
       tosAccepted: false,
       loading: false,
-      bainRedColor: "#cc0000",
+      bainRedColor: "#33ff00",
       baindLighterRedColor: "#e58080",
       fields: [
         {
@@ -3149,7 +3143,13 @@ export default {
     },
     // { "displayRegion": "Albuquerque Santa Fe", "isMetro": "1", "needsCaveat": "1", "region": "Albany" }
     marketNameWithCaveat() {
+      console.log("marketNameWithCaveat")
+      console.log(this.selectedSummaryMarket)
+      console.log(this.dataOptions.regionOptions)
       let market = this.selectedSummaryMarket;
+      // if (market == "DallasFortWorthTX") {
+      //   market = "DallasFortWorthTX"
+      // }
       let region = this.dataOptions.regionOptions.find(
         (region) => region.region === market
       );
@@ -7414,117 +7414,117 @@ export default {
     let DEFAULT_ZOOM_OUT = 0.4;
 
     // TODO - uncomment after mexico is working
-    // this.flowMap = new mapboxgl.Map({
-    //   container: "flowmap",
-    //   preserveDrawingBuffer: true,
-    //   accessToken: this.accessToken,
-    //   style: "mapbox://styles/stobieb/cl03cgll7000114p6t44bqa0d",
-    //   // Note: deck.gl will be in charge of interaction and event handling
-    //   interactive: true,
-    //   center: [INITIAL_VIEW_STATE.longitude, INITIAL_VIEW_STATE.latitude],
-    //   zoom: INITIAL_VIEW_STATE.zoom - DEFAULT_ZOOM_OUT,
-    //   bearing: INITIAL_VIEW_STATE.bearing,
-    //   pitch: INITIAL_VIEW_STATE.pitch,
-    // });
-    // console.log("this.INITIAL_VIEW_STATE");
-    // console.log(this.INITIAL_VIEW_STATE);
-    // let flowData = this.intermarketData;
-    // this.flowmapDeckOverlay = new DeckOverlay({
-    //   initialViewState: INITIAL_VIEW_STATE,
-    //   glOptions: {
-    //     preserveDrawingBuffer: true,
-    //   },
-    //   getTooltip: ({ object }) =>
-    //     object && {
-    //       // html: `<h2>${object.name}</h2><div>${object.message}</div>`,
-    //       html: tooltipHtml(object),
-    //       style: {
-    //         backgroundColor: "#fff",
-    //         fontSize: "12px",
-    //         color: "black",
-    //       },
-    //     },
-    //   width: "100%",
-    //   height: "100%",
-    //   layers: [
-    //     new FlowmapLayer({
-    //       id: "my-flowmap-layer",
-    //       flowData,
-    //       pickable: true,
-    //       visible: vue.flowMapLayerVisible,
-    //       opacity: vue.flowMapConfig.opacity,
-    //       darkMode: vue.flowMapConfig.darkMode,
-    //       colorScheme: vue.flowMapConfig.colorScheme,
-    //       fadeAmount: vue.flowMapConfig.fadeAmount,
-    //       fadeEnabled: vue.flowMapConfig.fadeEnabled,
-    //       fadeOpacityEnabled: vue.flowMapConfig.fadeOpacityEnabled,
-    //       locationTotalsEnabled: vue.flowMapConfig.locationTotalsEnabled,
-    //       animationEnabled: vue.flowMapConfig.animationEnabled,
-    //       clusteringEnabled: vue.flowMapConfig.clusteringEnabled,
-    //       clusteringAuto: vue.flowMapConfig.clusteringAuto,
-    //       clusteringLevel: vue.flowMapConfig.clusteringLevel,
-    //       adaptiveScalesEnabled: vue.flowMapConfig.adaptiveScalesEnabled,
-    //       highlightColor: vue.flowMapConfig.highlightColor,
-    //       getLocationId: (loc) => loc.id,
-    //       getLocationLat: (loc) => loc.lat,
-    //       getLocationLon: (loc) => loc.lon,
-    //       getFlowOriginId: (flow) => flow.origin,
-    //       getFlowDestId: (flow) => flow.dest,
-    //       getFlowMagnitude: (flow) => flow.count,
-    //       getLocationName: (loc) => loc.name,
+    this.flowMap = new mapboxgl.Map({
+      container: "flowmap",
+      preserveDrawingBuffer: true,
+      accessToken: this.accessToken,
+      style: "mapbox://styles/stobieb/cl03cgll7000114p6t44bqa0d",
+      // Note: deck.gl will be in charge of interaction and event handling
+      interactive: true,
+      center: [INITIAL_VIEW_STATE.longitude, INITIAL_VIEW_STATE.latitude],
+      zoom: INITIAL_VIEW_STATE.zoom - DEFAULT_ZOOM_OUT,
+      bearing: INITIAL_VIEW_STATE.bearing,
+      pitch: INITIAL_VIEW_STATE.pitch,
+    });
+    console.log("this.INITIAL_VIEW_STATE");
+    console.log(this.INITIAL_VIEW_STATE);
+    let flowData = this.intermarketData;
+    this.flowmapDeckOverlay = new DeckOverlay({
+      initialViewState: INITIAL_VIEW_STATE,
+      glOptions: {
+        preserveDrawingBuffer: true,
+      },
+      getTooltip: ({ object }) =>
+        object && {
+          // html: `<h2>${object.name}</h2><div>${object.message}</div>`,
+          html: tooltipHtml(object),
+          style: {
+            backgroundColor: "#fff",
+            fontSize: "12px",
+            color: "black",
+          },
+        },
+      width: "100%",
+      height: "100%",
+      layers: [
+        new FlowmapLayer({
+          id: "my-flowmap-layer",
+          flowData,
+          pickable: true,
+          visible: vue.flowMapLayerVisible,
+          opacity: vue.flowMapConfig.opacity,
+          darkMode: vue.flowMapConfig.darkMode,
+          colorScheme: vue.flowMapConfig.colorScheme,
+          fadeAmount: vue.flowMapConfig.fadeAmount,
+          fadeEnabled: vue.flowMapConfig.fadeEnabled,
+          fadeOpacityEnabled: vue.flowMapConfig.fadeOpacityEnabled,
+          locationTotalsEnabled: vue.flowMapConfig.locationTotalsEnabled,
+          animationEnabled: vue.flowMapConfig.animationEnabled,
+          clusteringEnabled: vue.flowMapConfig.clusteringEnabled,
+          clusteringAuto: vue.flowMapConfig.clusteringAuto,
+          clusteringLevel: vue.flowMapConfig.clusteringLevel,
+          adaptiveScalesEnabled: vue.flowMapConfig.adaptiveScalesEnabled,
+          highlightColor: vue.flowMapConfig.highlightColor,
+          getLocationId: (loc) => loc.id,
+          getLocationLat: (loc) => loc.lat,
+          getLocationLon: (loc) => loc.lon,
+          getFlowOriginId: (flow) => flow.origin,
+          getFlowDestId: (flow) => flow.dest,
+          getFlowMagnitude: (flow) => flow.count,
+          getLocationName: (loc) => loc.name,
 
-    //       // onHover: (info) => setTooltip(getTooltipState(info)),
-    //       onHover: (info) => console.log(info),
-    //       // onClick: (info) => console.log('clicked', info.type, info.object),
-    //       // onClick: (info) =>
-    //       //   alert(`clicked: ${info.type}  ${JSON.stringify(info.object)}`),
-    //     }),
-    //   ],
-    // });
+          // onHover: (info) => setTooltip(getTooltipState(info)),
+          onHover: (info) => console.log(info),
+          // onClick: (info) => console.log('clicked', info.type, info.object),
+          // onClick: (info) =>
+          //   alert(`clicked: ${info.type}  ${JSON.stringify(info.object)}`),
+        }),
+      ],
+    });
 
-    // this.flowMap.addControl(this.flowmapDeckOverlay);
-    // // flowmap.addControl(new mapboxgl.NavigationControl());
+    this.flowMap.addControl(this.flowmapDeckOverlay);
+    // flowmap.addControl(new mapboxgl.NavigationControl());
 
-    // this.flowmapScaleControl = new mapboxgl.ScaleControl({
-    //   maxWidth: 400,
-    //   unit: "imperial",
-    // });
-    // this.flowMap.addControl(this.flowmapScaleControl);
-    // this.flowmapNavigationControl = new mapboxgl.NavigationControl();
-    // this.addFlowHomeButton(this.flowMap, this);
-    // let flowmapNavigationPosition = this.isFullscreen
-    //   ? "bottom-right"
-    //   : "top-right";
-    // this.flowMap.addControl(this.flowmapNavigationControl, "bottom-left");
+    this.flowmapScaleControl = new mapboxgl.ScaleControl({
+      maxWidth: 400,
+      unit: "imperial",
+    });
+    this.flowMap.addControl(this.flowmapScaleControl);
+    this.flowmapNavigationControl = new mapboxgl.NavigationControl();
+    this.addFlowHomeButton(this.flowMap, this);
+    let flowmapNavigationPosition = this.isFullscreen
+      ? "bottom-right"
+      : "top-right";
+    this.flowMap.addControl(this.flowmapNavigationControl, "bottom-left");
 
-    // // ************* end test flowmap
-    // this.flowMap.on("resize", () => {
-    //   console.log("A resize event occurred.");
-    //   this.flowLoading = true;
-    //   vue.updateDeck(false);
-    //   // this.flowMap.removeControl(this.flowmapDeckOverlay);
-    //   // this.updateFlowData();
-    //   // this.flowMap.addControl(this.flowmapDeckOverlay);
+    // ************* end test flowmap
+    this.flowMap.on("resize", () => {
+      console.log("A resize event occurred.");
+      this.flowLoading = true;
+      vue.updateDeck(false);
+      // this.flowMap.removeControl(this.flowmapDeckOverlay);
+      // this.updateFlowData();
+      // this.flowMap.addControl(this.flowmapDeckOverlay);
 
-    //   // let direction = vue.flowSelectedMovementDirection;
-    //   // vue.flowSelectedMovementDirection = direction == "in" ? "out" : "in";
-    //   setTimeout(() => {
-    //     // vue.updateDeck();
-    //     // this.updateFlowData();
-    //     // this.flowMap.addControl(this.flowmapDeckOverlay);
-    //     console.log("updating deck from map resize");
-    //     this.flowOpacity = 99;
-    //     this.updateFlowData();
-    //     // if (vue.flowFirstTime) {
-    //     //   vue.flowSelectedMovementDirection = "out";
-    //     //   vue.flowFirstTime = false;
-    //     // }
-    //     vue.flowLoading = false;
-    //     vue.initialFlowLoading = false;
-    //     vue.updateDeck();
-    //   }, 1000);
-    // });
-    // this.updateDeck(false);
+      // let direction = vue.flowSelectedMovementDirection;
+      // vue.flowSelectedMovementDirection = direction == "in" ? "out" : "in";
+      setTimeout(() => {
+        // vue.updateDeck();
+        // this.updateFlowData();
+        // this.flowMap.addControl(this.flowmapDeckOverlay);
+        console.log("updating deck from map resize");
+        this.flowOpacity = 99;
+        this.updateFlowData();
+        // if (vue.flowFirstTime) {
+        //   vue.flowSelectedMovementDirection = "out";
+        //   vue.flowFirstTime = false;
+        // }
+        vue.flowLoading = false;
+        vue.initialFlowLoading = false;
+        vue.updateDeck();
+      }, 1000);
+    });
+    this.updateDeck(false);
     this.$root.$on("bv::modal::show", (bvEvent, modalId) => {
       // console.log('Modal is about to be shown', bvEvent, modalId)
       if (modalId == "modal-drop-location") {
@@ -8311,6 +8311,7 @@ export default {
       this.updateFlowData();
     },
     flowSelectedMarket() {
+      
       if (this.flowSelectedMarketType == "metro_area") {
         this.flowSelectedGeoSegment = this.flowSelectedMetroAreaOption;
       }
@@ -8318,6 +8319,10 @@ export default {
         this.flowSelectedGeoSegment = this.flowSelectedStatesOption;
       }
       this.flowFirstTime = false;
+      console.log('flowSelectedMarketType changed')
+      console.log(this.flowSelectedMarketType)
+      console.log(this.flowSelectedStatesOption)
+      console.log(this.flowSelectedGeoSegment)
       this.updateFlowData();
     },
     flowSelectedDirection() {
@@ -8383,7 +8388,7 @@ export default {
         // this.flowComputedMarketOptions = this.selectedComputedMarketOptions;
         // TODO: Change for mexico
         this.selectedMarket = this.countryData[this.country]["dma"];
-        // this.selectedMarket = "DallasFortWrthTX";
+        // this.selectedMarket = "DallasFortWorthTX";
         // this.selectedMarket = "Mexico";
       } else {
         console.log(

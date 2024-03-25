@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="" class="theme-dark">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -8,7 +8,17 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <title><%= htmlWebpackPlugin.options.title %></title>
+
+    <style>
+      .homepage_main .panel_left ul li a {
+        color: #cb0000;
+      }
+    </style>
+    <title>Bain Macro Trends</title>
+    <link
+    rel="stylesheet"
+    href="https://mtg.bain.com/src/Styles/dist/main.min.css?v=33"
+  />
 
     <!-- VueJS -->
     <script src="https://cdn.jsdelivr.net/npm/vue@latest/dist/vue.min.js"></script>
@@ -30,9 +40,129 @@
       rel="stylesheet"
       href="https://unpkg.com/vue-select@latest/dist/vue-select.css"
     />
+
   </head>
 
-  <body style="background-color: white">
+  <body class="body">
+    <!-- 
+    <header id="header" class="header">
+      <nav class="content-wrapper">
+        <div class="header__divider">
+          <div class="header__branding">
+            <a href="/link/90acdfea9b534b108c2041d90d2a7251.aspx">
+              <img
+                alt=""
+                class="svg"
+                onerror="SVGInject.err(this)"
+                onload="SVGInject(this)"
+                src="/globalassets/mtg/group-32.svg"
+              />
+            </a>
+          </div>
+          <div class="header__navigation">
+            <ul class="header__menu">
+              <li
+                id="feed-menu"
+                class="header__menu-item header__menu-item--current"
+              >
+                <button
+                  type="button"
+                  onClick="updateSideBar(this, getArticles)"
+                >
+                  Feed
+                </button>
+              </li>
+              <li id="updates-menu" class="header__menu-item">
+                <button
+                  type="button"
+                  data-article="/weekly-updates/last-week-in-brief-week-of-mar-11-2024/"
+                  data-topic="Weekly updates"
+                  onClick="updateSideBar(this, getWeeklyUpdates)"
+                >
+                  <span class="d-xl-none">Weekly Updates</span>
+                  <span class="d-none d-xl-block">Weekly updates</span>
+                </button>
+              </li>
+              <li id="topics-menu" class="header__menu-item">
+                <button type="button" onClick="updateSideBar(this, showTopics)">
+                  Topics
+                </button>
+              </li>
+              <li
+                class="header__menu-item header__menu-item--expandable d-none d-xl-block"
+              >
+                Tools
+                <div class="header__sub-menu-wrapper">
+                  <ul class="header__sub-menu">
+                    <li class="header__sub-menu-item">
+                      <a
+                        href="/situation-tracking/us-consumer-health/the-bain-consumer-health-index/"
+                        target="_blank"
+                        >US Consumer Health Index</a
+                      >
+                    </li>
+                    <li class="header__sub-menu-item">
+                      <a
+                        href="/major-topics/ex-urbanization/geospatial-tool/"
+                        target="_blank"
+                        >US Geospatial Toolkit</a
+                      >
+                    </li>
+                    <li class="header__sub-menu-item">
+                      <a
+                        href="/major-topics/ex-urbanization/mexico-geospatial-toolkit/"
+                        target="_blank"
+                        >MX Intramarket Mapping</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li id="saved-menu" class="header__menu-item">
+                <button
+                  type="button"
+                  onClick="updateSideBar(this, getSavedArticles)"
+                >
+                  Saved Articles
+                </button>
+              </li>
+              <li class="header__menu-item">
+                <a
+                  href="mailto:QuestionforMTG@Bain.com?subject=Question for Macro Trends Group"
+                  >Ask MTG a Question</a
+                >
+              </li>
+            </ul>
+
+            <div id="logout-btn">
+              <a href="/util/logout.aspx">Logout</a>
+            </div>
+          </div>
+
+          <button
+            id="close-sidebar"
+            class="header__menu-button d-none"
+            onclick="closeSideBar(this)"
+          >
+            <svg
+              width="15"
+              height="14"
+              viewBox="0 0 15 14"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M7.5 6.3817L0.6 0L0 0.554931L6.9 6.93663L0 13.3183L0.599999 13.8733L7.5 7.49156L14.4 13.8733L15 13.3183L8.1 6.93663L15 0.55493L14.4 0L7.5 6.3817Z"
+                fill="#999999"
+              />
+            </svg>
+          </button>
+        </div>
+      </nav>
+    </header>
+  -->
     <noscript>
       <strong
         >We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work
@@ -40,7 +170,13 @@
         continue.</strong
       >
     </noscript>
-    <div id="app"></div>
+
+    <main class="main">
+      <div class="content-wrapper">
+        <div id="app"></div>
+      </div>
+    </main>
+
     <!-- built files will be auto injected -->
   </body>
 </html>

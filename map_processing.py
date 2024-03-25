@@ -26,6 +26,56 @@ import csv
 import datetime
 import subprocess
 
+"AllentownPA", "AugustaGA", "BostonMA",
+MULTISTATE_MARKETS = [
+    "allentownpa",
+    "augustaga",
+    "bostonma",
+    "capegirardeaumo",
+    "cedarrapidsia",
+    "charlottenc",
+    "chattanoogatn",
+    "chicagoil",
+    "cincinnatioh",
+    "clarksvilletn",
+    "columbusga",
+    "cumberlandmd",
+    "duluthmn",
+    "evansvillein",
+    "fargond",
+    "fayettevillear",
+    "grandforksnd",
+    "hagerstownmd",
+    "huntingtonwv",
+    "kansascitymo",
+    "kingsporttn",
+    "lacrossewi",
+    "lewistonme",
+    "louisvilleky",
+    "memphistn",
+    "minneapolismn",
+    "myrtlebeachsc",
+    "newyorkny",
+    "omahane",
+    "philadelphiapa",
+    "portlandor",
+    "providenceri",
+    "salisburymd",
+    "siouxcityia",
+    "southbendin",
+    "stjosephmo",
+    "stlouismo",
+    "texarkanatx",
+    "virginiabeachva",
+    "washingtondc",
+    "weirtonwv",
+    "wheelingwv",
+    "wichitafallstx",
+    "winchesterva",
+    "worcesterma",
+    "youngstownoh",
+]
+
 MAX_RETRIES = 3
 
 MAP_VERSION = 4
@@ -472,10 +522,8 @@ def worker(input_queue):
         if job is None:
             break  # No more jobs
         job_id, market_count, type, data = job
-        logging.info(
-            f'Processing Data Job ID: {job_id},  Market Count: {market_count}, Market: {data["market_file_prefix"]} Ethnicity: {data["ethnicity"]} Stats Type: {data["stats_type"]}'
-        )
         if type == "label":
+
             process_label_job(
                 data["market_file_prefix"], data["published_data_base_path"]
             )
@@ -501,7 +549,9 @@ def create_jobs():
     with open(csv_file_path, encoding="utf-8-sig") as csvfile:
         reader = csv.DictReader(csvfile)
         for row in reader:
-            market_rows.append(row)
+            print(row)
+            if row["MultipleStates"] == "1":
+                market_rows.append(row)
     sorted_market_rows = sorted(market_rows, key=lambda d: d["MarketName"])
     market_count = 0
     completed_markets = []
@@ -517,36 +567,42 @@ def create_jobs():
             count += 1
             # Create labels
             market_file_prefix = market_data["MarketName"].lower()
-            if market_file_prefix not in [
-                "dallasfortworthtx",
-                "knoxvilletn",
-                "washingtondc",
-            ]:
-                # label_job = create_label_job(
-                #     count, market_count, market_file_prefix, published_data_base_path
-                # )
-                # jobs.append(label_job)
+            if (
+                market_file_prefix
+                in [
+                    # "dallasfortworthtx",
+                    # "knoxvilletn",
+                    # "washingtondc",
+                    # "newyorkny",
+                    "chicagoil",
+                ]
+                and market_file_prefix in MULTISTATE_MARKETS
+            ):
+                label_job = create_label_job(
+                    count, market_count, market_file_prefix, published_data_base_path
+                )
+                jobs.append(label_job)
                 # # Create data jobs
-                for ethnicity in list(ETHNICITIES.keys()):
-                    if (
-                        True
-                    ):  # market_data['MarketName'] in MARKETS: #,'DallasFortWorthTX']:
-                        logging.info(f"count: {count}")
-                        logging.info(
-                            f"creating tileset jobs for: {market_file_prefix}, {ethnicity}"
-                        )
-                        logging.info(datetime.datetime.now())
-                        for stats_type in STATS_TYPES[:-1]:
-                            count += 1
-                            new_job = create_data_job(
-                                count,
-                                market_count,
-                                market_file_prefix,
-                                ethnicity,
-                                stats_type,
-                                published_data_base_path,
-                            )
-                            jobs.append(new_job)
+                # for ethnicity in list(ETHNICITIES.keys()):
+                #     if (
+                #         True
+                #     ):  # market_data['MarketName'] in MARKETS: #,'DallasFortWorthTX']:
+                #         logging.info(f"count: {count}")
+                #         logging.info(
+                #             f"creating tileset jobs for: {market_file_prefix}, {ethnicity}"
+                #         )
+                #         logging.info(datetime.datetime.now())
+                #         for stats_type in STATS_TYPES[:-1]:
+                #             count += 1
+                #             new_job = create_data_job(
+                #                 count,
+                #                 market_count,
+                #                 market_file_prefix,
+                #                 ethnicity,
+                #                 stats_type,
+                #                 published_data_base_path,
+                #             )
+                #             jobs.append(new_job)
 
     return jobs
 

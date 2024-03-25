@@ -395,7 +395,7 @@
         {
             "displayRegion": "Colorado Springs, CO",
             "isMetro": "1",
-            "region": "ColoradoSpringCO"
+            "region": "ColoradoSpringsCO"
         },
         {
             "displayRegion": "Columbia, MO",
@@ -445,7 +445,7 @@
         {
             "displayRegion": "Dallas Fort Worth, TX",
             "isMetro": "1",
-            "region": "DallasFortWrthTX"
+            "region": "DallasFortWorthTX"
         },
         {
             "displayRegion": "Dalton, GA",
