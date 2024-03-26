@@ -4822,6 +4822,17 @@ export default {
       }
     },
 
+    trackEventInGoogleAnalytics(category, action, label) {
+      if (window.dataLayer) {
+        window.dataLayer.push({
+          event: "gaEvent",
+          eventCategory: category,
+          eventAction: action,
+          eventLabel: label,
+        });
+      }
+    },
+
     trackTOSAcceptanceInGoogleAnalytics() {
       let userId = null;
       if (window.dataLayer) {
@@ -6815,7 +6826,7 @@ export default {
                 mergeCtx.drawImage(mapCanvas, 0, 0);
                 mergeCtx.drawImage(
                   attributionLogo,
-                  10 * this.devicePixelRatio,
+                  mergeCanvas.width - attributionLogo.width - (10 * this.devicePixelRatio),
                   mergeCanvas.height - 101 * this.devicePixelRatio
                 );
 
@@ -6930,8 +6941,9 @@ export default {
                   }
                   mergeCtx.drawImage(
                     attributionLogo,
-                    10 * this.devicePixelRatio,
-                    mergeCanvas.height - 101 * this.devicePixelRatio
+                    // 10 * this.devicePixelRatio,
+                    mergeCanvas.width - attributionLogo.width - (10 * this.devicePixelRatio),
+                    mergeCanvas.height - 25 * this.devicePixelRatio
                   );
 
                   mergeCtx.drawImage(
@@ -7021,7 +7033,7 @@ export default {
                     mergeCtx.drawImage(
                       attributionLogo,
                       10 * this.devicePixelRatio,
-                      mergeCanvas.height - 101 * this.devicePixelRatio
+                      mergeCanvas.height - 25 * this.devicePixelRatio
                     );
 
                     mergeCtx.drawImage(
