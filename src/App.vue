@@ -788,6 +788,7 @@
                         <b-tooltip
                           placement="bottom"
                           target="downloaddoc-button"
+                          offset="10"
                           >Download CSV</b-tooltip
                         >
                       </div>
