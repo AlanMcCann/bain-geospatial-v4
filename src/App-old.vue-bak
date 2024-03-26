@@ -32,10 +32,12 @@
           color: #fff;
         "
       >
-        Intramarket Mapping
+        US Geospatial Toolkit (Beta)
       </h1>
-      <div>
-        <fullscreen v-model="fullscreen" teleport>
+      <!-- <img src="@/assets/svgLogo.svg" /> -->
+      <b-tabs content-class="mt-3" fill @input="onTabChange">
+        <b-tab title="Intramarket Mapping" active>
+          <fullscreen v-model="fullscreen" teleport>
             <!-- {{currentMarketChartData}} -->
             <!-- {{computedMarketOptions.length}} -->
             <!-- {{[computedMarketOptionsWithoutStates[0]]}} -->
@@ -945,9 +947,894 @@
 
             <b-row style="min-height: 60px"> </b-row>
           </fullscreen>
-        
-      </div>
-     
+        </b-tab>
+        <b-tab title="Intermarket Flows">
+          <fullscreen
+            v-model="flowFullScreen"
+            v-on:change="toggleFlowFullScreen"
+            teleport
+          >
+            <div id="settingsFlow" class="">
+              <div
+                class="map-menu"
+                :class="{ isFlowFullScreen: flowFullScreen }"
+              >
+                <b-row v-if="flowShowSettings">
+                  <b-col cols="5">
+                    <b-form-group
+                      id="flowMarketTypeSelectorRadio"
+                      label-cols="auto"
+                      label="Market Type"
+                      v-slot="{ ariaDescribedby2 }"
+                      class="mb-0"
+                    >
+                      <b-form-radio-group
+                        id="marketTypeRadioFlow"
+                        v-model="flowSelectedMarketType"
+                        :options="flowMarketTypeOptions"
+                        :aria-describedby="ariaDescribedby2"
+                        :disabled="flowDisableInputs"
+                        name="radio-options"
+                        style="padding-top: 7px"
+                      >
+                      </b-form-radio-group>
+                    </b-form-group>
+                    <v-select
+                      v-model="flowSelectedMarket"
+                      :options="flowComputedMarketOptions"
+                      :reduce="(market) => market.code"
+                      :clearable="false"
+                      class="col-9 pl-0"
+                      ref="flowSelectedMarket"
+                    ></v-select>
+
+                    <!-- </b-form-group> -->
+                  </b-col>
+                  <b-col cols="3" class="pt-2">
+                    <b-form-group
+                      label="Head of Household Age"
+                      v-slot="{ ariaDescribedby }"
+                      class="py-2"
+                      label-class="py-0"
+                    >
+                      <b-form-radio-group
+                        id="btn-radios-age-segment"
+                        v-model="flowSelectedAgeSegment"
+                        :options="flowAgeSegmentOptions"
+                        :aria-describedby="ariaDescribedby"
+                        :disabled="flowDisableInputs"
+                        name="radios-btn-default"
+                        buttons
+                        button-variant="outline-danger"
+                        size="sm"
+                      >
+                      </b-form-radio-group>
+                    </b-form-group>
+                  </b-col>
+                  <b-col cols="4" class="mt-2">
+                    <b-form-group
+                      label="Head of Household Income"
+                      v-slot="{ ariaDescribedby }"
+                    >
+                      <b-form-radio-group
+                        id="btn-radios-income-segment"
+                        v-model="flowSelectedIncomeSegment"
+                        :options="flowIncomeSegmentOptions"
+                        :aria-describedby="ariaDescribedby"
+                        :disabled="flowDisableInputs"
+                        name="radios-btn-default"
+                        buttons
+                        button-variant="outline-danger"
+                        size="sm"
+                      >
+                      </b-form-radio-group>
+                    </b-form-group>
+                  </b-col>
+                </b-row>
+                <b-row>
+                  <b-col cols="10">
+                    <b-form-group
+                      label="Movement Direction"
+                      v-slot="{ ariaDescribedby }"
+                      class=""
+                      style="display: inline-block"
+                      v-if="flowShowSettings"
+                    >
+                      <b-form-radio-group
+                        id="btn-radios-income-segment"
+                        v-model="flowSelectedMovementDirection"
+                        :options="flowMovementDirectionOptions"
+                        :aria-describedby="ariaDescribedby"
+                        :disabled="disableInputs"
+                        name="radios-btn-default"
+                        buttons
+                        button-variant="outline-danger"
+                        size="sm"
+                        ref="flowMovementDirection"
+                      >
+                      </b-form-radio-group>
+                    </b-form-group>
+
+                    <b-form-group
+                      label="Exclude same state movement?"
+                      v-slot="{ ariaDescribedby }"
+                      class="ml-3"
+                      style="display: inline-block"
+                      v-if="flowSelectedMarketType == 'metro_areas'"
+                    >
+                      <b-form-radio-group
+                        id="btn-radios-income-segment"
+                        v-model="flowExcludeWithinState"
+                        :options="flowExcludeWithinStateOptions"
+                        :aria-describedby="ariaDescribedby"
+                        :disabled="flowSelectedMarketType == 'states'"
+                        name="radios-btn-default"
+                        buttons
+                        button-variant="outline-danger"
+                        size="sm"
+                      >
+                      </b-form-radio-group>
+                    </b-form-group>
+
+                    <b-form-group
+                      label="Number of Top Movement Markets to Display"
+                      v-slot="{ ariaDescribedby }"
+                      class="ml-3"
+                      style="display: inline-block"
+                      v-if="
+                        flowSelectedMarketType == 'states' && flowShowSettings
+                      "
+                    >
+                      <b-form-radio-group
+                        id="btn-radios-income-segment"
+                        v-model="flowSelectedStatesOption"
+                        :options="flowStatesListOptions"
+                        :aria-describedby="ariaDescribedby"
+                        :disabled="disableInputs"
+                        name="radios-btn-default"
+                        buttons
+                        button-variant="outline-danger"
+                        size="sm"
+                      >
+                      </b-form-radio-group>
+                    </b-form-group>
+                    <b-form-group
+                      label="Number of Top Movement Markets to Display"
+                      v-slot="{ ariaDescribedby }"
+                      v-if="
+                        flowSelectedMarketType == 'metro_areas' &&
+                        flowShowSettings
+                      "
+                      class="pr-4 ml-3"
+                      style="display: inline-block"
+                    >
+                      <b-form-radio-group
+                        id="btn-radios-income-segment"
+                        v-model="flowSelectedMetroAreaOption"
+                        :options="flowMetroAreaListOptions"
+                        :aria-describedby="ariaDescribedby"
+                        :disabled="disableInputs"
+                        name="radios-btn-default"
+                        buttons
+                        button-variant="outline-danger"
+                        size="sm"
+                      >
+                      </b-form-radio-group>
+                    </b-form-group>
+                  </b-col>
+                  <b-col>
+                    <!-- <b-col cols="12" class="float-right"> -->
+                    <div
+                      :class="[
+                        flowFullScreen && !flowShowSettings ? 'mt-0' : 'mt-4',
+                        flowShowSettings ? 'float-right' : 'float-right',
+                      ]"
+                    >
+                      <div
+                        id="flow-downloaddoc-button"
+                        class="icon icon-downloaddoc"
+                        :class="{ active: false }"
+                        @click="showTosModalCsv('flow')"
+                        v-if="flowShowSettings"
+                      >
+                        <b-tooltip
+                          placement="top"
+                          target="flow-downloaddoc-button"
+                          >Download CSV</b-tooltip
+                        >
+                      </div>
+                      <div
+                        id="flow-downloadimg-map-button"
+                        class="icon icon-downloadimg"
+                        :class="{ active: false }"
+                        @click="downloadFlowMapImage"
+                      >
+                        <b-tooltip
+                          placement="top"
+                          target="flow-downloadimg-map-button"
+                          >Download image</b-tooltip
+                        >
+                      </div>
+
+                      <div
+                        v-if="!flowFullScreen"
+                        id="flow-maximize-button"
+                        class="icon icon-maximize icon-fa"
+                        :class="{ active: false }"
+                        @click="toggleFlowFullScreen"
+                      >
+                        <b-tooltip
+                          placement="bottom"
+                          target="flow-maximize-button"
+                          >Turn full screen mode on</b-tooltip
+                        >
+                      </div>
+                      <div
+                        v-if="flowFullScreen"
+                        id="flow-minimize-button"
+                        class="icon icon-minimize icon-fa"
+                        :class="{ active: false }"
+                        @click="toggleFlowFullScreen"
+                      >
+                        <b-tooltip
+                          placement="bottom"
+                          target="flow-minimize-button"
+                          >Turn full screen mode off</b-tooltip
+                        >
+                      </div>
+                      <div
+                        v-b-toggle.settings-collapse
+                        id="point-button"
+                        class="icon icon-point"
+                        :class="{
+                          active: false,
+                          'icon-point-active': !showSettings,
+                        }"
+                        v-if="fullscreen"
+                        @click="toggleShowSettings"
+                      >
+                        <b-tooltip placement="bottom" target="point-button"
+                          >Show or hide settings pane.</b-tooltip
+                        >
+                      </div>
+                      <div
+                        id="flow-point-button"
+                        class="icon icon-point"
+                        :class="{
+                          active: false,
+                          'icon-point-active': !flowShowSettings,
+                        }"
+                        v-if="flowFullScreen"
+                        @click="toggleflowShowSettings"
+                      >
+                        <b-tooltip placement="bottom" target="flow-point-button"
+                          >Show or hide settings pane.</b-tooltip
+                        >
+                      </div>
+                    </div>
+                  </b-col>
+                </b-row>
+              </div>
+            </div>
+            <div class="map">
+              <b-row
+                id="flow_image_container"
+                :class="{ isFullScreen: flowFullScreen }"
+              >
+                <b-col class="px-0">
+                  <section
+                    class="flow_map_box_container"
+                    :class="{ isFullScreen: flowFullScreen }"
+                  >
+                    <div
+                      id="dataTableToggleButton"
+                      @click="dataTableToggleVisibility"
+                    >
+                      <i class="icon icon-table-list"></i>
+                    </div>
+                    <div
+                      id="flowMapTitleSection"
+                      :class="{ flowShowSettings: flowShowSettings }"
+                    >
+                      <div
+                        id="flowMapTitle"
+                        v-if="showFlowMapTitle"
+                        class="mapTitle"
+                      >
+                        <h5>{{ this.flowMapTitleForSelectedOptions }}</h5>
+                      </div>
+                      <div
+                        id="flowRange"
+                        class="flowrange"
+                        :class="[showFlowMapTitle ? 'flowrange-download' : '']"
+                      >
+                        <h5>{{ this.flowSelectedEstimatedRangeText }}</h5>
+                      </div>
+                    </div>
+
+                    <img
+                      v-show="showFlowMapTitle"
+                      id="flowAttributionLogo"
+                      class="attribution-logo"
+                      src="./assets/bain-macro-strategy-platform-logo.png"
+                    />
+                    <div
+                      id="flowmap"
+                      style="min-height: 100px;"
+                      :class="{ isFullScreen: flowFullScreen }"
+                    ></div>
+                    <div id="deckglmap"></div>
+                  </section>
+                </b-col>
+                <b-col
+                  id="dataTableContainer"
+                  :cols="flowFullScreen ? 3 : 4"
+                  :class="this.dataTableVisibility ? '' : 'd-none'"
+                  style="
+                    padding: 10px;
+                    background: #fff;
+                    overflow-y: scroll;
+                    height: 60vh;
+                    z-index: 10;
+                  "
+                >
+                  <div class="datatable">
+                    <h4>{{ dataTableTitle }}</h4>
+                    <p
+                      style="
+                        font-size: 12px;
+                        font-family: graphik-regular, sans-serif;
+                      "
+                    >
+                      <b
+                        ><span
+                          v-html="flowSelectedEstimatedRangeTextSplit"
+                        ></span
+                      ></b>
+                    </p>
+                    <div class="mt-3">
+                      <b-table
+                        sticky-header="400px"
+                        bordered
+                        outlined
+                        small
+                        hover
+                        style="font-size: 12px"
+                        :items="flowDataTableData"
+                        :fields="dataTableFields"
+                        primary-key="rank"
+                      >
+                        <template #cell(formattedPercent)="data">
+                          {{ data.item.percent }}
+                        </template>
+                        <template #cell(selected)="data">
+                          <b-form-checkbox
+                            v-model="data.item.selected"
+                            @change="onSelectedClick($event)"
+                          ></b-form-checkbox>
+                        </template>
+                      </b-table>
+                    </div>
+                  </div>
+                  <p
+                    style="
+                      font-size: 12px;
+                      font-family: graphik-regular, sans-serif;
+                    "
+                  >
+                    <b>Methodology</b>
+                  </p>
+                  <p
+                    style="
+                      font-size: 12px;
+                      font-family: graphik-regular, sans-serif;
+                    "
+                  >
+                    To generate these views, we compared data from public
+                    records across states and metro areas for the date ranges
+                    provided. By tracking individuals who started in one
+                    location at the beginning of the time period and ended up in
+                    another in the final year of the period, we are able to
+                    determine aggregate flows between markets.
+                  </p>
+                  <p
+                    style="
+                      font-size: 12px;
+                      font-family: graphik-regular, sans-serif;
+                    "
+                  >
+                    Because some states and metros have different record-keeping
+                    procedures than others and different demographics are
+                    officially recorded in new metros at different speeds, there
+                    can be some lags in a given year's data. To account for
+                    these lags, we have created estimated ranges of population
+                    flows to avoid false precision. The views generated by this
+                    tool are intended to be used for understanding relative
+                    flows (and the magnitudes of these flows) between metros and
+                    states, not for understanding exact counts of population
+                    changes.
+                  </p>
+                  <p
+                    style="
+                      font-size: 12px;
+                      font-family: graphik-regular, sans-serif;
+                    "
+                  >
+                    Users may notice that the estimated mover ranges provided by
+                    this tool can be lower than the counts in many publicly
+                    available migration data sources. This is because our data
+                    source only includes individuals aged 18 and above who were
+                    associated with different locations in the starting and
+                    ending years of a date range.
+                  </p>
+                </b-col>
+              </b-row>
+            </div>
+            <b-modal
+              id="flow-modal-loading"
+              size="s"
+              centered
+              scrollable
+              title="Loading data"
+              v-model="flowLoading"
+              hide-header
+              hide-footer
+            >
+              <b-row>
+                <b-col cols="12" class="pt-6">
+                  <div
+                    class="d-flex justify-content-center align-items-center mt-2"
+                  >
+                    <div>
+                      <b-spinner
+                        label="Loading Toolkit..."
+                        variant="danger"
+                        style="width: 3rem; height: 3rem"
+                      ></b-spinner>
+                    </div>
+                    <div class="ml-3">
+                      <h3 class="mt-2">Loading Data</h3>
+                    </div>
+                  </div>
+                </b-col>
+              </b-row>
+            </b-modal>
+            <b-row style="min-height: 160px"> </b-row>
+          </fullscreen>
+        </b-tab>
+
+        <b-tab title="Market Summary">
+          <b-row class="mb-3">
+            <b-col cols="3">
+              <b-form-group
+                id="fieldset_horizontal_market"
+                label="Market"
+                label-for="input_horizontal_market"
+                class="pr-2"
+              >
+                <v-select
+                  v-model="selectedSummaryMarket"
+                  style="font-size: 14px"
+                  :options="selectedComputedSummaryMarketOptions"
+                  :clearable="false"
+                  :reduce="(market) => market.code"
+                ></v-select>
+              </b-form-group>
+            </b-col>
+
+            <b-col cols="2">
+              <b-form-group
+                id="fieldset_horizontal_data_series_summary"
+                label="Start year"
+                label-for="input_horizontal_data_series"
+              >
+                <v-select
+                  v-model="selectedStartYearSummary"
+                  :options="selectedStartYearOptionsSummary"
+                  :clearable="false"
+                ></v-select>
+              </b-form-group>
+            </b-col>
+            <b-col cols="2">
+              <b-form-group
+                id="fieldset_horizontal_data_series_summary"
+                label="End year"
+                label-for="input_horizontal_data_series"
+                class="ml-2"
+              >
+                <v-select
+                  v-model="selectedEndYearSummary"
+                  :options="selectedEndYearOptionsSummary"
+                  :clearable="false"
+                ></v-select>
+              </b-form-group>
+            </b-col>
+
+            <b-col cols="5">
+              <b-row class="mb-5 mt-2 float-right" style="float: right">
+                <b-button-group
+                  id="chartLegend"
+                  style="padding-top: 18px; float: right"
+                >
+                  <b-button
+                    :variant="highlightChartUrbanVariant"
+                    size="sm"
+                    :style="`
+                      margin-left: 10px;
+                      
+                      margin-right: 10px;
+                      min-width: 120px; 
+                      font-size: 10px;
+                      color: ${urbanTextColor};
+                      background-color: ${urbanBackgroundColor};
+                      border-color: ${urbanBackgroundColor}`"
+                    :pressed.sync="highlightChartUrban"
+                  >
+                    Urban <br />(0 to 7.5mi)</b-button
+                  >
+
+                  <b-button
+                    :variant="highlightChartSubUrbanVariant"
+                    size="sm"
+                    :style="`
+                      margin-left: 10px;
+                      margin-right: 10px;
+                      min-width: 120px;
+                      font-size: 10px;
+                      background-color: #9a0102;
+                      border-color: #9a0102;
+                      color: ${subUrbanTextColor};
+                      background-color: ${subUrbanBackgroundColor};
+                      border-color: ${subUrbanBackgroundColor}`"
+                    :pressed.sync="highlightChartSubUrban"
+                  >
+                    Suburban <br />
+                    (7.5 to 20mi)</b-button
+                  >
+
+                  <b-button
+                    :variant="highlightChartExUrbanVariant"
+                    size="sm"
+                    :style="`
+                      margin-left: 10px;
+                      margin-right: 10px;
+                      min-width: 120px;
+                      font-size: 10px;
+                      color: ${exUrbanTextColor};
+                      background-color: ${exUrbanBackgroundColor};
+                      border-color: ${exUrbanBackgroundColor}`"
+                    :pressed.sync="highlightChartExUrban"
+                  >
+                    Exurban <br />
+                    (> 20mi)</b-button
+                  >
+                </b-button-group>
+              </b-row>
+            </b-col>
+          </b-row>
+          <b-row>
+            <b-col cols="4">
+              <AllChart
+                :market="marketNameWithCaveat"
+                :x-axis-labels="marketAllChartsDataYearLabels"
+                :chart-data="selectedMarketSummaryTotalChartsData"
+                :start-year="selectedStartYearSummary"
+                :end-year="selectedEndYearSummary"
+                :highlight-chart-urban="highlightChartUrban"
+                :highlight-chart-sub-urban="highlightChartSubUrban"
+                :highlight-chart-ex-urban="highlightChartExUrban"
+                chart-title="Total Population"
+                chart-slug="total_population"
+              /> 
+            </b-col>
+            <b-col cols="4">
+              <AgeChart
+                :market="marketNameWithCaveat"
+                :x-axis-labels="marketAgeChartsDataYearLabels"
+                :chart-data="selectedMarketSummaryAgeChartsData"
+                :start-year="selectedStartYearSummary"
+                :end-year="selectedEndYearSummary"
+                :highlight-chart-urban="highlightChartUrban"
+                :highlight-chart-sub-urban="highlightChartSubUrban"
+                :highlight-chart-ex-urban="highlightChartExUrban"
+                chart-title="Age"
+                chart-slug="age"
+              />
+            </b-col>
+            <b-col cols="4">
+              <IncomeChart
+                :market="marketNameWithCaveat"
+                :x-axis-labels="marketIncomeChartsDataYearLabels"
+                :chart-data="selectedMarketSummaryIncomeChartsData"
+                :start-year="selectedStartYearSummary"
+                :end-year="selectedEndYearSummary"
+                :highlight-chart-urban="highlightChartUrban"
+                :highlight-chart-sub-urban="highlightChartSubUrban"
+                :highlight-chart-ex-urban="highlightChartExUrban"
+                chart-title="Income"
+                chart-slug="income"
+              />
+            </b-col>
+          </b-row>
+          <b-row>
+            <b-col cols="12">
+              <FullChart
+                :market="marketNameWithCaveat"
+                :x-axis-labels="marketFullChartsDataYearLabels"
+                :chart-data="selectedMarketSummaryAgeAndIncomeChartsData"
+                :start-year="selectedStartYearSummary"
+                :end-year="selectedEndYearSummary"
+                :highlight-chart-urban="highlightChartUrban"
+                :highlight-chart-sub-urban="highlightChartSubUrban"
+                :highlight-chart-ex-urban="highlightChartExUrban"
+                chart-title="Age + Income"
+                chart-slug="age_plus_income"
+              />
+            </b-col>
+          </b-row>
+
+          <b-row> </b-row>
+        </b-tab>
+        <b-tab title="Multimarket Comparison">
+          <b-row>
+            <b-col cols="3">
+              <b-button
+                variant="danger"
+                @click="selectComparisonMarkets"
+                style="margin-top: 23px"
+              >
+                Select markets
+              </b-button>
+            </b-col>
+            <b-col cols="4">
+              <b-form-group
+                label="Head of household age"
+                v-slot="{ ariaDescribedby }"
+              >
+                <b-form-radio-group
+                  id="btn-radios-age-segment"
+                  v-model="selectedAgeSegmentComp"
+                  :options="selectedAgeSegmentCompOptions"
+                  :aria-describedby="ariaDescribedby"
+                  name="radios-btn-default"
+                  buttons
+                  button-variant="outline-danger"
+                  size="sm"
+                >
+                </b-form-radio-group>
+              </b-form-group>
+            </b-col>
+            <b-col cols="5">
+              <b-form-group
+                label="Head of Household Income"
+                v-slot="{ ariaDescribedby }"
+              >
+                <b-form-radio-group
+                  id="btn-radios-income-segment"
+                  v-model="selectedIncomeSegmentComp"
+                  :options="selectedIncomeSegmentCompOptions"
+                  :aria-describedby="ariaDescribedby"
+                  name="radios-btn-default"
+                  buttons
+                  button-variant="outline-danger"
+                  size="sm"
+                >
+                </b-form-radio-group>
+              </b-form-group>
+            </b-col>
+          </b-row>
+          <b-row class="mb-4">
+            <b-col cols="12">
+              <b-row class="mb-5 mt-2">
+                <b-col cols="2">
+                  <b-form-group
+                    id="fieldset_horizontal_data_series"
+                    label="Start year"
+                    label-for="input_horizontal_data_series"
+                  >
+                    <v-select
+                      v-model="selectedStartYearComp"
+                      :options="selectedStartYearOptionsComp"
+                      :clearable="false"
+                    ></v-select>
+                  </b-form-group>
+                </b-col>
+                <b-col cols="2">
+                  <b-form-group
+                    id="fieldset_horizontal_data_series"
+                    label="End year"
+                    label-for="input_horizontal_data_series"
+                  >
+                    <v-select
+                      v-model="selectedEndYearComp"
+                      :options="selectedEndYearOptionsComp"
+                      :clearable="false"
+                    ></v-select>
+                  </b-form-group>
+                </b-col>
+                <b-col cols="8">
+                  <b-button-group
+                    id="chartLegend2"
+                    style="padding-top: 26px; float: right"
+                  >
+                    <b-button
+                      variant="highlightChartUrbanVariant"
+                      size="sm"
+                      :style="`
+                        margin-right: 10px;
+                        margin-left: 10px;
+                        min-width: 120px;
+                        font-size: 10px;
+                        color: ${urbanTextColor};
+                        background-color: ${urbanBackgroundColor};
+                        border-color: ${urbanBackgroundColor}`"
+                      :pressed.sync="highlightChartUrban"
+                    >
+                      Urban <br />
+                      (0 to 7.5mi)</b-button
+                    >
+
+                    <b-button
+                      variant="highlightChartSubUrbanVariant"
+                      size="sm"
+                      :style="`
+                        margin-right: 10px;
+                        margin-left: 10px;
+                        min-width: 120px;
+                        font-size: 10px;
+                        color: ${subUrbanTextColor};
+                        background-color: ${subUrbanBackgroundColor};
+                        border-color: ${subUrbanBackgroundColor}`"
+                      :pressed.sync="highlightChartSubUrban"
+                    >
+                      Suburban<br />
+                      (7.5 to 20mi)</b-button
+                    >
+
+                    <b-button
+                      variant="highlightChartExUrbanVariant"
+                      size="sm"
+                      :style="`
+                        margin-right: 10px;
+                        margin-left: 10px;
+                        min-width: 120px;
+                        font-size: 10px;
+                        color: ${exUrbanTextColor};
+                        background-color: ${exUrbanBackgroundColor};
+                        border-color: ${exUrbanBackgroundColor}`"
+                      :pressed.sync="highlightChartExUrban"
+                    >
+                      Exurban <br />
+                      (> 20mi)
+                    </b-button>
+                  </b-button-group>
+                </b-col>
+              </b-row>
+            </b-col>
+          </b-row>
+          <b-row>
+            <b-col cols="12" class="pt-4">
+              Comparison chart
+              <ComparisonChart
+                :dataOptions="dataOptions"
+                :market="
+                  marketSettingsData[selectedSummaryMarket].Market_Display_Name
+                "
+                :age-segment="selectedAgeSegmentComp"
+                :income-segment="selectedIncomeSegmentComp"
+                :x-axis-labels="marketComparisonChartsDataYearLabels"
+                :chart-data="selectedMarketComparisonChartsData"
+                :market-settings-data="marketSettingsData"
+                :start-year="selectedStartYearComp"
+                :end-year="selectedEndYearComp"
+                :highlight-chart-urban="highlightChartUrban"
+                :highlight-chart-sub-urban="highlightChartSubUrban"
+                :highlight-chart-ex-urban="highlightChartExUrban"
+                chart-title=" "
+                chart-slug="multi_market_comparison"
+              />
+            </b-col>
+          </b-row>
+          <b-modal
+            id="modal-markets-comparison"
+            size="xl"
+            centered
+            scrollable
+            title="Multi-Market Comparison"
+            style="min-height: 50vh"
+          >
+            <b-row>
+              <b-col cols="4">
+                <b-form-group
+                  id="fieldset_horizontal_data_series"
+                  label="Metro area 1"
+                  label-for="input_horizontal_data_series"
+                >
+                  <v-select
+                    v-model="selectedMarketsComp1"
+                    :options="selectedComputedSummaryMarketOptions"
+                    :reduce="(market) => market.code"
+                    :clearable="false"
+                  ></v-select>
+                </b-form-group>
+              </b-col>
+              <b-col cols="4">
+                <b-form-group
+                  id="fieldset_horizontal_data_series"
+                  label="Metro area 2"
+                  label-for="input_horizontal_data_series"
+                >
+                  <v-select
+                    v-model="selectedMarketsComp2"
+                    :options="selectedComputedSummaryMarketOptions"
+                    :reduce="(market) => market.code"
+                    :clearable="false"
+                  ></v-select>
+                </b-form-group>
+              </b-col>
+              <b-col cols="4">
+                <b-form-group
+                  id="fieldset_horizontal_data_series"
+                  label="Metro area 3"
+                  label-for="input_horizontal_data_series"
+                >
+                  <v-select
+                    v-model="selectedMarketsComp3"
+                    :options="selectedComputedSummaryMarketOptions"
+                    :reduce="(market) => market.code"
+                  ></v-select>
+                </b-form-group>
+              </b-col>
+            </b-row>
+            <b-row>
+              <b-col cols="4">
+                <b-form-group
+                  id="fieldset_horizontal_data_series"
+                  label="Metro area 4"
+                  label-for="input_horizontal_data_series"
+                >
+                  <v-select
+                    v-model="selectedMarketsComp4"
+                    :options="selectedComputedSummaryMarketOptions"
+                    :reduce="(market) => market.code"
+                  ></v-select>
+                </b-form-group>
+              </b-col>
+              <b-col cols="4">
+                <b-form-group
+                  id="fieldset_horizontal_data_series"
+                  label="Metro area 5"
+                  label-for="input_horizontal_data_series"
+                >
+                  <v-select
+                    v-model="selectedMarketsComp5"
+                    :options="selectedComputedSummaryMarketOptions"
+                    :reduce="(market) => market.code"
+                  ></v-select>
+                </b-form-group>
+              </b-col>
+              <b-col cols="4">
+                <b-form-group
+                  id="fieldset_horizontal_data_series"
+                  label="Metro area 6"
+                  label-for="input_horizontal_data_series"
+                >
+                  <v-select
+                    v-model="selectedMarketsComp6"
+                    :options="selectedComputedSummaryMarketOptions"
+                    :reduce="(market) => market.code"
+                  ></v-select>
+                </b-form-group>
+              </b-col>
+            </b-row>
+            <template #modal-footer>
+              <b-button variant="danger" @click="hideMarketComparisonModal">
+                OK
+              </b-button>
+            </template>
+          </b-modal>
+        </b-tab>
+      </b-tabs>
     </div>
   </div>
 </template>
@@ -1013,11 +1900,11 @@ import {
   optionsListToObjectArrayWithMappingCodeLabelForDataSeries,
   renameDataSeries,
 } from "./helpers/market_segment";
-// import FullChart from "./components/FullChart";
-// import AllChart from "./components/AllChart";
-// import AgeChart from "./components/AgeChart";
-// import IncomeChart from "./components/IncomeChart";
-// import ComparisonChart from "./components/ComparisonChart";
+import FullChart from "./components/FullChart";
+import AllChart from "./components/AllChart";
+import AgeChart from "./components/AgeChart";
+import IncomeChart from "./components/IncomeChart";
+import ComparisonChart from "./components/ComparisonChart";
 // import DonutChart from "./components/DonutChart";
 import vSelect from "vue-select";
 
@@ -1037,6 +1924,11 @@ export default {
   components: {
     BIconX,
     BEditableTable,
+    FullChart,
+    AllChart,
+    AgeChart,
+    IncomeChart,
+    ComparisonChart,
     vSelect,
   }, //VSwatches,DonutChart
   data() {
@@ -3137,13 +4029,13 @@ export default {
       map.addControl(homeButton, "bottom-left");
     },
     resetView() {
-      // this.flowMap.flyTo({
-      //   center: [
-      //     this.initialViewState.longitude,
-      //     this.initialViewState.latitude,
-      //   ],
-      //   zoom: this.initialViewState.zoom,
-      // });
+      this.flowMap.flyTo({
+        center: [
+          this.initialViewState.longitude,
+          this.initialViewState.latitude,
+        ],
+        zoom: this.initialViewState.zoom,
+      });
     },
     dataTableToggleVisibility() {
       this.dataTableVisibility = !this.dataTableVisibility;
@@ -3152,7 +4044,7 @@ export default {
       //   this.updateDeck();
       // }, 200);
       setTimeout(() => {
-        // this.flowMap.resize();
+        this.flowMap.resize();
         console.log("resize map");
         // setTimeout(() => {
         //   this.updateDeck();
@@ -3165,14 +4057,14 @@ export default {
       console.log("onDataTableRowSelected");
       console.log(items);
     },
-    // onSelectedClick(event) {
-    //   // console.log("onSelectedClick");
-    //   // console.log(event);
-    //   // console.table(this.flowDataTableData);
-    //   // console.log(row_index);
-    //   // console.table(row_item);
-    //   this.updateFlowData(true);
-    // },
+    onSelectedClick(event) {
+      // console.log("onSelectedClick");
+      // console.log(event);
+      // console.table(this.flowDataTableData);
+      // console.log(row_index);
+      // console.table(row_item);
+      this.updateFlowData(true);
+    },
     onDataTableRefreshed(table) {
       console.log("onDataTableRefreshed");
       console.log(table);
@@ -4188,38 +5080,38 @@ export default {
     },
     updateFlowData(selectOnly = false) {
       console.log("updateFlowData");
-      // console.log(this.flowMapData);
-      // // if (this.flowSelectedMovementDirection == "net") {
-      // //   this.flowMapData = this.flowMapData["net"];
-      // // } else {
-      // //   this.flowMapData = this.flowMapData["percent"];
-      // // }
-      // console.log(
-      //   this.flowMapData,
-      //   this.marketSettingsData,
-      //   this.flowSelectedMarketTypeDetails,
-      //   this.flowSelectedMarket,
-      //   this.flowSelectedGeoSegment,
-      //   this.flowSelectedMovementDirection,
-      //   this.flowSelectedGeoSegment,
-      //   this.flowExcludeWithinState,
-      //   this.flowSelectedAgeSegment,
-      //   this.flowSelectedIncomeSegment
-      // );
-      // let data = getIntermarketData(
-      //   this.flowMapData,
-      //   this.marketSettingsData,
-      //   this.flowSelectedMarketTypeDetails,
-      //   this.flowSelectedMarket,
-      //   this.flowSelectedGeoSegment,
-      //   this.flowSelectedMovementDirection,
-      //   this.flowSelectedGeoSegment,
-      //   this.flowExcludeWithinState,
-      //   this.flowSelectedAgeSegment,
-      //   this.flowSelectedIncomeSegment,
-      //   this.flowDataTableData,
-      //   selectOnly
-      // );
+      console.log(this.flowMapData);
+      // if (this.flowSelectedMovementDirection == "net") {
+      //   this.flowMapData = this.flowMapData["net"];
+      // } else {
+      //   this.flowMapData = this.flowMapData["percent"];
+      // }
+      console.log(
+        this.flowMapData,
+        this.marketSettingsData,
+        this.flowSelectedMarketTypeDetails,
+        this.flowSelectedMarket,
+        this.flowSelectedGeoSegment,
+        this.flowSelectedMovementDirection,
+        this.flowSelectedGeoSegment,
+        this.flowExcludeWithinState,
+        this.flowSelectedAgeSegment,
+        this.flowSelectedIncomeSegment
+      );
+      let data = getIntermarketData(
+        this.flowMapData,
+        this.marketSettingsData,
+        this.flowSelectedMarketTypeDetails,
+        this.flowSelectedMarket,
+        this.flowSelectedGeoSegment,
+        this.flowSelectedMovementDirection,
+        this.flowSelectedGeoSegment,
+        this.flowExcludeWithinState,
+        this.flowSelectedAgeSegment,
+        this.flowSelectedIncomeSegment,
+        this.flowDataTableData,
+        selectOnly
+      );
 
       this.intermarketData = data;
       this.flowDataTableData = this.dataTableItems;
@@ -4269,60 +5161,60 @@ export default {
       );
       const videoData = await videoDataResponse.json();
       this.videoOptions = videoData;
-      // const flowDataResponse = await fetch(
-      //   `${this.base_asset_url}/intermarketdata-20240115.json`
-      // );
-      // console.log(flowDataResponse);
-      // const flowMapDataBase = await flowDataResponse.json();
-      // console.log("flowMapDataBase");
-      // console.log(flowMapDataBase);
-      // this.flowMapDataBase = flowMapDataBase;
-      // if (this.flowSelectedMovementDirection == "net") {
-      //   this.flowMapData = this.flowMapDataBase["net"];
-      // } else {
-      //   this.flowMapData = this.flowMapDataBase["percent"];
-      // }
+      const flowDataResponse = await fetch(
+        `${this.base_asset_url}/intermarketdata-20240115.json`
+      );
+      console.log(flowDataResponse);
+      const flowMapDataBase = await flowDataResponse.json();
+      console.log("flowMapDataBase");
+      console.log(flowMapDataBase);
+      this.flowMapDataBase = flowMapDataBase;
+      if (this.flowSelectedMovementDirection == "net") {
+        this.flowMapData = this.flowMapDataBase["net"];
+      } else {
+        this.flowMapData = this.flowMapDataBase["percent"];
+      }
 
-      // console.log("flowMapDataBase");
-      // console.log(flowMapDataBase);
-      // let flowMapData = this.flowMapData;
-      // // this.flowMapData = flowMapData;
-      // console.log("flowMapDataBase");
-      // console.log(flowMapDataBase);
-      // console.log(flowMapData);
-      // if (this.flowMarketType == "metro_areas") {
-      //   this.mapFlowSourceData = flowMapData.metro_areas;
-      //   this.flowMarketListOptions = this.flowMetroAreaListOptions;
-      // } else {
-      //   this.mapFlowSourceData = flowMapData.states;
-      //   this.flowMarketListOptions = this.flowStatesListOptions;
-      // }
-      // // console.log("loaded flow data");
-      // // console.log(flowMapData);
-      // if (this.flowSelectedMarketType == "metro_areas") {
-      //   this.flowSelectedGeoSegment = this.flowSelectedMetroAreaOption;
-      // } else {
-      //   this.flowSelectedGeoSegment = this.flowSelectedStatesOption;
-      // }
-
-      // let data = getIntermarketData(
-      //   flowMapData,
-      //   this.marketSettingsData,
-      //   this.flowSelectedMarketType,
-      //   this.flowSelectedMarket,
-      //   this.flowSelectedGeoSegment,
-      //   this.flowSelectedMovementDirection,
-      //   this.flowSelectedGeoSegment,
-      //   this.flowExcludeWithinState,
-      //   this.flowSelectedAgeSegment,
-      //   this.flowSelectedIncomeSegment
-      // );
+      console.log("flowMapDataBase");
+      console.log(flowMapDataBase);
+      let flowMapData = this.flowMapData;
+      // this.flowMapData = flowMapData;
+      console.log("flowMapDataBase");
+      console.log(flowMapDataBase);
+      console.log(flowMapData);
+      if (this.flowMarketType == "metro_areas") {
+        this.mapFlowSourceData = flowMapData.metro_areas;
+        this.flowMarketListOptions = this.flowMetroAreaListOptions;
+      } else {
+        this.mapFlowSourceData = flowMapData.states;
+        this.flowMarketListOptions = this.flowStatesListOptions;
+      }
       // console.log("loaded flow data");
-      // console.log(data);
+      // console.log(flowMapData);
+      if (this.flowSelectedMarketType == "metro_areas") {
+        this.flowSelectedGeoSegment = this.flowSelectedMetroAreaOption;
+      } else {
+        this.flowSelectedGeoSegment = this.flowSelectedStatesOption;
+      }
 
-      // this.intermarketData = data;
-      // this.intermarketLocationData = this.intermarketData.locations;
-      // this.intermarketFlowData = this.intermarketData.flows;
+      let data = getIntermarketData(
+        flowMapData,
+        this.marketSettingsData,
+        this.flowSelectedMarketType,
+        this.flowSelectedMarket,
+        this.flowSelectedGeoSegment,
+        this.flowSelectedMovementDirection,
+        this.flowSelectedGeoSegment,
+        this.flowExcludeWithinState,
+        this.flowSelectedAgeSegment,
+        this.flowSelectedIncomeSegment
+      );
+      console.log("loaded flow data");
+      console.log(data);
+
+      this.intermarketData = data;
+      this.intermarketLocationData = this.intermarketData.locations;
+      this.intermarketFlowData = this.intermarketData.flows;
 
       // intermarketdata-20221115
       // const settingsDataResponse = await fetch(
@@ -6368,7 +7260,7 @@ export default {
     console.log("intramarketMarketSettingsDataV4");
     console.log(intramarketMarketSettingsDataV4);
     this.loading = true;
-    // this.initialFlowLoading = true;
+    this.initialFlowLoading = true;
     this.player = this.$refs.player;
     this.selectedEthnicityOptions = optionsListToObjectArray([
       ...new Set(this.ethnicityTypes.map((item) => item)),
@@ -6435,8 +7327,8 @@ export default {
     // ************* test flowmap
     const MAPBOX_STYLE_DARK = "mapbox://styles/mapbox/dark-v10";
 
-    // const config = { ...UI_INITIAL };
-    // this.flowMapConfig = config;
+    const config = { ...UI_INITIAL };
+    this.flowMapConfig = config;
 
     // console.log("flows");
     // // let intermarketFlowData = this.intermarketFlowData;
@@ -6480,172 +7372,172 @@ export default {
     let vue = this;
 
     // this.flowSelectedMarket = this.selectedMarket;
-    // this.flowSelectedDirection = Object.keys(this.flowDirectionOptions)[0];
-    // this.flowSelectedMarketType = "states";
-    // this.flowSelectedMetroAreaOption = Object.keys(
-    //   this.flowMetroAreaListOptions
-    // )[1];
-    // this.flowExcludeWithinState = Object.keys(
-    //   this.flowExcludeWithinStateOptions
-    // )[0];
-    // this.flowSelectedMetroAreaOption = Object.keys(
-    //   this.flowMetroAreaListOptions
-    // )[1];
-    // this.flowSelectedStatesOption = Object.keys(this.flowStatesListOptions)[0];
-    // this.flowSelectedMovementDirection = Object.keys(
-    //   this.flowMovementDirectionOptions
-    // )[0];
-    // this.flowSelectedAgeSegment = Object.keys(this.flowAgeSegmentOptions)[0];
-    // this.flowSelectedIncomeSegment = Object.keys(
-    //   this.flowIncomeSegmentOptions
-    // )[0];
-    // await this.getMapData();
+    this.flowSelectedDirection = Object.keys(this.flowDirectionOptions)[0];
+    this.flowSelectedMarketType = "states";
+    this.flowSelectedMetroAreaOption = Object.keys(
+      this.flowMetroAreaListOptions
+    )[1];
+    this.flowExcludeWithinState = Object.keys(
+      this.flowExcludeWithinStateOptions
+    )[0];
+    this.flowSelectedMetroAreaOption = Object.keys(
+      this.flowMetroAreaListOptions
+    )[1];
+    this.flowSelectedStatesOption = Object.keys(this.flowStatesListOptions)[0];
+    this.flowSelectedMovementDirection = Object.keys(
+      this.flowMovementDirectionOptions
+    )[0];
+    this.flowSelectedAgeSegment = Object.keys(this.flowAgeSegmentOptions)[0];
+    this.flowSelectedIncomeSegment = Object.keys(
+      this.flowIncomeSegmentOptions
+    )[0];
+    await this.getMapData();
     // console.log("***HAVEDATA");
-    // this.updateFlowData();
+    this.updateFlowData();
     // console.log(this.flowData);
     // fetchData().then((data) => {
     // const gui = new GUI();
     // initLilGui(gui);
     // console.log("data");
     // console.log(data);
-    // window.data = this.intermarketData;
+    window.data = this.intermarketData;
     // const { locations, flows } = this.intermarketData;
-    // const { locations, flows } = this.intermarketData;
-    // console.log("initial data");
-    // console.log(locations);
-    // console.log(flows);
-    // // eslint-disable-next-line no-undef
-    // const [width, height] = [globalThis.innerWidth, globalThis.innerHeight];
-    // const LOADED_INITIAL_VIEW_STATE = {
-    //   longitude: -97.61555,
-    //   latitude: 39.60401096871773,
-    //   zoom: 3.4702991148251474,
-    //   pitch: 0,
-    //   bearing: 0,
-    // };
-    // const INITIAL_VIEW_STATE = getViewStateForLocations(
-    //   locations,
-    //   (loc) => [loc.lon, loc.lat],
-    //   [width, height],
-    //   { pad: 0.3 }
-    // );
-    // console.log("INITIAL_VIEW_STATE");
-    // console.log(INITIAL_VIEW_STATE);
-    // this.initialViewState = LOADED_INITIAL_VIEW_STATE;
-    // let DEFAULT_ZOOM_OUT = 0.4;
+    const { locations, flows } = this.intermarketData;
+    console.log("initial data");
+    console.log(locations);
+    console.log(flows);
+    // eslint-disable-next-line no-undef
+    const [width, height] = [globalThis.innerWidth, globalThis.innerHeight];
+    const LOADED_INITIAL_VIEW_STATE = {
+      longitude: -97.61555,
+      latitude: 39.60401096871773,
+      zoom: 3.4702991148251474,
+      pitch: 0,
+      bearing: 0,
+    };
+    const INITIAL_VIEW_STATE = getViewStateForLocations(
+      locations,
+      (loc) => [loc.lon, loc.lat],
+      [width, height],
+      { pad: 0.3 }
+    );
+    console.log("INITIAL_VIEW_STATE");
+    console.log(INITIAL_VIEW_STATE);
+    this.initialViewState = LOADED_INITIAL_VIEW_STATE;
+    let DEFAULT_ZOOM_OUT = 0.4;
 
-    // // TODO - uncomment after mexico is working
-    // this.flowMap = new mapboxgl.Map({
-    //   container: "flowmap",
-    //   preserveDrawingBuffer: true,
-    //   accessToken: this.accessToken,
-    //   style: "mapbox://styles/stobieb/cl03cgll7000114p6t44bqa0d",
-    //   // Note: deck.gl will be in charge of interaction and event handling
-    //   interactive: true,
-    //   center: [INITIAL_VIEW_STATE.longitude, INITIAL_VIEW_STATE.latitude],
-    //   zoom: INITIAL_VIEW_STATE.zoom - DEFAULT_ZOOM_OUT,
-    //   bearing: INITIAL_VIEW_STATE.bearing,
-    //   pitch: INITIAL_VIEW_STATE.pitch,
-    // });
-    // console.log("this.INITIAL_VIEW_STATE");
-    // console.log(this.INITIAL_VIEW_STATE);
-    // let flowData = this.intermarketData;
-    // this.flowmapDeckOverlay = new DeckOverlay({
-    //   initialViewState: INITIAL_VIEW_STATE,
-    //   glOptions: {
-    //     preserveDrawingBuffer: true,
-    //   },
-    //   getTooltip: ({ object }) =>
-    //     object && {
-    //       // html: `<h2>${object.name}</h2><div>${object.message}</div>`,
-    //       html: tooltipHtml(object),
-    //       style: {
-    //         backgroundColor: "#fff",
-    //         fontSize: "12px",
-    //         color: "black",
-    //       },
-    //     },
-    //   width: "100%",
-    //   height: "100%",
-    //   layers: [
-    //     new FlowmapLayer({
-    //       id: "my-flowmap-layer",
-    //       flowData,
-    //       pickable: true,
-    //       visible: vue.flowMapLayerVisible,
-    //       opacity: vue.flowMapConfig.opacity,
-    //       darkMode: vue.flowMapConfig.darkMode,
-    //       colorScheme: vue.flowMapConfig.colorScheme,
-    //       fadeAmount: vue.flowMapConfig.fadeAmount,
-    //       fadeEnabled: vue.flowMapConfig.fadeEnabled,
-    //       fadeOpacityEnabled: vue.flowMapConfig.fadeOpacityEnabled,
-    //       locationTotalsEnabled: vue.flowMapConfig.locationTotalsEnabled,
-    //       animationEnabled: vue.flowMapConfig.animationEnabled,
-    //       clusteringEnabled: vue.flowMapConfig.clusteringEnabled,
-    //       clusteringAuto: vue.flowMapConfig.clusteringAuto,
-    //       clusteringLevel: vue.flowMapConfig.clusteringLevel,
-    //       adaptiveScalesEnabled: vue.flowMapConfig.adaptiveScalesEnabled,
-    //       highlightColor: vue.flowMapConfig.highlightColor,
-    //       getLocationId: (loc) => loc.id,
-    //       getLocationLat: (loc) => loc.lat,
-    //       getLocationLon: (loc) => loc.lon,
-    //       getFlowOriginId: (flow) => flow.origin,
-    //       getFlowDestId: (flow) => flow.dest,
-    //       getFlowMagnitude: (flow) => flow.count,
-    //       getLocationName: (loc) => loc.name,
+    // TODO - uncomment after mexico is working
+    this.flowMap = new mapboxgl.Map({
+      container: "flowmap",
+      preserveDrawingBuffer: true,
+      accessToken: this.accessToken,
+      style: "mapbox://styles/stobieb/cl03cgll7000114p6t44bqa0d",
+      // Note: deck.gl will be in charge of interaction and event handling
+      interactive: true,
+      center: [INITIAL_VIEW_STATE.longitude, INITIAL_VIEW_STATE.latitude],
+      zoom: INITIAL_VIEW_STATE.zoom - DEFAULT_ZOOM_OUT,
+      bearing: INITIAL_VIEW_STATE.bearing,
+      pitch: INITIAL_VIEW_STATE.pitch,
+    });
+    console.log("this.INITIAL_VIEW_STATE");
+    console.log(this.INITIAL_VIEW_STATE);
+    let flowData = this.intermarketData;
+    this.flowmapDeckOverlay = new DeckOverlay({
+      initialViewState: INITIAL_VIEW_STATE,
+      glOptions: {
+        preserveDrawingBuffer: true,
+      },
+      getTooltip: ({ object }) =>
+        object && {
+          // html: `<h2>${object.name}</h2><div>${object.message}</div>`,
+          html: tooltipHtml(object),
+          style: {
+            backgroundColor: "#fff",
+            fontSize: "12px",
+            color: "black",
+          },
+        },
+      width: "100%",
+      height: "100%",
+      layers: [
+        new FlowmapLayer({
+          id: "my-flowmap-layer",
+          flowData,
+          pickable: true,
+          visible: vue.flowMapLayerVisible,
+          opacity: vue.flowMapConfig.opacity,
+          darkMode: vue.flowMapConfig.darkMode,
+          colorScheme: vue.flowMapConfig.colorScheme,
+          fadeAmount: vue.flowMapConfig.fadeAmount,
+          fadeEnabled: vue.flowMapConfig.fadeEnabled,
+          fadeOpacityEnabled: vue.flowMapConfig.fadeOpacityEnabled,
+          locationTotalsEnabled: vue.flowMapConfig.locationTotalsEnabled,
+          animationEnabled: vue.flowMapConfig.animationEnabled,
+          clusteringEnabled: vue.flowMapConfig.clusteringEnabled,
+          clusteringAuto: vue.flowMapConfig.clusteringAuto,
+          clusteringLevel: vue.flowMapConfig.clusteringLevel,
+          adaptiveScalesEnabled: vue.flowMapConfig.adaptiveScalesEnabled,
+          highlightColor: vue.flowMapConfig.highlightColor,
+          getLocationId: (loc) => loc.id,
+          getLocationLat: (loc) => loc.lat,
+          getLocationLon: (loc) => loc.lon,
+          getFlowOriginId: (flow) => flow.origin,
+          getFlowDestId: (flow) => flow.dest,
+          getFlowMagnitude: (flow) => flow.count,
+          getLocationName: (loc) => loc.name,
 
-    //       // onHover: (info) => setTooltip(getTooltipState(info)),
-    //       onHover: (info) => console.log(info),
-    //       // onClick: (info) => console.log('clicked', info.type, info.object),
-    //       // onClick: (info) =>
-    //       //   alert(`clicked: ${info.type}  ${JSON.stringify(info.object)}`),
-    //     }),
-    //   ],
-    // });
+          // onHover: (info) => setTooltip(getTooltipState(info)),
+          onHover: (info) => console.log(info),
+          // onClick: (info) => console.log('clicked', info.type, info.object),
+          // onClick: (info) =>
+          //   alert(`clicked: ${info.type}  ${JSON.stringify(info.object)}`),
+        }),
+      ],
+    });
 
-    // this.flowMap.addControl(this.flowmapDeckOverlay);
-    // // flowmap.addControl(new mapboxgl.NavigationControl());
+    this.flowMap.addControl(this.flowmapDeckOverlay);
+    // flowmap.addControl(new mapboxgl.NavigationControl());
 
-    // this.flowmapScaleControl = new mapboxgl.ScaleControl({
-    //   maxWidth: 400,
-    //   unit: "imperial",
-    // });
-    // this.flowMap.addControl(this.flowmapScaleControl);
-    // this.flowmapNavigationControl = new mapboxgl.NavigationControl();
-    // this.addFlowHomeButton(this.flowMap, this);
-    // let flowmapNavigationPosition = this.isFullscreen
-    //   ? "bottom-right"
-    //   : "top-right";
-    // this.flowMap.addControl(this.flowmapNavigationControl, "bottom-left");
+    this.flowmapScaleControl = new mapboxgl.ScaleControl({
+      maxWidth: 400,
+      unit: "imperial",
+    });
+    this.flowMap.addControl(this.flowmapScaleControl);
+    this.flowmapNavigationControl = new mapboxgl.NavigationControl();
+    this.addFlowHomeButton(this.flowMap, this);
+    let flowmapNavigationPosition = this.isFullscreen
+      ? "bottom-right"
+      : "top-right";
+    this.flowMap.addControl(this.flowmapNavigationControl, "bottom-left");
 
-    // // ************* end test flowmap
-    // this.flowMap.on("resize", () => {
-    //   console.log("A resize event occurred.");
-    //   this.flowLoading = true;
-    //   vue.updateDeck(false);
-    //   // this.flowMap.removeControl(this.flowmapDeckOverlay);
-    //   // this.updateFlowData();
-    //   // this.flowMap.addControl(this.flowmapDeckOverlay);
+    // ************* end test flowmap
+    this.flowMap.on("resize", () => {
+      console.log("A resize event occurred.");
+      this.flowLoading = true;
+      vue.updateDeck(false);
+      // this.flowMap.removeControl(this.flowmapDeckOverlay);
+      // this.updateFlowData();
+      // this.flowMap.addControl(this.flowmapDeckOverlay);
 
-    //   // let direction = vue.flowSelectedMovementDirection;
-    //   // vue.flowSelectedMovementDirection = direction == "in" ? "out" : "in";
-    //   setTimeout(() => {
-    //     // vue.updateDeck();
-    //     // this.updateFlowData();
-    //     // this.flowMap.addControl(this.flowmapDeckOverlay);
-    //     console.log("updating deck from map resize");
-    //     this.flowOpacity = 99;
-    //     this.updateFlowData();
-    //     // if (vue.flowFirstTime) {
-    //     //   vue.flowSelectedMovementDirection = "out";
-    //     //   vue.flowFirstTime = false;
-    //     // }
-    //     vue.flowLoading = false;
-    //     vue.initialFlowLoading = false;
-    //     vue.updateDeck();
-    //   }, 1000);
-    // });
-    // this.updateDeck(false);
+      // let direction = vue.flowSelectedMovementDirection;
+      // vue.flowSelectedMovementDirection = direction == "in" ? "out" : "in";
+      setTimeout(() => {
+        // vue.updateDeck();
+        // this.updateFlowData();
+        // this.flowMap.addControl(this.flowmapDeckOverlay);
+        console.log("updating deck from map resize");
+        this.flowOpacity = 99;
+        this.updateFlowData();
+        // if (vue.flowFirstTime) {
+        //   vue.flowSelectedMovementDirection = "out";
+        //   vue.flowFirstTime = false;
+        // }
+        vue.flowLoading = false;
+        vue.initialFlowLoading = false;
+        vue.updateDeck();
+      }, 1000);
+    });
+    this.updateDeck(false);
     this.$root.$on("bv::modal::show", (bvEvent, modalId) => {
       // console.log('Modal is about to be shown', bvEvent, modalId)
       if (modalId == "modal-drop-location") {
@@ -7418,73 +8310,73 @@ export default {
       this.updateIntramarketData();
     },
     $fullscreen: function () {
-      // this.toggleFlowFullScreen();
+      this.toggleFlowFullScreen();
     },
     // flowFullScreen: function () {
     //   this.flowShowSettings = true;
     // },
-    // flowShowSettings: function () {},
-    // flowExcludeWithinStateOptions() {
-    //   this.updateFlowData();
-    // },
-    // flowExcludeWithinState() {
-    //   this.flowFirstTime = false;
-    //   this.updateFlowData();
-    // },
-    // flowSelectedMarket() {
+    flowShowSettings: function () {},
+    flowExcludeWithinStateOptions() {
+      this.updateFlowData();
+    },
+    flowExcludeWithinState() {
+      this.flowFirstTime = false;
+      this.updateFlowData();
+    },
+    flowSelectedMarket() {
       
-    //   if (this.flowSelectedMarketType == "metro_area") {
-    //     this.flowSelectedGeoSegment = this.flowSelectedMetroAreaOption;
-    //   }
-    //   if (this.flowSelectedMarketType == "states") {
-    //     this.flowSelectedGeoSegment = this.flowSelectedStatesOption;
-    //   }
-    //   this.flowFirstTime = false;
-    //   console.log('flowSelectedMarketType changed')
-    //   console.log(this.flowSelectedMarketType)
-    //   console.log(this.flowSelectedStatesOption)
-    //   console.log(this.flowSelectedGeoSegment)
-    //   this.updateFlowData();
-    // },
-    // flowSelectedDirection() {
-    //   this.flowFirstTime = false;
-    //   this.updateFlowData();
-    // },
+      if (this.flowSelectedMarketType == "metro_area") {
+        this.flowSelectedGeoSegment = this.flowSelectedMetroAreaOption;
+      }
+      if (this.flowSelectedMarketType == "states") {
+        this.flowSelectedGeoSegment = this.flowSelectedStatesOption;
+      }
+      this.flowFirstTime = false;
+      console.log('flowSelectedMarketType changed')
+      console.log(this.flowSelectedMarketType)
+      console.log(this.flowSelectedStatesOption)
+      console.log(this.flowSelectedGeoSegment)
+      this.updateFlowData();
+    },
+    flowSelectedDirection() {
+      this.flowFirstTime = false;
+      this.updateFlowData();
+    },
 
-    // flowSelectedGeoSegment() {
-    //   this.flowFirstTime = false;
-    //   this.updateFlowData();
-    // },
-    // flowSelectedMetroAreaOption() {
-    //   this.flowFirstTime = false;
-    //   if (this.flowSelectedMarketType == "metro_areas") {
-    //     this.flowSelectedGeoSegment = this.flowSelectedMetroAreaOption;
-    //   }
-    //   this.updateFlowData();
-    // },
-    // flowSelectedStatesOption() {
-    //   if (this.flowSelectedMarketType == "states") {
-    //     this.flowSelectedGeoSegment = this.flowSelectedStatesOption;
-    //   }
-    //   this.updateFlowData();
-    // },
-    // flowSelectedMovementDirection() {
-    //   this.flowFirstTime = false;
-    //   if (this.flowSelectedMovementDirection == "net") {
-    //     this.flowMapData = this.flowMapDataBase["net"];
-    //   } else {
-    //     this.flowMapData = this.flowMapDataBase["percent"];
-    //   }
-    //   this.updateFlowData();
-    // },
-    // flowSelectedAgeSegment() {
-    //   this.updateFlowData();
-    // },
-    // flowSelectedIncomeSegment() {
-    //   this.flowFirstTime = false;
-    //   console.log("flowSelectedIncomeSegment updated");
-    //   this.updateFlowData();
-    // },
+    flowSelectedGeoSegment() {
+      this.flowFirstTime = false;
+      this.updateFlowData();
+    },
+    flowSelectedMetroAreaOption() {
+      this.flowFirstTime = false;
+      if (this.flowSelectedMarketType == "metro_areas") {
+        this.flowSelectedGeoSegment = this.flowSelectedMetroAreaOption;
+      }
+      this.updateFlowData();
+    },
+    flowSelectedStatesOption() {
+      if (this.flowSelectedMarketType == "states") {
+        this.flowSelectedGeoSegment = this.flowSelectedStatesOption;
+      }
+      this.updateFlowData();
+    },
+    flowSelectedMovementDirection() {
+      this.flowFirstTime = false;
+      if (this.flowSelectedMovementDirection == "net") {
+        this.flowMapData = this.flowMapDataBase["net"];
+      } else {
+        this.flowMapData = this.flowMapDataBase["percent"];
+      }
+      this.updateFlowData();
+    },
+    flowSelectedAgeSegment() {
+      this.updateFlowData();
+    },
+    flowSelectedIncomeSegment() {
+      this.flowFirstTime = false;
+      console.log("flowSelectedIncomeSegment updated");
+      this.updateFlowData();
+    },
 
     fullscreen: function () {
       this.showSettings = true;
@@ -7526,7 +8418,25 @@ export default {
       console.log("selectedMarketType", this.selectedMarketType);
       console.log("selectedMarket", this.selectedMarket);
     },
-
+    flowSelectedMarketType: function () {
+      if (this.flowSelectedMarketType === "metro_areas") {
+        this.flowSelectedMetroAreaOption = Object.keys(
+          this.flowMetroAreaListOptions
+        )[1];
+        this.flowSelectedGeoSegment = this.flowSelectedMetroAreaOption;
+        this.flowComputedMarketOptions =
+          this.computedFlowMarketOptions[0]["options"];
+        this.flowSelectedMarket = "DallasFortWorthTX";
+      } else {
+        this.flowSelectedStatesOption = Object.keys(
+          this.flowStatesListOptions
+        )[1];
+        this.flowSelectedGeoSegment = this.flowSelectedStatesOption;
+        this.flowComputedMarketOptions =
+          this.computedFlowMarketOptions[1]["options"];
+        this.flowSelectedMarket = "Texas";
+      }
+    },
     selectedAgeSegment: function () {
       if (this.countryChange) {
         return;
@@ -8161,6 +9071,11 @@ export default {
     },
     csv: function () {
       // console.log('csv.loaded')
+    },
+    flowOpacity: function () {
+      this.flowMapConfig.opacity = this.flowOpacity / 100;
+      console.log("updating opacity");
+      this.updateDeck();
     },
     opacity: function () {
       if (this.map) {
